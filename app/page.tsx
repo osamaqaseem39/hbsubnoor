@@ -1,65 +1,143 @@
-import Image from "next/image";
+import Link from 'next/link';
+import Image from 'next/image';
+import ProductMarquee from '@/components/ProductMarquee';
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+    <div className="min-h-screen">
+      {/* Hero Section */}
+      <section className="relative bg-gradient-to-br from-[#fcb03b] to-[#e09d2a] text-black py-32 md:py-40 px-4 overflow-hidden min-h-[600px] md:min-h-[700px] flex items-center">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/images/herobg.png"
+            alt="Hero Background"
+            fill
+            className="object-cover opacity-70"
+            priority
+          />
+        </div>
+        <div className="container mx-auto text-center relative z-10 w-full">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6">
+            HB SUB NOOR INDUSTRIES
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+          <p className="text-2xl md:text-3xl mb-4 text-black font-semibold">
+            The Future of Industrial Packaging Security
+          </p>
+          <p className="text-xl md:text-2xl mb-8">
+            Elevate Your Logistics. Secure Your Future.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link 
+              href="/contact" 
+              className="bg-[#fcb03b] text-black px-8 py-3 rounded-lg font-semibold hover:bg-[#e09d2a] transition-colors"
             >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+              Get a Quote
+            </Link>
+            <Link 
+              href="/products" 
+              className="border-2 border-black text-black px-8 py-3 rounded-lg font-semibold hover:bg-black hover:text-[#fcb03b] transition-colors"
             >
-              Learning
-            </a>{" "}
-            center.
+              View Products
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Product Marquee */}
+      <ProductMarquee />
+
+      {/* Company Overview */}
+      <section className="py-16 px-4 bg-black">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-[#fcb03b]">
+            Welcome to HB Sub Noor Industries
+          </h2>
+          <p className="text-lg text-white leading-relaxed mb-6">
+            A global leader in comprehensive packaging and strapping solutions. With over <strong>25 years of operational excellence</strong>, we deliver intelligent, cost-effective systems engineered to protect your goods, streamline your operations, and enhance your brand integrity.
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </section>
+
+      {/* Core Capabilities */}
+      <section className="py-16 px-4 bg-black">
+        <div className="container mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-[#fcb03b]">
+            Our Core Capabilities
+          </h2>
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            <div className="bg-black p-8 rounded-lg shadow-lg border-l-4 border-[#fcb03b]">
+              <h3 className="text-2xl font-bold mb-4 text-[#fcb03b]">
+                High-Performance Packaging Strips
+              </h3>
+              <p className="text-white leading-relaxed">
+                Manufacturing top-of-the-line custom plastic poly strapping (Polypropylene/Polyester) known for being <strong>Easy to Use, Safe, Reliable, and Long Lasting</strong>.
+              </p>
+            </div>
+            
+            <div className="bg-black p-8 rounded-lg shadow-lg border-l-4 border-[#fcb03b]">
+              <h3 className="text-2xl font-bold mb-4 text-[#fcb03b]">
+                Automated Strapping Machinery
+              </h3>
+              <p className="text-white leading-relaxed">
+                Dealing in state-of-the-art automatic and semi-automatic strapping machines designed to boost productivity and reduce operational costs.
+              </p>
+            </div>
+          </div>
         </div>
-      </main>
+      </section>
+
+      {/* Key Features */}
+      <section className="py-16 px-4 bg-black">
+        <div className="container mx-auto max-w-6xl">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-[#fcb03b]">
+            Why Choose HB Sub Noor?
+          </h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="text-center">
+              <div className="bg-[#fcb03b] text-black w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+                25+
+              </div>
+              <h3 className="text-xl font-semibold mb-2 text-[#fcb03b]">Years of Excellence</h3>
+              <p className="text-white opacity-90">Over two decades of industry leadership</p>
+            </div>
+            
+            <div className="text-center">
+              <div className="bg-[#fcb03b] text-black w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+                ✓
+              </div>
+              <h3 className="text-xl font-semibold mb-2 text-[#fcb03b]">Quality Assured</h3>
+              <p className="text-white opacity-90">Commitment, Quality, and Loyalty</p>
+            </div>
+            
+            <div className="text-center">
+              <div className="bg-[#fcb03b] text-black w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+                🌍
+              </div>
+              <h3 className="text-xl font-semibold mb-2 text-[#fcb03b]">Global Reach</h3>
+              <p className="text-white opacity-90">Serving Pakistan and international markets</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-16 px-4 bg-[#fcb03b] text-black">
+        <div className="container mx-auto text-center max-w-3xl">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            Ready to Secure Your Future?
+          </h2>
+          <p className="text-xl mb-8">
+            Contact us today for detailed product information, technical support, or to request a custom quote.
+          </p>
+          <Link 
+            href="/contact" 
+            className="inline-block bg-[#fcb03b] text-black px-8 py-3 rounded-lg font-semibold hover:bg-[#e09d2a] transition-colors"
+          >
+            Get in Touch
+          </Link>
+        </div>
+      </section>
     </div>
   );
 }
