@@ -444,7 +444,7 @@ export default function Home() {
                   High-performance Polypropylene (PP) and Polyester (PET) straps engineered for maximum tensile strength, shock absorption, and reliable elongation recovery.
                 </p>
                 
-                <div className="space-y-3 mb-4">
+                <div className="grid grid-cols-2 gap-3 mb-4">
                   <div className="bg-bg-accent/10 backdrop-blur-sm p-4 rounded-lg border border-border-accent/20">
                     <h4 className="font-bold mb-2 text-lg text-text-heading">Custom Sized Strap</h4>
                     <p className="text-sm text-text-primary">
