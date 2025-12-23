@@ -444,22 +444,30 @@ export default function Home() {
                   High-performance Polypropylene (PP) and Polyester (PET) straps engineered for maximum tensile strength, shock absorption, and reliable elongation recovery.
                 </p>
                 
-                <div className="space-y-2 mb-4">
-                  <div className="flex items-center gap-3">
-                    <div className="w-2 h-2 bg-bg-accent rounded-full"></div>
-                    <span className="text-text-primary font-medium">Custom Sized Strap</span>
+                <div className="space-y-3 mb-4">
+                  <div className="bg-bg-accent/10 backdrop-blur-sm p-4 rounded-lg border border-border-accent/20">
+                    <h4 className="font-bold mb-2 text-lg text-text-heading">Custom Sized Strap</h4>
+                    <p className="text-sm text-text-primary">
+                      Engineered to fit exact product geometry for specialized goods and irregularly shaped packages.
+                    </p>
                   </div>
-                  <div className="flex items-center gap-3">
-                    <div className="w-2 h-2 bg-bg-accent rounded-full"></div>
-                    <span className="text-text-primary font-medium">Printed Strap</span>
+                  <div className="bg-bg-accent/10 backdrop-blur-sm p-4 rounded-lg border border-border-accent/20">
+                    <h4 className="font-bold mb-2 text-lg text-text-heading">Printed Strap</h4>
+                    <p className="text-sm text-text-primary">
+                      High-contrast, durable printing for branding, security marking, and logistics communication.
+                    </p>
                   </div>
-                  <div className="flex items-center gap-3">
-                    <div className="w-2 h-2 bg-bg-accent rounded-full"></div>
-                    <span className="text-text-primary font-medium">Coloured Strap</span>
+                  <div className="bg-bg-accent/10 backdrop-blur-sm p-4 rounded-lg border border-border-accent/20">
+                    <h4 className="font-bold mb-2 text-lg text-text-heading">Coloured Strap</h4>
+                    <p className="text-sm text-text-primary">
+                      Visual identification tool for warehouse management, tracking, and safety protocols.
+                    </p>
                   </div>
-                  <div className="flex items-center gap-3">
-                    <div className="w-2 h-2 bg-bg-accent rounded-full"></div>
-                    <span className="text-text-primary font-medium">Transparent Strap</span>
+                  <div className="bg-bg-accent/10 backdrop-blur-sm p-4 rounded-lg border border-border-accent/20">
+                    <h4 className="font-bold mb-2 text-lg text-text-heading">Transparent Strap</h4>
+                    <p className="text-sm text-text-primary">
+                      Sleek, professional hold for retail-facing goods where package design must remain visible.
+                    </p>
                   </div>
                 </div>
 
