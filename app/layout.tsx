@@ -165,6 +165,18 @@ export default function RootLayout({
       <body
         className={`${montserrat.variable} antialiased min-h-screen flex flex-col`}
       >
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-6M7QKH5K4Z"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-6M7QKH5K4Z');
+          `}
+        </Script>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
