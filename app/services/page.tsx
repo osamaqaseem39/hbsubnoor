@@ -77,7 +77,7 @@ export default function Services() {
 
         <div className="container mx-auto max-w-7xl relative z-10">
           <div className="text-center mb-8">
-            <h2 className="text-2xl md:text-3xl font-extrabold mb-4 text-text-heading leading-tight">Our Services</h2>
+            <h2 className="text-3xl md:text-4xl font-extrabold mb-4 text-text-heading leading-tight">Our Services</h2>
             <div className="w-32 h-1.5 bg-gradient-to-r from-bg-accent to-transparent mx-auto"></div>
             <p className="text-lg text-text-secondary mt-6 max-w-2xl mx-auto">
               Everything you need for complete packaging solutions
@@ -90,7 +90,7 @@ export default function Services() {
               <div className="w-16 h-16 bg-gradient-to-br from-bg-accent to-bg-accent/70 rounded-xl flex items-center justify-center text-3xl mb-4 group-hover:scale-110 transition-transform">
                 ⚙️
               </div>
-              <h2 className="text-xl md:text-2xl font-bold mb-4 text-text-heading">
+              <h2 className="text-2xl md:text-3xl font-bold mb-4 text-text-heading">
                 Custom Manufacturing
               </h2>
               <p className="text-text-primary leading-relaxed mb-6">
@@ -129,7 +129,7 @@ export default function Services() {
               <div className="w-16 h-16 bg-gradient-to-br from-bg-accent to-bg-accent/70 rounded-xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition-transform">
                 🔧
               </div>
-              <h2 className="text-xl md:text-2xl font-bold mb-4 text-text-heading">
+              <h2 className="text-2xl md:text-3xl font-bold mb-4 text-text-heading">
                 Machinery Solutions
               </h2>
               <p className="text-text-primary leading-relaxed mb-6">
@@ -168,7 +168,7 @@ export default function Services() {
               <div className="w-16 h-16 bg-gradient-to-br from-bg-accent to-bg-accent/70 rounded-xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition-transform">
                 🛠️
               </div>
-              <h2 className="text-xl md:text-2xl font-bold mb-4 text-text-heading">
+              <h2 className="text-2xl md:text-3xl font-bold mb-4 text-text-heading">
                 Technical Support
               </h2>
               <p className="text-text-primary leading-relaxed mb-6">
@@ -207,7 +207,7 @@ export default function Services() {
               <div className="w-16 h-16 bg-gradient-to-br from-bg-accent to-bg-accent/70 rounded-xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition-transform">
                 📦
               </div>
-              <h2 className="text-xl md:text-2xl font-bold mb-4 text-text-heading">
+              <h2 className="text-2xl md:text-3xl font-bold mb-4 text-text-heading">
                 Supply Chain Solutions
               </h2>
               <p className="text-text-primary leading-relaxed mb-6">
@@ -255,7 +255,7 @@ export default function Services() {
 
         <div className="container mx-auto max-w-6xl relative z-10">
           <div className="text-center mb-8">
-            <h2 className="text-2xl md:text-3xl font-extrabold mb-4 leading-tight">Why Choose Our Services?</h2>
+            <h2 className="text-3xl md:text-4xl font-extrabold mb-4 leading-tight">Why Choose Our Services?</h2>
             <div className="w-32 h-1.5 bg-gradient-to-r from-white/50 to-transparent mx-auto"></div>
             <p className="text-lg mt-6 max-w-2xl mx-auto opacity-90">
               Intelligent solutions that deliver exceptional value
@@ -265,7 +265,7 @@ export default function Services() {
           <div className="grid md:grid-cols-3 gap-6">
             <div className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl border border-white/20 text-center group hover:scale-105 transition-transform duration-300">
               <div className="text-5xl mb-4 group-hover:scale-110 transition-transform">🎯</div>
-              <h3 className="text-xl font-bold mb-3">Cost-Effective</h3>
+              <h3 className="text-2xl font-bold mb-3">Cost-Effective</h3>
               <p className="text-base opacity-90 leading-relaxed">
                 Intelligent solutions that reduce operational costs while maintaining quality
               </p>
@@ -297,7 +297,7 @@ export default function Services() {
 
         <div className="container mx-auto max-w-6xl relative z-10">
           <div className="text-center mb-8">
-            <h2 className="text-2xl md:text-3xl font-extrabold mb-4 text-text-heading leading-tight">Quality Assurance Excellence</h2>
+            <h2 className="text-3xl md:text-4xl font-extrabold mb-4 text-text-heading leading-tight">Quality Assurance Excellence</h2>
             <div className="w-32 h-1.5 bg-gradient-to-r from-bg-accent to-transparent mx-auto"></div>
             <p className="text-lg text-text-secondary mt-6 max-w-2xl mx-auto">
               Rigorous testing and certification processes ensure every product exceeds expectations
@@ -325,43 +325,6 @@ export default function Services() {
               <h3 className="text-xl font-bold mb-2 text-text-heading">Global Compliance</h3>
               <p className="text-sm text-text-primary">Products meet regulatory requirements across all markets</p>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Clients Section */}
-      <section className="py-8 px-4 bg-gradient-to-br from-bg-accent via-bg-accent/90 to-bg-accent/80 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0" style={{
-            backgroundImage: 'linear-gradient(rgba(0,0,0,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,0.1) 1px, transparent 1px)',
-            backgroundSize: '50px 50px',
-          }}></div>
-        </div>
-
-        <div className="container mx-auto max-w-7xl relative z-10">
-          <div className="text-center mb-8">
-            <h2 className="text-2xl md:text-3xl font-extrabold mb-4 text-text-on-accent leading-tight">Trusted by Industry Leaders</h2>
-            <div className="w-32 h-1.5 bg-gradient-to-r from-white/50 to-transparent mx-auto"></div>
-            <p className="text-lg text-text-on-accent/90 mt-6 max-w-2xl mx-auto">
-              Companies worldwide rely on our packaging solutions to secure their products and streamline operations
-            </p>
-          </div>
-
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 items-center justify-items-center">
-            {[1, 2, 3, 4, 5, 6, 7].map((num) => (
-              <div
-                key={num}
-                className="group relative w-full h-32 bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 hover:border-white/40 transition-all duration-300 hover:shadow-xl hover:-translate-y-2 flex items-center justify-center p-6"
-              >
-                <Image
-                  src={`/images/clients (${num}).png`}
-                  alt={`Client logo ${num}`}
-                  width={200}
-                  height={100}
-                  className="object-contain w-full h-full grayscale group-hover:grayscale-0 transition-all duration-300 opacity-70 group-hover:opacity-100"
-                />
-              </div>
-            ))}
           </div>
         </div>
       </section>

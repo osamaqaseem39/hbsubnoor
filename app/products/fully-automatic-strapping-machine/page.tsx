@@ -174,7 +174,7 @@ export default function FullyAutomaticStrappingMachinePage() {
                 <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-bg-accent/20 rounded-full">
                   <span className="text-xs font-semibold text-text-heading">High-Speed Automation</span>
                 </div>
-                <h2 className="text-2xl md:text-3xl font-bold text-text-heading">
+                <h2 className="text-3xl md:text-4xl font-bold text-text-heading">
                   Maximum Throughput, Zero Manual Intervention
                 </h2>
                 <p className="text-lg text-text-primary leading-relaxed">
@@ -222,7 +222,7 @@ export default function FullyAutomaticStrappingMachinePage() {
             {/* Function & Operation */}
             <div className="grid md:grid-cols-2 gap-8 mb-12">
               <div className="bg-bg-card p-8 rounded-2xl shadow-xl border border-border-accent/20">
-                <h3 className="text-xl font-bold mb-4 text-text-heading">Function</h3>
+                <h3 className="text-2xl font-bold mb-4 text-text-heading">Function</h3>
                 <p className="text-text-primary leading-relaxed mb-4">
                   Capable of detecting the package, automatically allotting, tightening (to a precise setting), and fastening polypropylene straps around packages. The entire process is fully automated with no manual intervention required.
                 </p>
@@ -246,7 +246,7 @@ export default function FullyAutomaticStrappingMachinePage() {
                 </ul>
               </div>
               <div className="bg-gradient-to-br from-bg-accent via-bg-accent/90 to-bg-accent/80 text-text-on-accent p-8 rounded-2xl shadow-xl">
-                <h3 className="text-xl font-bold mb-4">Operation</h3>
+                <h3 className="text-2xl font-bold mb-4">Operation</h3>
                 <p className="leading-relaxed mb-4">
                   Utilizes an instantaneous heat-weld closure for a secure, permanent seal. Features inbuilt sensors that auto-switch the motor off when idle to conserve energy, restarting automatically upon product detection.
                 </p>
@@ -273,7 +273,7 @@ export default function FullyAutomaticStrappingMachinePage() {
 
             {/* Recommendation */}
             <div className="bg-bg-card p-8 rounded-2xl shadow-xl border border-border-accent/20 mb-12">
-              <h3 className="text-xl font-bold mb-4 text-text-heading">Ideal For</h3>
+              <h3 className="text-2xl font-bold mb-4 text-text-heading">Ideal For</h3>
               <p className="text-lg text-text-primary leading-relaxed mb-6">
                 Ideal for busy, high-volume, and 24/7 industrial operations requiring consistent, perfect strap placement for product and pallet stability. Perfect for production line integration where maximum throughput and reliability are essential.
               </p>
@@ -295,7 +295,7 @@ export default function FullyAutomaticStrappingMachinePage() {
 
             {/* FAQ Section */}
             <div className="bg-gradient-to-br from-bg-card/50 to-bg-primary p-8 rounded-2xl border border-border-accent/20 mb-12">
-              <h3 className="text-2xl font-bold mb-8 text-text-heading text-center">Frequently Asked Questions</h3>
+              <h3 className="text-3xl font-bold mb-8 text-text-heading text-center">Frequently Asked Questions</h3>
               <div className="space-y-6 max-w-4xl mx-auto">
                 <div>
                   <h4 className="font-bold text-lg text-text-heading mb-2">What is a fully automatic strapping machine?</h4>

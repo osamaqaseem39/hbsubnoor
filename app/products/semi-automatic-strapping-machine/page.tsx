@@ -173,7 +173,7 @@ export default function SemiAutomaticStrappingMachinePage() {
                 <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-bg-accent/20 rounded-full">
                   <span className="text-xs font-semibold text-text-heading">Portable Solution</span>
                 </div>
-                <h2 className="text-2xl md:text-3xl font-bold text-text-heading">
+                <h2 className="text-3xl md:text-4xl font-bold text-text-heading">
                   Flexibility Meets Efficiency
                 </h2>
                 <p className="text-lg text-text-primary leading-relaxed">
@@ -221,7 +221,7 @@ export default function SemiAutomaticStrappingMachinePage() {
             {/* Technical Specs */}
             <div className="grid md:grid-cols-2 gap-8 mb-12">
               <div className="bg-bg-card p-8 rounded-2xl shadow-xl border border-border-accent/20">
-                <h3 className="text-xl font-bold mb-4 text-text-heading">Function</h3>
+                <h3 className="text-2xl font-bold mb-4 text-text-heading">Function</h3>
                 <p className="text-text-primary leading-relaxed mb-4">
                   Operators manually feed the strap over the product, and the machine instantly and reliably executes the tensioning and sealing process. This provides flexibility for diverse product sizes while maintaining consistent quality.
                 </p>
@@ -245,7 +245,7 @@ export default function SemiAutomaticStrappingMachinePage() {
                 </ul>
               </div>
               <div className="bg-gradient-to-br from-bg-accent via-bg-accent/90 to-bg-accent/80 text-text-on-accent p-8 rounded-2xl shadow-xl">
-                <h3 className="text-xl font-bold mb-4">Key Technical Specs</h3>
+                <h3 className="text-2xl font-bold mb-4">Key Technical Specs</h3>
                 <ul className="space-y-4">
                   <li>
                     <strong>Cycle Time:</strong> Rapid 2.5 seconds per strap
@@ -265,7 +265,7 @@ export default function SemiAutomaticStrappingMachinePage() {
 
             {/* Application Suitability */}
             <div className="bg-bg-card p-8 rounded-2xl shadow-xl border border-border-accent/20 mb-12">
-              <h3 className="text-xl font-bold mb-4 text-text-heading">Application Suitability</h3>
+              <h3 className="text-2xl font-bold mb-4 text-text-heading">Application Suitability</h3>
               <p className="text-lg text-text-primary leading-relaxed mb-6">
                 Excellent for diverse product sizes and mobile packaging stations. Suitable for a wide variety of goods including:
               </p>
@@ -299,7 +299,7 @@ export default function SemiAutomaticStrappingMachinePage() {
 
             {/* FAQ Section */}
             <div className="bg-gradient-to-br from-bg-card/50 to-bg-primary p-8 rounded-2xl border border-border-accent/20 mb-12">
-              <h3 className="text-2xl font-bold mb-8 text-text-heading text-center">Frequently Asked Questions</h3>
+              <h3 className="text-3xl font-bold mb-8 text-text-heading text-center">Frequently Asked Questions</h3>
               <div className="space-y-6 max-w-4xl mx-auto">
                 <div>
                   <h4 className="font-bold text-lg text-text-heading mb-2">What is a semi automatic strapping machine?</h4>

@@ -85,7 +85,7 @@ export default function Contact() {
                 <div className="w-12 h-12 bg-gradient-to-br from-bg-accent to-bg-accent/70 rounded-xl flex items-center justify-center text-2xl">
                   📧
                 </div>
-                <h2 className="text-2xl md:text-3xl font-bold text-text-heading">Get a Quote</h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-text-heading">Get a Quote</h2>
               </div>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
@@ -169,7 +169,7 @@ export default function Contact() {
                   <div className="w-12 h-12 bg-gradient-to-br from-bg-accent to-bg-accent/70 rounded-xl flex items-center justify-center text-2xl">
                     📞
                   </div>
-                  <h2 className="text-2xl md:text-3xl font-bold text-text-heading">Contact Information</h2>
+                  <h2 className="text-3xl md:text-4xl font-bold text-text-heading">Contact Information</h2>
                 </div>
                 
                 <div className="space-y-6">
@@ -249,7 +249,7 @@ export default function Contact() {
 
         <div className="container mx-auto max-w-6xl relative z-10">
           <div className="text-center mb-8">
-            <h2 className="text-2xl md:text-3xl font-extrabold mb-4 text-text-heading leading-tight">Our Locations</h2>
+            <h2 className="text-3xl md:text-4xl font-extrabold mb-4 text-text-heading leading-tight">Our Locations</h2>
             <div className="w-32 h-1.5 bg-gradient-to-r from-bg-accent to-transparent mx-auto"></div>
             <p className="text-lg text-text-secondary mt-6 max-w-2xl mx-auto">
               Visit us at our offices and manufacturing facilities
@@ -262,7 +262,7 @@ export default function Contact() {
                 <div className="w-12 h-12 bg-gradient-to-br from-bg-accent to-bg-accent/70 rounded-xl flex items-center justify-center text-2xl">
                   🏢
                 </div>
-                <h3 className="text-xl font-bold text-text-heading">Head Office</h3>
+                <h3 className="text-2xl font-bold text-text-heading">Head Office</h3>
               </div>
               <p className="text-text-primary leading-relaxed text-lg">
                 9/E, G-Block, Mushtaq Ahmed Gurmani Road,<br />
@@ -292,7 +292,7 @@ export default function Contact() {
       <section className="py-12 px-4 bg-bg-primary relative overflow-hidden">
         <div className="container mx-auto max-w-7xl relative z-10">
           <div className="text-center mb-8">
-            <h2 className="text-2xl md:text-3xl font-extrabold mb-4 text-text-heading leading-tight">What Our Clients Say</h2>
+            <h2 className="text-3xl md:text-4xl font-extrabold mb-4 text-text-heading leading-tight">What Our Clients Say</h2>
             <div className="w-32 h-1.5 bg-gradient-to-r from-bg-accent to-transparent mx-auto"></div>
             <p className="text-lg text-text-secondary mt-6 max-w-2xl mx-auto">
               Trusted by industry leaders across Pakistan and beyond

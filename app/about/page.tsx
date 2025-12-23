@@ -56,7 +56,7 @@ export default function About() {
 
         <div className="container mx-auto max-w-6xl relative z-10">
           <div className="text-center mb-8">
-            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-text-heading">Our Journey</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-text-heading">Our Journey</h2>
             <div className="w-24 h-1 bg-bg-accent mx-auto"></div>
             <p className="text-lg text-text-secondary mt-6 max-w-2xl mx-auto">
               From a vision to a global leader—discover the milestones that shaped our company
@@ -64,84 +64,90 @@ export default function About() {
           </div>
 
           <div className="relative">
-            {/* Timeline Line */}
-            <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-bg-accent via-bg-accent/50 to-bg-accent/20 transform md:-translate-x-1/2"></div>
+            {/* Horizontal Timeline Line */}
+            <div className="absolute top-16 left-0 right-0 h-0.5 bg-gradient-to-r from-bg-accent via-bg-accent/50 to-bg-accent/20 hidden md:block"></div>
 
-            <div className="space-y-8">
+            <div className="flex flex-col md:flex-row items-start md:items-center gap-8 md:gap-4 overflow-x-auto pb-8 md:pb-0">
               {/* 2004 - Strategic Entry */}
-              <div className="relative flex flex-col md:flex-row items-center gap-6">
-                <div className="w-16 h-16 bg-bg-accent rounded-full flex items-center justify-center text-2xl font-bold text-text-on-accent z-10 flex-shrink-0">
-                  <span className="text-sm">2004</span>
+              <div className="relative flex flex-col items-center gap-4 min-w-[200px] md:min-w-0 flex-1">
+                <div className="w-32 h-32 bg-bg-accent rounded-full flex flex-col items-center justify-center text-text-on-accent z-10 shadow-lg">
+                  <span className="text-3xl mb-1">🚀</span>
+                  <span className="text-sm font-bold">2004</span>
                 </div>
-                <div className="flex-1 md:ml-8 bg-bg-card p-6 rounded-xl border-l-4 border-border-accent shadow-lg">
-                  <h3 className="text-xl font-bold mb-3 text-text-heading">Strategic Entry</h3>
-                  <p className="text-text-primary leading-relaxed">
-                    A bold initiative marking our entry into the strip packaging business. This strategic move established HB Sub Noor Industries as a dedicated player in the industrial packaging sector, setting the foundation for decades of growth and innovation.
+                <div className="bg-bg-card p-4 rounded-xl border-t-4 border-border-accent shadow-lg text-center">
+                  <h3 className="text-lg font-bold mb-2 text-text-heading">Strategic Entry</h3>
+                  <p className="text-sm text-text-primary">
+                    Entered the strip packaging business, establishing our foundation in industrial packaging.
                   </p>
                 </div>
               </div>
 
               {/* 2008 - First Production Line */}
-              <div className="relative flex flex-col md:flex-row-reverse items-center gap-6">
-                <div className="w-16 h-16 bg-bg-accent rounded-full flex items-center justify-center text-2xl font-bold text-text-on-accent z-10 flex-shrink-0">
-                  <span className="text-sm">2008</span>
+              <div className="relative flex flex-col items-center gap-4 min-w-[200px] md:min-w-0 flex-1">
+                <div className="w-32 h-32 bg-bg-accent rounded-full flex flex-col items-center justify-center text-text-on-accent z-10 shadow-lg">
+                  <span className="text-3xl mb-1">🏭</span>
+                  <span className="text-sm font-bold">2008</span>
                 </div>
-                <div className="flex-1 md:mr-8 bg-bg-card p-4 rounded-xl border-r-4 border-border-accent shadow-lg md:text-right">
-                  <h3 className="text-2xl font-bold mb-2 text-text-heading">A Bold Initiative</h3>
-                  <p className="text-text-primary leading-relaxed">
-                    Inaugurating our first production line, we took a significant leap forward in manufacturing capabilities. This milestone enabled us to meet growing market demand and establish ourselves as a reliable supplier of high-quality packaging straps.
+                <div className="bg-bg-card p-4 rounded-xl border-t-4 border-border-accent shadow-lg text-center">
+                  <h3 className="text-lg font-bold mb-2 text-text-heading">First Production Line</h3>
+                  <p className="text-sm text-text-primary">
+                    Launched our first production line, expanding manufacturing capabilities.
                   </p>
                 </div>
               </div>
 
               {/* 2011 - Second Production Line */}
-              <div className="relative flex flex-col md:flex-row items-center gap-6">
-                <div className="w-16 h-16 bg-bg-accent rounded-full flex items-center justify-center text-2xl font-bold text-text-on-accent z-10 flex-shrink-0">
-                  <span className="text-sm">2011</span>
+              <div className="relative flex flex-col items-center gap-4 min-w-[200px] md:min-w-0 flex-1">
+                <div className="w-32 h-32 bg-bg-accent rounded-full flex flex-col items-center justify-center text-text-on-accent z-10 shadow-lg">
+                  <span className="text-3xl mb-1">📈</span>
+                  <span className="text-sm font-bold">2011</span>
                 </div>
-                <div className="flex-1 md:ml-8 bg-bg-card p-4 rounded-xl border-l-4 border-border-accent shadow-lg">
-                  <h3 className="text-2xl font-bold mb-2 text-text-heading">Expanding & Scaling Up</h3>
-                  <p className="text-text-primary leading-relaxed">
-                    Successfully opened our second production line, doubling our manufacturing capacity. This expansion allowed us to serve a broader customer base and respond more effectively to increasing demand, marking a period of rapid growth and market expansion.
+                <div className="bg-bg-card p-4 rounded-xl border-t-4 border-border-accent shadow-lg text-center">
+                  <h3 className="text-lg font-bold mb-2 text-text-heading">Scaling Up</h3>
+                  <p className="text-sm text-text-primary">
+                    Opened second production line, doubling capacity and market reach.
                   </p>
                 </div>
               </div>
 
               {/* 2015 - Third Production Line */}
-              <div className="relative flex flex-col md:flex-row-reverse items-center gap-6">
-                <div className="w-16 h-16 bg-bg-accent rounded-full flex items-center justify-center text-2xl font-bold text-text-on-accent z-10 flex-shrink-0">
-                  <span className="text-sm">2015</span>
+              <div className="relative flex flex-col items-center gap-4 min-w-[200px] md:min-w-0 flex-1">
+                <div className="w-32 h-32 bg-bg-accent rounded-full flex flex-col items-center justify-center text-text-on-accent z-10 shadow-lg">
+                  <span className="text-3xl mb-1">🌱</span>
+                  <span className="text-sm font-bold">2015</span>
                 </div>
-                <div className="flex-1 md:mr-8 bg-bg-card p-6 rounded-xl border-r-4 border-border-accent shadow-lg md:text-right">
-                  <h3 className="text-2xl font-bold mb-3 text-text-heading">Growing Up</h3>
-                  <p className="text-text-primary leading-relaxed">
-                    Launched our third production line, further expanding our capabilities. The expansion continued as we strengthened our position in the market, enhancing our ability to deliver consistent quality and meet the evolving needs of our global customer base.
+                <div className="bg-bg-card p-4 rounded-xl border-t-4 border-border-accent shadow-lg text-center">
+                  <h3 className="text-lg font-bold mb-2 text-text-heading">Growing Up</h3>
+                  <p className="text-sm text-text-primary">
+                    Launched third production line, strengthening market position.
                   </p>
                 </div>
               </div>
 
               {/* 2018 - Fourth Production Line */}
-              <div className="relative flex flex-col md:flex-row items-center gap-6">
-                <div className="w-16 h-16 bg-bg-accent rounded-full flex items-center justify-center text-2xl font-bold text-text-on-accent z-10 flex-shrink-0">
-                  <span className="text-sm">2018</span>
+              <div className="relative flex flex-col items-center gap-4 min-w-[200px] md:min-w-0 flex-1">
+                <div className="w-32 h-32 bg-bg-accent rounded-full flex flex-col items-center justify-center text-text-on-accent z-10 shadow-lg">
+                  <span className="text-3xl mb-1">💪</span>
+                  <span className="text-sm font-bold">2018</span>
                 </div>
-                <div className="flex-1 md:ml-8 bg-bg-card p-6 rounded-xl border-l-4 border-border-accent shadow-lg">
-                  <h3 className="text-2xl font-bold mb-3 text-text-heading">Staying Committed to Our Mission</h3>
-                  <p className="text-text-primary leading-relaxed">
-                    Our fourth successful production line came online, demonstrating our unwavering commitment to growth and excellence. Developing and launching this expansion, we scaled up the industry with the aim of expanding our reach and serving customers worldwide with enhanced capacity and efficiency.
+                <div className="bg-bg-card p-4 rounded-xl border-t-4 border-border-accent shadow-lg text-center">
+                  <h3 className="text-lg font-bold mb-2 text-text-heading">Global Expansion</h3>
+                  <p className="text-sm text-text-primary">
+                    Fourth production line online, expanding worldwide reach.
                   </p>
                 </div>
               </div>
 
               {/* 2025 - Future Vision */}
-              <div className="relative flex flex-col md:flex-row-reverse items-center gap-6">
-                <div className="w-16 h-16 bg-bg-accent rounded-full flex items-center justify-center text-2xl font-bold text-text-on-accent z-10 flex-shrink-0">
-                  <span className="text-sm">2025</span>
+              <div className="relative flex flex-col items-center gap-4 min-w-[200px] md:min-w-0 flex-1">
+                <div className="w-32 h-32 bg-bg-accent rounded-full flex flex-col items-center justify-center text-text-on-accent z-10 shadow-lg">
+                  <span className="text-3xl mb-1">🌟</span>
+                  <span className="text-sm font-bold">2025</span>
                 </div>
-                <div className="flex-1 md:mr-8 bg-bg-card p-6 rounded-xl border-r-4 border-border-accent shadow-lg md:text-right">
-                  <h3 className="text-2xl font-bold mb-3 text-text-heading">Innovation & Global Leadership</h3>
-                  <p className="text-text-primary leading-relaxed">
-                    As we look toward 2025, we continue to push boundaries with advanced automation, sustainable manufacturing practices, and cutting-edge technology. Our commitment to innovation drives us to explore new markets, develop eco-friendly solutions, and maintain our position as a global leader in industrial packaging solutions.
+                <div className="bg-bg-card p-4 rounded-xl border-t-4 border-border-accent shadow-lg text-center">
+                  <h3 className="text-lg font-bold mb-2 text-text-heading">Innovation Leader</h3>
+                  <p className="text-sm text-text-primary">
+                    Advancing automation and sustainable manufacturing practices.
                   </p>
                 </div>
               </div>
@@ -159,7 +165,7 @@ export default function About() {
 
         <div className="container mx-auto max-w-6xl relative z-10">
           <div className="text-center mb-8">
-            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-text-heading">Our Core Values</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-text-heading">Our Core Values</h2>
             <div className="w-24 h-1 bg-bg-accent mx-auto"></div>
             <p className="text-lg text-text-secondary mt-6 max-w-2xl mx-auto">
               The principles that guide every decision, every product, and every relationship
@@ -171,7 +177,7 @@ export default function About() {
               <div className="w-16 h-16 bg-gradient-to-br from-bg-accent to-bg-accent/70 rounded-xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition-transform">
                 🎯
               </div>
-              <h3 className="text-xl font-bold mb-4 text-text-heading">Commitment</h3>
+              <h3 className="text-2xl font-bold mb-4 text-text-heading">Commitment</h3>
               <p className="text-text-primary leading-relaxed">
                 We stand by our promises. Every order, every deadline, every quality standard—we deliver with unwavering dedication. Our commitment extends beyond products to building lasting partnerships.
               </p>
@@ -209,7 +215,7 @@ export default function About() {
                 <span className="w-2 h-2 bg-bg-accent rounded-full animate-pulse"></span>
                 <span className="text-xs font-semibold text-text-heading">Innovation</span>
               </div>
-              <h2 className="text-2xl md:text-3xl font-bold mb-6 text-text-heading">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-text-heading">
                 Pioneering the Future of Packaging
               </h2>
               <p className="text-lg text-text-primary leading-relaxed mb-4">

@@ -32,45 +32,46 @@ export default function Company() {
           </p>
         </div>
       </section>
+      {/* Leadership Message */}
+      <section className="py-16 px-4 bg-gradient-to-br from-bg-primary via-bg-card/20 to-bg-primary relative overflow-hidden">
+        <div className="absolute inset-0 opacity-[0.03]" style={{
+          backgroundImage: 'linear-gradient(rgba(0,0,0,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,0.1) 1px, transparent 1px)',
+          backgroundSize: '60px 60px',
+        }}></div>
+        <div className="absolute top-0 right-0 w-96 h-96 bg-bg-accent/5 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-bg-accent/5 rounded-full blur-3xl"></div>
 
-      {/* Quality Standards */}
-      <section className="py-12 px-4 bg-gradient-to-br from-bg-accent via-bg-accent/90 to-bg-accent/80 text-text-on-accent relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0" style={{
-            backgroundImage: 'linear-gradient(rgba(0,0,0,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,0.1) 1px, transparent 1px)',
-            backgroundSize: '50px 50px',
-          }}></div>
-        </div>
-
-        <div className="container mx-auto max-w-6xl relative z-10">
-          <div className="text-center mb-8">
-            <h2 className="text-2xl md:text-3xl font-extrabold mb-4 leading-tight">Quality Assurance Excellence</h2>
-            <div className="w-32 h-1.5 bg-gradient-to-r from-white/50 to-transparent mx-auto"></div>
-            <p className="text-lg mt-6 max-w-2xl mx-auto opacity-90">
-              Rigorous testing and certification processes ensure every product exceeds expectations
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/20">
-              <div className="text-4xl mb-4">🔬</div>
-              <h3 className="text-xl font-bold mb-2">Material Testing</h3>
-              <p className="text-sm opacity-90">Comprehensive analysis of tensile strength, elongation, and durability</p>
-            </div>
-            <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/20">
-              <div className="text-4xl mb-4">📋</div>
-              <h3 className="text-xl font-bold mb-2">ISO Standards</h3>
-              <p className="text-sm opacity-90">Adherence to international quality management systems</p>
-            </div>
-            <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/20">
-              <div className="text-4xl mb-4">✅</div>
-              <h3 className="text-xl font-bold mb-2">Batch Inspection</h3>
-              <p className="text-sm opacity-90">Every production batch undergoes thorough quality checks</p>
-            </div>
-            <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/20">
-              <div className="text-4xl mb-4">🌍</div>
-              <h3 className="text-xl font-bold mb-2">Global Compliance</h3>
-              <p className="text-sm opacity-90">Products meet regulatory requirements across all markets</p>
+        <div className="container mx-auto max-w-5xl relative z-10">
+          <div className="relative group">
+            <div className="absolute -inset-1 bg-gradient-to-r from-bg-accent via-bg-accent/50 to-bg-accent rounded-3xl blur-lg opacity-20 group-hover:opacity-30 transition-opacity"></div>
+            <div className="relative bg-bg-card p-8 md:p-12 rounded-3xl shadow-2xl border border-border-accent/20">
+              <div className="flex flex-col md:flex-row items-start md:items-center gap-6 mb-8">
+                <div className="relative">
+                  <div className="absolute inset-0 bg-gradient-to-br from-bg-accent to-bg-accent/70 rounded-2xl blur-md opacity-50"></div>
+                  <div className="relative w-24 h-24 bg-gradient-to-br from-bg-accent to-bg-accent/80 rounded-2xl flex items-center justify-center text-4xl shadow-lg transform group-hover:scale-105 transition-transform">
+                    💼
+                  </div>
+                </div>
+                <div className="flex-1">
+                  <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-bg-accent/10 rounded-full mb-3">
+                    <span className="w-2 h-2 bg-bg-accent rounded-full animate-pulse"></span>
+                    <span className="text-xs font-semibold text-text-heading uppercase tracking-wide">Leadership</span>
+                  </div>
+                  <h2 className="text-3xl md:text-4xl font-extrabold mb-2 text-text-heading leading-tight">A Message from Leadership</h2>
+                  <p className="text-sm text-text-secondary font-medium">CEO, HB Sub Noor Industries</p>
+                </div>
+              </div>
+              
+              <div className="relative">
+                <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-bg-accent via-bg-accent/70 to-bg-accent/30 rounded-full"></div>
+                <blockquote className="relative pl-8 md:pl-10">
+                  <div className="absolute -top-2 -left-2 text-6xl text-bg-accent/10 font-serif leading-none">&quot;</div>
+                  <p className="text-lg md:text-xl text-text-primary leading-relaxed relative z-10 font-medium">
+                    For over three decades, we have been driven by a singular purpose: to provide intelligent, cost-effective solutions that empower businesses to protect their products and optimize their operations. Our success isn't measured in units sold, but in the trust we've built with customers across the globe. We believe that true excellence comes from a relentless focus on quality, unwavering commitment to our promises, and genuine loyalty to the partnerships we forge. As we look to the future, we remain dedicated to innovation, sustainability, and the continued growth of our global community of partners.
+                  </p>
+                  <div className="absolute -bottom-4 -right-2 text-6xl text-bg-accent/10 font-serif leading-none">&quot;</div>
+                </blockquote>
+              </div>
             </div>
           </div>
         </div>
@@ -85,7 +86,7 @@ export default function Company() {
 
         <div className="container mx-auto max-w-7xl relative z-10">
           <div className="text-center mb-8">
-            <h2 className="text-2xl md:text-3xl font-extrabold mb-4 text-text-heading leading-tight">Trusted by Industry Leaders</h2>
+            <h2 className="text-3xl md:text-4xl font-extrabold mb-4 text-text-heading leading-tight">Trusted by Industry Leaders</h2>
             <div className="w-32 h-1.5 bg-gradient-to-r from-bg-accent to-transparent mx-auto"></div>
             <p className="text-lg text-text-secondary mt-6 max-w-2xl mx-auto">
               Companies worldwide rely on our packaging solutions to secure their products and streamline operations
@@ -111,26 +112,6 @@ export default function Company() {
         </div>
       </section>
 
-      {/* Leadership Message */}
-      <section className="py-12 px-4 bg-bg-primary relative overflow-hidden">
-        <div className="container mx-auto max-w-4xl relative z-10">
-          <div className="bg-bg-card p-8 md:p-12 rounded-2xl border-l-4 border-border-accent shadow-2xl">
-            <div className="flex items-start gap-6 mb-6">
-              <div className="w-20 h-20 bg-gradient-to-br from-bg-accent to-bg-accent/70 rounded-full flex items-center justify-center text-3xl flex-shrink-0">
-                💼
-              </div>
-              <div>
-                <h2 className="text-2xl md:text-3xl font-bold mb-4 text-text-heading">A Message from Leadership</h2>
-                <p className="text-sm text-text-secondary uppercase tracking-wide">CEO, HB Sub Noor Industries</p>
-              </div>
-            </div>
-            <blockquote className="text-lg md:text-xl text-text-primary leading-relaxed italic border-l-4 border-bg-accent pl-6">
-              &quot;For over three decades, we have been driven by a singular purpose: to provide intelligent, cost-effective solutions that empower businesses to protect their products and optimize their operations. Our success isn't measured in units sold, but in the trust we've built with customers across the globe. We believe that true excellence comes from a relentless focus on quality, unwavering commitment to our promises, and genuine loyalty to the partnerships we forge. As we look to the future, we remain dedicated to innovation, sustainability, and the continued growth of our global community of partners.&quot;
-            </blockquote>
-          </div>
-        </div>
-      </section>
-
       {/* Future Vision */}
       <section className="py-12 px-4 bg-gradient-to-br from-bg-card/30 via-bg-primary to-bg-card/20 relative overflow-hidden">
         <div className="absolute inset-0 overflow-hidden">
@@ -140,7 +121,7 @@ export default function Company() {
 
         <div className="container mx-auto max-w-6xl relative z-10">
           <div className="text-center mb-8">
-            <h2 className="text-2xl md:text-3xl font-extrabold mb-4 text-text-heading leading-tight">Looking Forward</h2>
+            <h2 className="text-3xl md:text-4xl font-extrabold mb-4 text-text-heading leading-tight">Looking Forward</h2>
             <div className="w-32 h-1.5 bg-gradient-to-r from-bg-accent to-transparent mx-auto"></div>
             <p className="text-lg text-text-secondary mt-6 max-w-2xl mx-auto">
               Our roadmap for continued innovation and global expansion
@@ -150,7 +131,7 @@ export default function Company() {
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-bg-card p-8 rounded-2xl border border-border-accent/20 shadow-lg">
               <div className="text-5xl mb-6">🚀</div>
-              <h3 className="text-xl font-bold mb-4 text-text-heading">Technological Advancement</h3>
+              <h3 className="text-2xl font-bold mb-4 text-text-heading">Technological Advancement</h3>
               <p className="text-text-primary leading-relaxed mb-4">
                 Investing in next-generation manufacturing technologies, including AI-driven quality control, automated production lines, and smart packaging solutions that integrate with Industry 4.0 systems.
               </p>

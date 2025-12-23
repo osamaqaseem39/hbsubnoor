@@ -197,7 +197,7 @@ export default function Home() {
                   <span className="w-2 h-2 bg-bg-accent rounded-full animate-pulse"></span>
                   <span className="text-sm font-semibold text-text-heading">About Us</span>
                 </div>
-                <h2 className="text-2xl md:text-3xl font-extrabold mb-4 text-text-heading leading-tight">
+                <h2 className="text-3xl md:text-4xl font-extrabold mb-4 text-text-heading leading-tight">
                   Welcome to HB Sub Noor Industries
                 </h2>
                 <div className="w-32 h-1.5 bg-gradient-to-r from-bg-accent to-transparent"></div>
@@ -347,7 +347,7 @@ export default function Home() {
                   <span className="w-2 h-2 bg-bg-accent rounded-full animate-pulse"></span>
                   <span className="text-sm font-semibold text-text-heading">Our Products</span>
                 </div>
-                <h2 className="text-2xl md:text-3xl font-extrabold mb-4 text-text-heading leading-tight">
+                <h2 className="text-3xl md:text-4xl font-extrabold mb-4 text-text-heading leading-tight">
                   Comprehensive Packaging Solutions
                 </h2>
                 <div className="w-32 h-1.5 bg-gradient-to-r from-bg-accent to-transparent"></div>

@@ -94,7 +94,7 @@ export default function Products() {
                   <span className="w-2 h-2 bg-bg-accent rounded-full animate-pulse"></span>
                   <span className="text-xs font-semibold text-text-heading">Packaging Straps</span>
                 </div>
-                <h2 className="text-2xl md:text-3xl font-extrabold mb-3 text-text-heading leading-tight">
+                <h2 className="text-3xl md:text-4xl font-extrabold mb-3 text-text-heading leading-tight">
                   High-Performance Strap Materials
                 </h2>
                 <div className="w-24 h-1 bg-gradient-to-r from-bg-accent to-transparent"></div>
@@ -129,7 +129,7 @@ export default function Products() {
                     <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-bg-accent/20 rounded-full">
                       <span className="text-xs font-semibold text-text-heading">Premium Material</span>
                     </div>
-                    <h3 className="text-xl md:text-2xl font-bold text-text-heading">
+                    <h3 className="text-2xl md:text-3xl font-bold text-text-heading">
                       Polypropylene (PP) Straps
                     </h3>
                     <p className="text-base text-text-primary leading-relaxed">
@@ -348,7 +348,7 @@ export default function Products() {
                   <span className="w-2 h-2 bg-bg-accent rounded-full animate-pulse"></span>
                   <span className="text-xs font-semibold text-text-heading">Strapping Machinery</span>
                 </div>
-                <h2 className="text-2xl md:text-3xl font-extrabold mb-3 text-text-heading leading-tight">
+                <h2 className="text-3xl md:text-4xl font-extrabold mb-3 text-text-heading leading-tight">
                   Industrial Strapping Machinery
                 </h2>
                 <div className="w-24 h-1 bg-gradient-to-r from-bg-accent to-transparent"></div>
@@ -383,7 +383,7 @@ export default function Products() {
                   <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-bg-accent/20 rounded-full mb-4">
                     <span className="text-xs font-semibold text-text-heading">High-Speed Automation</span>
                   </div>
-                  <h3 className="text-xl md:text-2xl font-bold mb-4 text-text-heading group-hover:text-bg-accent transition-colors">
+                  <h3 className="text-2xl md:text-3xl font-bold mb-4 text-text-heading group-hover:text-bg-accent transition-colors">
                     Fully Automatic Strapping Machine
                   </h3>
                 </div>
@@ -438,7 +438,7 @@ export default function Products() {
                   <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-white/20 backdrop-blur-sm rounded-full mb-4">
                     <span className="text-xs font-semibold">Portable Solution</span>
                   </div>
-                  <h3 className="text-xl md:text-2xl font-bold mb-4">
+                  <h3 className="text-2xl md:text-3xl font-bold mb-4">
                     Semi Automatic Strapping Machine
                   </h3>
                 </div>
