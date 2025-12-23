@@ -5,6 +5,87 @@ import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
 export default function Products() {
+  const productCollectionStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Packaging Solutions - HB Sub Noor Industries",
+    "description": "Complete ecosystem of packaging security with customizable strap materials and high-speed application machinery",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "Product",
+          "name": "Custom Sized Strap",
+          "url": "https://hbsubnoor.com/products/custom-sized-strap"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "Product",
+          "name": "Printed Strap",
+          "url": "https://hbsubnoor.com/products/printed-strap"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "Product",
+          "name": "Coloured Strap",
+          "url": "https://hbsubnoor.com/products/coloured-strap"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "item": {
+          "@type": "Product",
+          "name": "Transparent Strap",
+          "url": "https://hbsubnoor.com/products/transparent-strap"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "item": {
+          "@type": "Product",
+          "name": "Fully Automatic Strapping Machine",
+          "url": "https://hbsubnoor.com/products/fully-automatic-strapping-machine"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 6,
+        "item": {
+          "@type": "Product",
+          "name": "Semi Automatic Strapping Machine",
+          "url": "https://hbsubnoor.com/products/semi-automatic-strapping-machine"
+        }
+      }
+    ]
+  };
+
+  const breadcrumbStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://hbsubnoor.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Products",
+        "item": "https://hbsubnoor.com/products"
+      }
+    ]
+  };
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
@@ -16,7 +97,16 @@ export default function Products() {
   }, []);
 
   return (
-    <div className="min-h-screen">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productCollectionStructuredData) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbStructuredData) }}
+      />
+      <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-bg-hero via-[#F9A634] to-bg-hero-gradient text-text-on-accent py-12 md:py-16 px-4 overflow-hidden">
         {/* Animated Background Image with Parallax */}
@@ -506,5 +596,6 @@ export default function Products() {
         </div>
       </section>
     </div>
+    </>
   );
 }

@@ -5,6 +5,71 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Contact() {
+  const contactPageStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contact Us - HB Sub Noor Industries",
+    "description": "Get in touch with HB Sub Noor Industries for packaging solutions, quotes, and technical support.",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "HB Sub Noor Industries",
+      "email": "info@strapack.com.pk",
+      "telephone": [
+        "+92-322-4722707",
+        "+92-322-4054078",
+        "+92-323-3093336",
+        "+92-301-4914797"
+      ],
+      "address": [
+        {
+          "@type": "PostalAddress",
+          "streetAddress": "9/E, G-Block, Mushtaq Ahmed Gurmani Road, Main Boulevard Gulberg-II",
+          "addressLocality": "Lahore",
+          "addressRegion": "Punjab",
+          "addressCountry": "PK"
+        },
+        {
+          "@type": "PostalAddress",
+          "streetAddress": "18-KM Multan Road, Near High Noon Laboratories",
+          "addressLocality": "Lahore",
+          "addressRegion": "Punjab",
+          "addressCountry": "PK"
+        }
+      ],
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "09:00",
+        "closes": "18:00"
+      }
+    }
+  };
+
+  const breadcrumbStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://hbsubnoor.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Contact",
+        "item": "https://hbsubnoor.com/contact"
+      }
+    ]
+  };
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -35,7 +100,16 @@ export default function Contact() {
   };
 
   return (
-    <div className="min-h-screen">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(contactPageStructuredData) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbStructuredData) }}
+      />
+      <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-bg-hero via-[#F9A634] to-bg-hero-gradient text-text-on-accent py-20 md:py-32 px-4 overflow-hidden">
         <div className="absolute inset-0 z-0">
@@ -363,5 +437,6 @@ export default function Contact() {
         </div>
       </section>
     </div>
+    </>
   );
 }

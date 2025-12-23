@@ -105,6 +105,31 @@ export default function TransparentStrapPage() {
     ]
   };
 
+  const breadcrumbStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://hbsubnoor.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Products",
+        "item": "https://hbsubnoor.com/products"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Transparent Strap",
+        "item": "https://hbsubnoor.com/products/transparent-strap"
+      }
+    ]
+  };
+
   return (
     <>
       <script
@@ -114,6 +139,10 @@ export default function TransparentStrapPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqStructuredData) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbStructuredData) }}
       />
       <div className="min-h-screen">
         {/* Hero Section */}

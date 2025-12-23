@@ -5,6 +5,76 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Services() {
+  const serviceStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Industrial Packaging Solutions",
+    "provider": {
+      "@type": "Organization",
+      "name": "HB Sub Noor Industries"
+    },
+    "areaServed": {
+      "@type": "Country",
+      "name": "Pakistan"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Packaging Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Custom Manufacturing",
+            "description": "Custom-sized, colored, and printed packaging straps tailored to specific requirements"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Machinery Solutions",
+            "description": "State-of-the-art automatic and semi-automatic strapping machines"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Technical Support",
+            "description": "Comprehensive technical support and consultation services"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Supply Chain Solutions",
+            "description": "Nationwide and international distribution network"
+          }
+        }
+      ]
+    }
+  };
+
+  const breadcrumbStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://hbsubnoor.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Services",
+        "item": "https://hbsubnoor.com/services"
+      }
+    ]
+  };
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
@@ -16,7 +86,16 @@ export default function Services() {
   }, []);
 
   return (
-    <div className="min-h-screen">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceStructuredData) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbStructuredData) }}
+      />
+      <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-bg-hero via-[#F9A634] to-bg-hero-gradient text-text-on-accent py-12 md:py-16 px-4 overflow-hidden">
         <div className="absolute inset-0 z-0">
@@ -349,5 +428,6 @@ export default function Services() {
         </div>
       </section>
     </div>
+    </>
   );
 }

@@ -4,8 +4,95 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Company() {
+  const organizationStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "HB Sub Noor Industries",
+    "alternateName": "HB SUB NOOR",
+    "url": "https://hbsubnoor.com",
+    "logo": "https://hbsubnoor.com/images/hb-sub-noor-industries-logo.png",
+    "description": "Excellence in every aspect of operations. Committed to quality, innovation, and building lasting partnerships with industry leaders worldwide.",
+    "foundingDate": "1999",
+    "address": [
+      {
+        "@type": "PostalAddress",
+        "streetAddress": "9/E, G-Block, Mushtaq Ahmed Gurmani Road, Main Boulevard Gulberg-II",
+        "addressLocality": "Lahore",
+        "addressRegion": "Punjab",
+        "addressCountry": "PK"
+      },
+      {
+        "@type": "PostalAddress",
+        "streetAddress": "18-KM Multan Road, Near High Noon Laboratories",
+        "addressLocality": "Lahore",
+        "addressRegion": "Punjab",
+        "addressCountry": "PK"
+      }
+    ],
+    "contactPoint": [
+      {
+        "@type": "ContactPoint",
+        "telephone": "+92-322-4722707",
+        "contactType": "Sales",
+        "areaServed": "PK",
+        "availableLanguage": "en"
+      },
+      {
+        "@type": "ContactPoint",
+        "telephone": "+92-322-4054078",
+        "contactType": "Sales",
+        "areaServed": "PK",
+        "availableLanguage": "en"
+      },
+      {
+        "@type": "ContactPoint",
+        "email": "info@strapack.com.pk",
+        "contactType": "Customer Service",
+        "areaServed": "Worldwide",
+        "availableLanguage": "en"
+      }
+    ],
+    "areaServed": {
+      "@type": "Country",
+      "name": "Pakistan"
+    },
+    "knowsAbout": [
+      "Industrial Packaging",
+      "Strap Solutions",
+      "Manufacturing",
+      "Quality Assurance"
+    ]
+  };
+
+  const breadcrumbStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://hbsubnoor.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Company",
+        "item": "https://hbsubnoor.com/company"
+      }
+    ]
+  };
   return (
-    <div className="min-h-screen">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationStructuredData) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbStructuredData) }}
+      />
+      <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-bg-hero via-[#F9A634] to-bg-hero-gradient text-text-on-accent py-20 md:py-32 px-4 overflow-hidden">
         <div className="absolute inset-0 z-0">
@@ -190,6 +277,7 @@ export default function Company() {
         </div>
       </section>
     </div>
+    </>
   );
 }
 

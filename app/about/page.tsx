@@ -5,6 +5,43 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export default function About() {
+  const aboutPageStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "About Us - HB Sub Noor Industries",
+    "description": "Three decades of transforming industrial packaging through cutting-edge technology and unwavering commitment to quality. Building trust through innovation and excellence.",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "HB Sub Noor Industries",
+      "foundingDate": "1999",
+      "description": "A global leader in comprehensive packaging and strap solutions with over 25 years of operational excellence.",
+      "knowsAbout": [
+        "Industrial Packaging",
+        "Strap Solutions",
+        "Quality Manufacturing",
+        "Innovation"
+      ]
+    }
+  };
+
+  const breadcrumbStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://hbsubnoor.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "About",
+        "item": "https://hbsubnoor.com/about"
+      }
+    ]
+  };
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
@@ -16,7 +53,16 @@ export default function About() {
   }, []);
 
   return (
-    <div className="min-h-screen">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutPageStructuredData) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbStructuredData) }}
+      />
+      <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-bg-hero via-[#F9A634] to-bg-hero-gradient text-text-on-accent py-12 md:py-16 px-4 overflow-hidden">
         <div className="absolute inset-0 z-0">
@@ -291,5 +337,6 @@ export default function About() {
         </div>
       </section>
     </div>
+    </>
   );
 }
