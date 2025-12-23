@@ -16,7 +16,7 @@ export default function ProductMarquee() {
   const duplicatedProducts = [...products, ...products];
 
   return (
-    <div className="bg-bg-primary py-6 overflow-hidden border-y border-border-accent/20 relative">
+    <div className="bg-bg-primary py-6 overflow-hidden border-y border-border-accent/20 relative z-20">
       <div className="flex animate-marquee whitespace-nowrap">
         {duplicatedProducts.map((product, index) => (
           <div

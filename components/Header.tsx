@@ -2,13 +2,15 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { usePathname } from 'next/navigation';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isProductsDropdownOpen, setIsProductsDropdownOpen] = useState(false);
   const pathname = usePathname();
+  const dropdownRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,15 +20,41 @@ export default function Header() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+        setIsProductsDropdownOpen(false);
+      }
+    };
+
+    if (isProductsDropdownOpen) {
+      document.addEventListener('mousedown', handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [isProductsDropdownOpen]);
+
   const navLinks = [
     { href: '/', label: 'Home' },
     { href: '/about', label: 'About' },
-    { href: '/products', label: 'Products' },
+    { href: '/company', label: 'Company' },
+    { href: '/products', label: 'Products', hasDropdown: true },
     { href: '/services', label: 'Services' },
     { href: '/contact', label: 'Contact' },
   ];
 
-  const isActive = (href: string) => pathname === href;
+  const productItems = [
+    { href: '/products/custom-sized-strap', label: 'Custom Sized Strap' },
+    { href: '/products/printed-strap', label: 'Printed Strap' },
+    { href: '/products/coloured-strap', label: 'Coloured Strap' },
+    { href: '/products/transparent-strap', label: 'Transparent Strap' },
+    { href: '/products/fully-automatic-strapping-machine', label: 'Fully Automatic Strapping Machine' },
+    { href: '/products/semi-automatic-strapping-machine', label: 'Semi Automatic Strapping Machine' },
+  ];
+
+  const isActive = (href: string) => pathname === href || pathname.startsWith(href + '/');
 
   return (
     <>
@@ -47,7 +75,7 @@ export default function Header() {
         }`}
       >
         <div className="container mx-auto px-4 lg:px-8">
-          <div className="flex items-center justify-between h-24 lg:h-28">
+          <div className="flex items-center justify-between h-20 lg:h-24">
             {/* Logo */}
             <Link 
               href="/" 
@@ -68,6 +96,86 @@ export default function Header() {
             <nav className="hidden lg:flex items-center space-x-1">
               {navLinks.map((link) => {
                 const active = isActive(link.href);
+                
+                if (link.hasDropdown) {
+                  return (
+                    <div
+                      key={link.href}
+                      ref={dropdownRef}
+                      className="relative"
+                      onMouseEnter={() => setIsProductsDropdownOpen(true)}
+                      onMouseLeave={() => setIsProductsDropdownOpen(false)}
+                    >
+                      <Link
+                        href={link.href}
+                        className={`relative px-5 py-2.5 text-sm font-semibold tracking-wide transition-all duration-300 group flex items-center gap-1 ${
+                          active
+                            ? isScrolled
+                              ? 'text-text-heading'
+                              : 'text-text-on-accent'
+                            : isScrolled
+                              ? 'text-text-primary/90 hover:text-text-heading'
+                              : 'text-text-on-accent/90 hover:text-text-on-accent'
+                        }`}
+                      >
+                        <span className="relative z-10">{link.label}</span>
+                        <svg 
+                          className={`w-4 h-4 transition-transform duration-300 ${isProductsDropdownOpen ? 'rotate-180' : ''}`}
+                          fill="none" 
+                          stroke="currentColor" 
+                          viewBox="0 0 24 24"
+                        >
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                        </svg>
+                        {/* Active indicator underline */}
+                        {active && (
+                          <span 
+                            className={`absolute bottom-0 left-0 right-0 h-0.5 rounded-full transition-all duration-300 ${
+                              isScrolled ? 'bg-text-heading' : 'bg-text-on-accent'
+                            }`}
+                          />
+                        )}
+                        {/* Hover underline animation */}
+                        {!active && (
+                          <span 
+                            className={`absolute bottom-0 left-0 h-0.5 rounded-full transition-all duration-300 w-0 group-hover:w-full ${
+                              isScrolled ? 'bg-text-heading' : 'bg-text-on-accent'
+                            }`}
+                          />
+                        )}
+                      </Link>
+                      
+                      {/* Dropdown Menu */}
+                      <div
+                        className={`absolute top-full left-0 mt-2 w-64 bg-bg-card border border-border-accent/20 rounded-xl shadow-2xl backdrop-blur-xl z-50 overflow-hidden transition-all duration-300 ${
+                          isProductsDropdownOpen
+                            ? 'opacity-100 visible translate-y-0'
+                            : 'opacity-0 invisible -translate-y-2'
+                        }`}
+                      >
+                        <div className="py-2">
+                          {productItems.map((item) => {
+                            const itemActive = pathname === item.href;
+                            return (
+                              <Link
+                                key={item.href}
+                                href={item.href}
+                                className={`block px-4 py-3 text-sm font-medium transition-colors duration-200 ${
+                                  itemActive
+                                    ? 'bg-bg-accent/20 text-text-heading border-l-4 border-bg-accent'
+                                    : 'text-text-primary hover:bg-bg-accent/10 hover:text-text-heading'
+                                }`}
+                              >
+                                {item.label}
+                              </Link>
+                            );
+                          })}
+                        </div>
+                      </div>
+                    </div>
+                  );
+                }
+                
                 return (
                   <Link
                     key={link.href}
@@ -150,6 +258,74 @@ export default function Header() {
             }`}>
               {navLinks.map((link, index) => {
                 const active = isActive(link.href);
+                
+                if (link.hasDropdown) {
+                  return (
+                    <div key={link.href}>
+                      <button
+                        onClick={() => setIsProductsDropdownOpen(!isProductsDropdownOpen)}
+                        className={`w-full flex items-center justify-between px-4 py-3.5 rounded-xl font-semibold text-base transition-all duration-300 transform ${
+                          isMenuOpen ? 'translate-x-0 opacity-100' : '-translate-x-4 opacity-0'
+                        } ${
+                          active
+                            ? isScrolled
+                              ? 'text-text-heading bg-bg-accent/15 border-l-4 border-border-accent'
+                              : 'text-text-on-accent bg-white/20 border-l-4 border-white/60'
+                            : isScrolled
+                              ? 'text-text-primary hover:text-text-heading hover:bg-bg-accent/10'
+                              : 'text-text-on-accent/90 hover:text-text-on-accent hover:bg-white/10'
+                        }`}
+                        style={{ transitionDelay: isMenuOpen ? `${index * 50}ms` : '0ms' }}
+                      >
+                        {link.label}
+                        <svg 
+                          className={`w-4 h-4 transition-transform duration-300 ${isProductsDropdownOpen ? 'rotate-180' : ''}`}
+                          fill="none" 
+                          stroke="currentColor" 
+                          viewBox="0 0 24 24"
+                        >
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                        </svg>
+                      </button>
+                      <div
+                        className={`overflow-hidden transition-all duration-300 ${
+                          isProductsDropdownOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                        }`}
+                      >
+                        <div className="pl-8 pt-2 space-y-1">
+                          {productItems.map((item, itemIndex) => {
+                            const itemActive = pathname === item.href;
+                            return (
+                              <Link
+                                key={item.href}
+                                href={item.href}
+                                onClick={() => {
+                                  setIsMenuOpen(false);
+                                  setIsProductsDropdownOpen(false);
+                                }}
+                                className={`block px-4 py-2.5 rounded-lg text-sm font-medium transition-all duration-300 ${
+                                  isMenuOpen ? 'translate-x-0 opacity-100' : '-translate-x-4 opacity-0'
+                                } ${
+                                  itemActive
+                                    ? isScrolled
+                                      ? 'text-text-heading bg-bg-accent/15'
+                                      : 'text-text-on-accent bg-white/20'
+                                    : isScrolled
+                                      ? 'text-text-primary hover:text-text-heading hover:bg-bg-accent/10'
+                                      : 'text-text-on-accent/80 hover:text-text-on-accent hover:bg-white/10'
+                                }`}
+                                style={{ transitionDelay: isMenuOpen ? `${(index * 50) + (itemIndex * 30) + 100}ms` : '0ms' }}
+                              >
+                                {item.label}
+                              </Link>
+                            );
+                          })}
+                        </div>
+                      </div>
+                    </div>
+                  );
+                }
+                
                 return (
                   <Link
                     key={link.href}

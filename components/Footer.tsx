@@ -3,9 +3,9 @@ import Image from 'next/image';
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-100 text-black py-12">
+    <footer className="bg-gray-100 text-black py-8">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-6">
           <div>
             <Link href="/" className="inline-block mb-4">
               <Image 
@@ -72,7 +72,7 @@ export default function Footer() {
           </div>
         </div>
         
-        <div className="border-t border-gray-400 pt-8 text-center text-sm text-black opacity-80">
+        <div className="border-t border-gray-400 pt-6 text-center text-sm text-black opacity-80">
           <p>Copyright ©2026 HB SUB NOOR. All rights reserved.</p>
         </div>
       </div>
