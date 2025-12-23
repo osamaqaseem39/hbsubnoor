@@ -51,11 +51,13 @@ export default function FullyAutomaticStrappingMachinePage() {
     "description": "High-speed automation solution engineered for production line integration and maximum throughput. Automatically detects packages, tightens to precise settings, and fastens straps with heat-weld closure.",
     "brand": {
       "@type": "Brand",
-      "name": "HB Sub Noor Industries"
+      "name": "HB Sub Noor Industries",
+      "logo": "https://hbsubnoor.com/images/favicon.png"
     },
     "manufacturer": {
       "@type": "Organization",
-      "name": "HB Sub Noor Industries"
+      "name": "HB Sub Noor Industries",
+      "logo": "https://hbsubnoor.com/images/favicon.png"
     },
     "offers": {
       "@type": "Offer",

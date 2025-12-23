@@ -52,11 +52,13 @@ export default function ColouredStrapPage() {
     "description": "Coloured packaging straps that serve as powerful tools for warehouse management, tracking, and safety protocols through visual identification.",
     "brand": {
       "@type": "Brand",
-      "name": "HB Sub Noor Industries"
+      "name": "HB Sub Noor Industries",
+      "logo": "https://hbsubnoor.com/images/favicon.png"
     },
     "manufacturer": {
       "@type": "Organization",
-      "name": "HB Sub Noor Industries"
+      "name": "HB Sub Noor Industries",
+      "logo": "https://hbsubnoor.com/images/favicon.png"
     },
     "offers": {
       "@type": "Offer",

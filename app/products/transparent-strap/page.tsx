@@ -52,11 +52,13 @@ export default function TransparentStrapPage() {
     "description": "Transparent packaging straps designed for retail-facing goods or situations where the package design must remain clearly visible. Offers a sleek, professional, and discreet hold.",
     "brand": {
       "@type": "Brand",
-      "name": "HB Sub Noor Industries"
+      "name": "HB Sub Noor Industries",
+      "logo": "https://hbsubnoor.com/images/favicon.png"
     },
     "manufacturer": {
       "@type": "Organization",
-      "name": "HB Sub Noor Industries"
+      "name": "HB Sub Noor Industries",
+      "logo": "https://hbsubnoor.com/images/favicon.png"
     },
     "offers": {
       "@type": "Offer",

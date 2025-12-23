@@ -53,11 +53,13 @@ export default function PrintedStrapPage() {
     "description": "Printed packaging straps that turn your packaging into a mobile billboard with high-contrast, durable, fade-resistant printing for branding, security marking, and logistics communication.",
     "brand": {
       "@type": "Brand",
-      "name": "HB Sub Noor Industries"
+      "name": "HB Sub Noor Industries",
+      "logo": "https://hbsubnoor.com/images/favicon.png"
     },
     "manufacturer": {
       "@type": "Organization",
-      "name": "HB Sub Noor Industries"
+      "name": "HB Sub Noor Industries",
+      "logo": "https://hbsubnoor.com/images/favicon.png"
     },
     "offers": {
       "@type": "Offer",

@@ -52,11 +52,13 @@ export default function CustomSizedStrapPage() {
     "description": "Custom sized packaging straps engineered to fit exact product geometry, crucial for specialized goods or irregularly shaped packages.",
     "brand": {
       "@type": "Brand",
-      "name": "HB Sub Noor Industries"
+      "name": "HB Sub Noor Industries",
+      "logo": "https://hbsubnoor.com/images/favicon.png"
     },
     "manufacturer": {
       "@type": "Organization",
-      "name": "HB Sub Noor Industries"
+      "name": "HB Sub Noor Industries",
+      "logo": "https://hbsubnoor.com/images/favicon.png"
     },
     "offers": {
       "@type": "Offer",

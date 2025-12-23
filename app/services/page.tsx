@@ -11,7 +11,8 @@ export default function Services() {
     "serviceType": "Industrial Packaging Solutions",
     "provider": {
       "@type": "Organization",
-      "name": "HB Sub Noor Industries"
+      "name": "HB Sub Noor Industries",
+      "logo": "https://hbsubnoor.com/images/favicon.png"
     },
     "areaServed": {
       "@type": "Country",

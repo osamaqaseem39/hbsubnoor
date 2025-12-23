@@ -50,11 +50,13 @@ export default function SemiAutomaticStrappingMachinePage() {
     "description": "Cost-effective, portable solution offering flexibility without compromising on sealing integrity or speed. Rapid 2.5-second cycle time with adjustable tension from 15-45 Kgs.",
     "brand": {
       "@type": "Brand",
-      "name": "HB Sub Noor Industries"
+      "name": "HB Sub Noor Industries",
+      "logo": "https://hbsubnoor.com/images/favicon.png"
     },
     "manufacturer": {
       "@type": "Organization",
-      "name": "HB Sub Noor Industries"
+      "name": "HB Sub Noor Industries",
+      "logo": "https://hbsubnoor.com/images/favicon.png"
     },
     "offers": {
       "@type": "Offer",

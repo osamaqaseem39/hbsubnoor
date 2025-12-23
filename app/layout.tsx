@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     siteName: "HB Sub Noor Industries",
     images: [
       {
-        url: "/images/hb-sub-noor-industries-logo.png",
+        url: "/images/favicon.png",
         width: 1200,
         height: 630,
         alt: "HB Sub Noor Industries - Industrial Packaging & Strap Solutions Logo",
@@ -79,7 +79,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "HB Sub Noor Industries | Industrial Packaging & Strap Solutions",
     description: "Leading manufacturer of industrial packaging and strap solutions. Over 25 years of excellence in PP/PET strap materials and strapping machines.",
-    images: ["/images/hb-sub-noor-industries-logo.png"],
+    images: ["/images/favicon.png"],
     creator: "@hbsubnoor", // Update with actual Twitter handle if available
     site: "@hbsubnoor", // Update with actual Twitter handle if available
   },
@@ -107,7 +107,7 @@ export default function RootLayout({
     "name": "HB Sub Noor Industries",
     "alternateName": "HB SUB NOOR",
     "url": "https://hbsubnoor.com",
-    "logo": "https://hbsubnoor.com/images/hb-sub-noor-industries-logo.png",
+    "logo": "https://hbsubnoor.com/images/favicon.png",
     "description": "Leading manufacturer of polypropylene (PP) and polyester (PET) strap materials, semi-automatic and automatic strapping machines. Over 25 years of excellence in industrial packaging solutions.",
     "foundingDate": "1999",
     "address": {

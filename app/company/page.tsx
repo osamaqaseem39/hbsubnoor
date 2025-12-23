@@ -10,7 +10,7 @@ export default function Company() {
     "name": "HB Sub Noor Industries",
     "alternateName": "HB SUB NOOR",
     "url": "https://hbsubnoor.com",
-    "logo": "https://hbsubnoor.com/images/hb-sub-noor-industries-logo.png",
+    "logo": "https://hbsubnoor.com/images/favicon.png",
     "description": "Excellence in every aspect of operations. Committed to quality, innovation, and building lasting partnerships with industry leaders worldwide.",
     "foundingDate": "1999",
     "address": [
