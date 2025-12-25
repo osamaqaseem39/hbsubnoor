@@ -56,7 +56,7 @@ export default function HomePageClient() {
       />
       <div className="min-h-screen">
         {/* Hero Section */}
-        <section className="relative bg-gradient-to-br from-bg-hero via-[#F9A634] to-bg-hero-gradient text-text-on-accent py-12 md:py-16 px-4 overflow-hidden min-h-screen flex items-center">
+        <section className="relative bg-gradient-to-br from-bg-hero via-[#F9A634] to-bg-hero-gradient text-text-on-accent py-8 sm:py-12 md:py-16 px-4 overflow-hidden min-h-[85vh] sm:min-h-screen flex items-center">
           {/* Animated Background Image with Parallax */}
           <div className="absolute inset-0 z-0">
             <Image
@@ -98,7 +98,7 @@ export default function HomePageClient() {
                 </div>
 
                 {/* Main Heading */}
-                <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight animate-fade-in-up text-black">
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold leading-tight animate-fade-in-up text-black">
                   <span className="block">HB SUB NOOR</span>
                   <span className="block drop-shadow-2xl">
                     INDUSTRIES
@@ -106,29 +106,29 @@ export default function HomePageClient() {
                 </h1>
 
                 {/* Subheading */}
-                <div className="space-y-2 animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
-                  <p className="text-2xl md:text-3xl lg:text-4xl font-bold text-black drop-shadow-lg">
+                <div className="space-y-1 sm:space-y-2 animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
+                  <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-black drop-shadow-lg">
                     The Future of Industrial
                   </p>
-                  <p className="text-2xl md:text-3xl lg:text-4xl font-bold text-black">
+                  <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-black">
                     Packaging Security
                   </p>
                 </div>
 
                 {/* Description */}
-                <p className="text-lg md:text-xl text-black/80 max-w-xl mx-auto lg:mx-0 leading-relaxed animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+                <p className="text-base sm:text-lg md:text-xl text-black/80 max-w-xl mx-auto lg:mx-0 leading-relaxed animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
                   Elevate Your Logistics. Secure Your Future.
                 </p>
 
                 {/* CTA Buttons */}
-                <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
+                <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
                   <Link 
                     href="/contact" 
-                    className="group relative px-8 py-4 bg-black text-white rounded-xl font-bold text-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+                    className="group relative px-6 sm:px-8 py-3 sm:py-4 bg-black text-white rounded-xl font-bold text-base sm:text-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl"
                   >
                     <span className="relative z-10 flex items-center justify-center gap-2">
                       Get a Quote
-                      <svg className="w-5 h-5 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-4 h-4 sm:w-5 sm:h-5 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                       </svg>
                     </span>
@@ -136,25 +136,25 @@ export default function HomePageClient() {
                   </Link>
                   <Link 
                     href="/products" 
-                    className="group px-8 py-4 bg-white/10 backdrop-blur-md border-2 border-black/30 text-black font-bold text-lg rounded-xl transition-all duration-300 hover:bg-white/20 hover:scale-105 hover:shadow-xl"
+                    className="group px-6 sm:px-8 py-3 sm:py-4 bg-white/10 backdrop-blur-md border-2 border-black/30 text-black font-bold text-base sm:text-lg rounded-xl transition-all duration-300 hover:bg-white/20 hover:scale-105 hover:shadow-xl"
                   >
                     View Products
                   </Link>
                 </div>
 
                 {/* Stats */}
-                <div className="flex flex-wrap gap-6 justify-center lg:justify-start pt-8 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
+                <div className="flex flex-wrap gap-4 sm:gap-6 justify-center lg:justify-start pt-6 sm:pt-8 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
                   <div className="text-center lg:text-left">
-                    <div className="text-3xl md:text-4xl font-extrabold text-black">25+</div>
-                    <div className="text-sm text-black/70 font-medium">Years Experience</div>
+                    <div className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-black">25+</div>
+                    <div className="text-xs sm:text-sm text-black/70 font-medium">Years Experience</div>
                   </div>
                   <div className="text-center lg:text-left">
-                    <div className="text-3xl md:text-4xl font-extrabold text-black">1000+</div>
-                    <div className="text-sm text-black/70 font-medium">Happy Clients</div>
+                    <div className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-black">1000+</div>
+                    <div className="text-xs sm:text-sm text-black/70 font-medium">Happy Clients</div>
                   </div>
                   <div className="text-center lg:text-left">
-                    <div className="text-3xl md:text-4xl font-extrabold text-black">50+</div>
-                    <div className="text-sm text-black/70 font-medium">Countries Served</div>
+                    <div className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-black">50+</div>
+                    <div className="text-xs sm:text-sm text-black/70 font-medium">Countries Served</div>
                   </div>
                 </div>
               </div>
@@ -211,7 +211,7 @@ export default function HomePageClient() {
         <ProductMarquee />
 
         {/* About Us Section */}
-        <section className="py-8 px-4 bg-gradient-to-br from-bg-primary via-bg-card/20 to-bg-primary relative overflow-hidden">
+        <section className="py-6 sm:py-8 px-4 sm:px-6 bg-gradient-to-br from-bg-primary via-bg-card/20 to-bg-primary relative overflow-hidden">
           {/* Animated Background Elements */}
           <div className="absolute inset-0 overflow-hidden">
             <div className="absolute top-20 left-10 w-72 h-72 bg-bg-accent/10 rounded-full blur-3xl animate-pulse"></div>
@@ -234,7 +234,7 @@ export default function HomePageClient() {
                     <span className="w-2 h-2 bg-bg-accent rounded-full animate-pulse"></span>
                     <span className="text-sm font-semibold text-text-heading">About Us</span>
                   </div>
-                  <h2 className="text-3xl md:text-4xl font-extrabold mb-4 text-text-heading leading-tight">
+                  <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold mb-4 text-text-heading leading-tight">
                     Welcome to HB Sub Noor Industries
                   </h2>
                   <div className="w-32 h-1.5 bg-gradient-to-r from-bg-accent to-transparent"></div>
@@ -252,16 +252,16 @@ export default function HomePageClient() {
             <div className="mb-12">
               <div className="relative group">
                 <div className="absolute -inset-1 bg-gradient-to-r from-bg-accent via-bg-accent/50 to-bg-accent rounded-3xl blur-lg opacity-20 group-hover:opacity-30 transition-opacity"></div>
-                <div className="relative bg-bg-card p-10 md:p-12 rounded-3xl shadow-2xl border border-border-accent/20">
-                  <div className="flex items-start gap-6 mb-6">
-                    <div className="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-bg-accent to-bg-accent/70 rounded-2xl flex items-center justify-center text-3xl">
+                <div className="relative bg-bg-card p-6 sm:p-8 md:p-10 lg:p-12 rounded-2xl sm:rounded-3xl shadow-2xl border border-border-accent/20">
+                  <div className="flex items-start gap-4 sm:gap-6 mb-4 sm:mb-6">
+                    <div className="flex-shrink-0 w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-bg-accent to-bg-accent/70 rounded-xl sm:rounded-2xl flex items-center justify-center text-2xl sm:text-3xl">
                       🏆
                     </div>
                     <div className="flex-1">
-                      <h3 className="text-xl md:text-2xl font-bold mb-4 text-text-heading">
+                      <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-3 sm:mb-4 text-text-heading">
                         A Legacy of Excellence
                       </h3>
-                      <div className="space-y-3 text-lg text-text-primary leading-relaxed">
+                      <div className="space-y-2 sm:space-y-3 text-base sm:text-lg text-text-primary leading-relaxed">
                         <p>
                           A global leader in comprehensive packaging and strap solutions. With over <strong className="text-text-heading text-xl">25 years of operational excellence</strong>, we deliver intelligent, cost-effective systems engineered to protect your goods, streamline your operations, and enhance your brand integrity.
                         </p>
@@ -276,18 +276,18 @@ export default function HomePageClient() {
             </div>
 
             {/* Mission & Vision - Side by Side Cards */}
-            <div className="grid md:grid-cols-2 gap-6 mb-8">
+            <div className="grid md:grid-cols-2 gap-4 sm:gap-6 mb-6 sm:mb-8">
               {/* Mission Card */}
               <div className="group relative">
-                <div className="absolute -inset-0.5 bg-gradient-to-br from-bg-accent to-bg-accent/50 rounded-2xl blur opacity-20 group-hover:opacity-30 transition-opacity"></div>
-                <div className="relative bg-gradient-to-br from-bg-accent via-bg-accent/90 to-bg-accent/80 text-text-on-accent p-8 rounded-2xl shadow-xl h-full flex flex-col">
-                  <div className="mb-6">
-                    <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center text-2xl mb-4">
+                <div className="absolute -inset-0.5 bg-gradient-to-br from-bg-accent to-bg-accent/50 rounded-xl sm:rounded-2xl blur opacity-20 group-hover:opacity-30 transition-opacity"></div>
+                <div className="relative bg-gradient-to-br from-bg-accent via-bg-accent/90 to-bg-accent/80 text-text-on-accent p-6 sm:p-8 rounded-xl sm:rounded-2xl shadow-xl h-full flex flex-col">
+                  <div className="mb-4 sm:mb-6">
+                    <div className="w-10 h-10 sm:w-12 sm:h-12 bg-white/20 backdrop-blur-sm rounded-lg sm:rounded-xl flex items-center justify-center text-xl sm:text-2xl mb-3 sm:mb-4">
                       🎯
                     </div>
-                    <h3 className="text-xl md:text-2xl font-bold mb-4">Our Mission</h3>
+                    <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-3 sm:mb-4">Our Mission</h3>
                   </div>
-                  <p className="text-lg leading-relaxed flex-1">
+                  <p className="text-base sm:text-lg leading-relaxed flex-1">
                     To provide our customers with the best and affordable custom plastic poly packaging straps, which are <strong className="text-white">Easy to Use, Safe, Reliable and Long Lasting</strong>.
                   </p>
                 </div>
@@ -295,15 +295,15 @@ export default function HomePageClient() {
 
               {/* Vision Card */}
               <div className="group relative">
-                <div className="absolute -inset-0.5 bg-gradient-to-br from-bg-accent/50 to-bg-accent rounded-2xl blur opacity-20 group-hover:opacity-30 transition-opacity"></div>
-                <div className="relative bg-bg-card p-6 rounded-2xl shadow-xl border border-border-accent/20 h-full flex flex-col">
-                  <div className="mb-4">
-                    <div className="w-12 h-12 bg-bg-accent/20 rounded-xl flex items-center justify-center text-2xl mb-3">
+                <div className="absolute -inset-0.5 bg-gradient-to-br from-bg-accent/50 to-bg-accent rounded-xl sm:rounded-2xl blur opacity-20 group-hover:opacity-30 transition-opacity"></div>
+                <div className="relative bg-bg-card p-5 sm:p-6 rounded-xl sm:rounded-2xl shadow-xl border border-border-accent/20 h-full flex flex-col">
+                  <div className="mb-3 sm:mb-4">
+                    <div className="w-10 h-10 sm:w-12 sm:h-12 bg-bg-accent/20 rounded-lg sm:rounded-xl flex items-center justify-center text-xl sm:text-2xl mb-2 sm:mb-3">
                       👁️
                     </div>
-                    <h3 className="text-xl md:text-2xl font-bold mb-4 text-text-heading">Our Vision</h3>
+                    <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-3 sm:mb-4 text-text-heading">Our Vision</h3>
                   </div>
-                  <p className="text-lg text-text-primary leading-relaxed flex-1">
+                  <p className="text-base sm:text-lg text-text-primary leading-relaxed flex-1">
                     To become a leading manufacturer of custom plastic poly packaging straps in the world by focusing on <strong className="text-text-heading">Quality</strong>.
                   </p>
                 </div>
@@ -319,41 +319,41 @@ export default function HomePageClient() {
                 </p>
               </div>
               
-              <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-                <div className="group bg-bg-card p-6 rounded-2xl shadow-lg border border-border-accent/20 hover:border-border-accent transition-all duration-300 hover:shadow-xl hover:-translate-y-2 text-center">
-                  <div className="w-20 h-20 bg-gradient-to-br from-bg-accent/20 to-bg-accent/10 rounded-2xl flex items-center justify-center text-5xl mb-4 mx-auto group-hover:scale-110 transition-transform">
+              <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
+                <div className="group bg-bg-card p-4 sm:p-6 rounded-xl sm:rounded-2xl shadow-lg border border-border-accent/20 hover:border-border-accent transition-all duration-300 hover:shadow-xl hover:-translate-y-2 text-center">
+                  <div className="w-14 h-14 sm:w-20 sm:h-20 bg-gradient-to-br from-bg-accent/20 to-bg-accent/10 rounded-xl sm:rounded-2xl flex items-center justify-center text-3xl sm:text-5xl mb-3 sm:mb-4 mx-auto group-hover:scale-110 transition-transform">
                     🏭
                   </div>
-                  <div className="text-4xl font-extrabold text-bg-accent mb-2">30+</div>
-                  <div className="font-bold text-text-heading mb-1">Years</div>
-                  <div className="text-sm text-text-primary">Industry Experience</div>
+                  <div className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-bg-accent mb-1 sm:mb-2">30+</div>
+                  <div className="font-bold text-text-heading mb-1 text-sm sm:text-base">Years</div>
+                  <div className="text-xs sm:text-sm text-text-primary">Industry Experience</div>
                 </div>
 
-                <div className="group bg-bg-card p-6 rounded-2xl shadow-lg border border-border-accent/20 hover:border-border-accent transition-all duration-300 hover:shadow-xl hover:-translate-y-2 text-center">
-                  <div className="w-20 h-20 bg-gradient-to-br from-bg-accent/20 to-bg-accent/10 rounded-2xl flex items-center justify-center text-5xl mb-3 mx-auto group-hover:scale-110 transition-transform">
+                <div className="group bg-bg-card p-4 sm:p-6 rounded-xl sm:rounded-2xl shadow-lg border border-border-accent/20 hover:border-border-accent transition-all duration-300 hover:shadow-xl hover:-translate-y-2 text-center">
+                  <div className="w-14 h-14 sm:w-20 sm:h-20 bg-gradient-to-br from-bg-accent/20 to-bg-accent/10 rounded-xl sm:rounded-2xl flex items-center justify-center text-3xl sm:text-5xl mb-3 mx-auto group-hover:scale-110 transition-transform">
                     🌍
                   </div>
-                  <div className="text-4xl font-extrabold text-bg-accent mb-2">50+</div>
-                  <div className="font-bold text-text-heading mb-1">Countries</div>
-                  <div className="text-sm text-text-primary">Global Reach</div>
+                  <div className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-bg-accent mb-1 sm:mb-2">50+</div>
+                  <div className="font-bold text-text-heading mb-1 text-sm sm:text-base">Countries</div>
+                  <div className="text-xs sm:text-sm text-text-primary">Global Reach</div>
                 </div>
 
-                <div className="group bg-bg-card p-6 rounded-2xl shadow-lg border border-border-accent/20 hover:border-border-accent transition-all duration-300 hover:shadow-xl hover:-translate-y-2 text-center">
-                  <div className="w-20 h-20 bg-gradient-to-br from-bg-accent/20 to-bg-accent/10 rounded-2xl flex items-center justify-center text-5xl mb-3 mx-auto group-hover:scale-110 transition-transform">
+                <div className="group bg-bg-card p-4 sm:p-6 rounded-xl sm:rounded-2xl shadow-lg border border-border-accent/20 hover:border-border-accent transition-all duration-300 hover:shadow-xl hover:-translate-y-2 text-center">
+                  <div className="w-14 h-14 sm:w-20 sm:h-20 bg-gradient-to-br from-bg-accent/20 to-bg-accent/10 rounded-xl sm:rounded-2xl flex items-center justify-center text-3xl sm:text-5xl mb-3 mx-auto group-hover:scale-110 transition-transform">
                     ✨
                   </div>
-                  <div className="text-4xl font-extrabold text-bg-accent mb-2">Premium</div>
-                  <div className="font-bold text-text-heading mb-1">Quality</div>
-                  <div className="text-sm text-text-primary">Superior Products</div>
+                  <div className="text-xl sm:text-2xl md:text-3xl font-extrabold text-bg-accent mb-1 sm:mb-2">Premium</div>
+                  <div className="font-bold text-text-heading mb-1 text-sm sm:text-base">Quality</div>
+                  <div className="text-xs sm:text-sm text-text-primary">Superior Products</div>
                 </div>
 
-                <div className="group bg-bg-card p-6 rounded-2xl shadow-lg border border-border-accent/20 hover:border-border-accent transition-all duration-300 hover:shadow-xl hover:-translate-y-2 text-center">
-                  <div className="w-20 h-20 bg-gradient-to-br from-bg-accent/20 to-bg-accent/10 rounded-2xl flex items-center justify-center text-5xl mb-3 mx-auto group-hover:scale-110 transition-transform">
+                <div className="group bg-bg-card p-4 sm:p-6 rounded-xl sm:rounded-2xl shadow-lg border border-border-accent/20 hover:border-border-accent transition-all duration-300 hover:shadow-xl hover:-translate-y-2 text-center">
+                  <div className="w-14 h-14 sm:w-20 sm:h-20 bg-gradient-to-br from-bg-accent/20 to-bg-accent/10 rounded-xl sm:rounded-2xl flex items-center justify-center text-3xl sm:text-5xl mb-3 mx-auto group-hover:scale-110 transition-transform">
                     💼
                   </div>
-                  <div className="text-4xl font-extrabold text-bg-accent mb-2">1000+</div>
-                  <div className="font-bold text-text-heading mb-1">Clients</div>
-                  <div className="text-sm text-text-primary">Trusted Worldwide</div>
+                  <div className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-bg-accent mb-1 sm:mb-2">1000+</div>
+                  <div className="font-bold text-text-heading mb-1 text-sm sm:text-base">Clients</div>
+                  <div className="text-xs sm:text-sm text-text-primary">Trusted Worldwide</div>
                 </div>
               </div>
             </div>
@@ -361,7 +361,7 @@ export default function HomePageClient() {
         </section>
 
         {/* Products Section */}
-        <section className="py-8 px-4 bg-gradient-to-br from-bg-card/30 via-bg-primary to-bg-card/20 relative overflow-hidden">
+        <section className="py-6 sm:py-8 px-4 sm:px-6 bg-gradient-to-br from-bg-card/30 via-bg-primary to-bg-card/20 relative overflow-hidden">
           {/* Animated Background Elements */}
           <div className="absolute inset-0 overflow-hidden">
             <div className="absolute top-20 right-10 w-72 h-72 bg-bg-accent/10 rounded-full blur-3xl animate-pulse"></div>
@@ -384,7 +384,7 @@ export default function HomePageClient() {
                     <span className="w-2 h-2 bg-bg-accent rounded-full animate-pulse"></span>
                     <span className="text-sm font-semibold text-text-heading">Our Products</span>
                   </div>
-                  <h2 className="text-3xl md:text-4xl font-extrabold mb-4 text-text-heading leading-tight">
+                  <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold mb-4 text-text-heading leading-tight">
                     Comprehensive Packaging Solutions
                   </h2>
                   <div className="w-32 h-1.5 bg-gradient-to-r from-bg-accent to-transparent"></div>
@@ -405,16 +405,16 @@ export default function HomePageClient() {
             <div className="mb-12">
               <div className="relative group">
                 <div className="absolute -inset-1 bg-gradient-to-r from-bg-accent via-bg-accent/50 to-bg-accent rounded-3xl blur-lg opacity-20 group-hover:opacity-30 transition-opacity"></div>
-                <div className="relative bg-bg-card p-10 md:p-12 rounded-3xl shadow-2xl border border-border-accent/20">
-                  <div className="flex items-start gap-6 mb-6">
-                    <div className="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-bg-accent to-bg-accent/70 rounded-2xl flex items-center justify-center text-3xl">
+                <div className="relative bg-bg-card p-6 sm:p-8 md:p-10 lg:p-12 rounded-2xl sm:rounded-3xl shadow-2xl border border-border-accent/20">
+                  <div className="flex items-start gap-4 sm:gap-6 mb-4 sm:mb-6">
+                    <div className="flex-shrink-0 w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-bg-accent to-bg-accent/70 rounded-xl sm:rounded-2xl flex items-center justify-center text-2xl sm:text-3xl">
                       📦
                     </div>
                     <div className="flex-1">
-                      <h3 className="text-xl md:text-2xl font-bold mb-4 text-text-heading">
+                      <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-3 sm:mb-4 text-text-heading">
                         Complete Packaging Ecosystem
                       </h3>
-                      <div className="space-y-3 text-lg text-text-primary leading-relaxed">
+                      <div className="space-y-2 sm:space-y-3 text-base sm:text-lg text-text-primary leading-relaxed">
                         <p>
                           We provide a comprehensive range of <strong className="text-text-heading text-xl">high-performance packaging straps</strong> and <strong className="text-text-heading text-xl">state-of-the-art strapping machinery</strong> designed to protect your goods, streamline operations, and enhance productivity.
                         </p>
@@ -429,53 +429,53 @@ export default function HomePageClient() {
             </div>
 
             {/* Product Categories - Side by Side Cards */}
-            <div className="grid md:grid-cols-2 gap-6 mb-8">
+            <div className="grid md:grid-cols-2 gap-4 sm:gap-6 mb-6 sm:mb-8">
               {/* Packaging Straps Card */}
               <Link href="/products" className="group relative block">
-                <div className="absolute -inset-0.5 bg-gradient-to-br from-bg-accent to-bg-accent/50 rounded-2xl blur opacity-20 group-hover:opacity-30 transition-opacity"></div>
-                <div className="relative bg-bg-card p-6 rounded-2xl shadow-xl border border-border-accent/20 h-full flex flex-col hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
-                  <div className="mb-4">
-                    <div className="w-12 h-12 bg-gradient-to-br from-bg-accent to-bg-accent/70 rounded-xl flex items-center justify-center text-2xl mb-3">
+                <div className="absolute -inset-0.5 bg-gradient-to-br from-bg-accent to-bg-accent/50 rounded-xl sm:rounded-2xl blur opacity-20 group-hover:opacity-30 transition-opacity"></div>
+                <div className="relative bg-bg-card p-5 sm:p-6 rounded-xl sm:rounded-2xl shadow-xl border border-border-accent/20 h-full flex flex-col hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+                  <div className="mb-3 sm:mb-4">
+                    <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-bg-accent to-bg-accent/70 rounded-lg sm:rounded-xl flex items-center justify-center text-xl sm:text-2xl mb-2 sm:mb-3">
                       📦
                     </div>
-                    <h3 className="text-xl md:text-2xl font-bold mb-4 text-text-heading">Packaging Straps</h3>
+                    <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-3 sm:mb-4 text-text-heading">Packaging Straps</h3>
                   </div>
-                  <p className="text-lg text-text-primary leading-relaxed mb-4 flex-1">
+                  <p className="text-base sm:text-lg text-text-primary leading-relaxed mb-3 sm:mb-4 flex-1">
                     High-performance Polypropylene (PP) and Polyester (PET) straps engineered for maximum tensile strength, shock absorption, and reliable elongation recovery.
                   </p>
                   
-                  <div className="grid grid-cols-2 gap-3 mb-4">
-                    <div className="bg-bg-accent/10 backdrop-blur-sm p-4 rounded-lg border border-border-accent/20">
-                      <h4 className="font-bold mb-2 text-lg text-text-heading">Custom Sized Strap</h4>
-                      <p className="text-sm text-text-primary">
+                  <div className="grid grid-cols-2 gap-2 sm:gap-3 mb-3 sm:mb-4">
+                    <div className="bg-bg-accent/10 backdrop-blur-sm p-3 sm:p-4 rounded-lg border border-border-accent/20">
+                      <h4 className="font-bold mb-1 sm:mb-2 text-sm sm:text-base md:text-lg text-text-heading">Custom Sized Strap</h4>
+                      <p className="text-xs sm:text-sm text-text-primary">
                         Engineered to fit exact product geometry for specialized goods and irregularly shaped packages.
                       </p>
                     </div>
-                    <div className="bg-bg-accent/10 backdrop-blur-sm p-4 rounded-lg border border-border-accent/20">
-                      <h4 className="font-bold mb-2 text-lg text-text-heading">Printed Strap</h4>
-                      <p className="text-sm text-text-primary">
+                    <div className="bg-bg-accent/10 backdrop-blur-sm p-3 sm:p-4 rounded-lg border border-border-accent/20">
+                      <h4 className="font-bold mb-1 sm:mb-2 text-sm sm:text-base md:text-lg text-text-heading">Printed Strap</h4>
+                      <p className="text-xs sm:text-sm text-text-primary">
                         High-contrast, durable printing for branding, security marking, and logistics communication.
                       </p>
                     </div>
-                    <div className="bg-bg-accent/10 backdrop-blur-sm p-4 rounded-lg border border-border-accent/20">
-                      <h4 className="font-bold mb-2 text-lg text-text-heading">Coloured Strap</h4>
-                      <p className="text-sm text-text-primary">
+                    <div className="bg-bg-accent/10 backdrop-blur-sm p-3 sm:p-4 rounded-lg border border-border-accent/20">
+                      <h4 className="font-bold mb-1 sm:mb-2 text-sm sm:text-base md:text-lg text-text-heading">Coloured Strap</h4>
+                      <p className="text-xs sm:text-sm text-text-primary">
                         Visual identification tool for warehouse management, tracking, and safety protocols.
                       </p>
                     </div>
-                    <div className="bg-bg-accent/10 backdrop-blur-sm p-4 rounded-lg border border-border-accent/20">
-                      <h4 className="font-bold mb-2 text-lg text-text-heading">Transparent Strap</h4>
-                      <p className="text-sm text-text-primary">
+                    <div className="bg-bg-accent/10 backdrop-blur-sm p-3 sm:p-4 rounded-lg border border-border-accent/20">
+                      <h4 className="font-bold mb-1 sm:mb-2 text-sm sm:text-base md:text-lg text-text-heading">Transparent Strap</h4>
+                      <p className="text-xs sm:text-sm text-text-primary">
                         Sleek, professional hold for retail-facing goods where package design must remain visible.
                       </p>
                     </div>
                   </div>
 
-                  <div className="pt-4 border-t border-border-accent/20 flex items-center justify-between">
-                    <p className="text-sm text-text-secondary">
-                      <strong className="text-text-heading">Customizable:</strong> Length, Width, Thickness, Colour, Printing
+                  <div className="pt-3 sm:pt-4 border-t border-border-accent/20 flex items-center justify-between gap-2">
+                    <p className="text-xs sm:text-sm text-text-secondary">
+                      <strong className="text-text-heading">Customizable:</strong> <span className="hidden sm:inline">Length, Width, Thickness, Colour, Printing</span><span className="sm:hidden">Fully Customizable</span>
                     </p>
-                    <svg className="w-5 h-5 text-bg-accent group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-4 h-4 sm:w-5 sm:h-5 text-bg-accent group-hover:translate-x-1 transition-transform flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                     </svg>
                   </div>
@@ -484,38 +484,38 @@ export default function HomePageClient() {
 
               {/* Strapping Machinery Card */}
               <Link href="/products" className="group relative block">
-                <div className="absolute -inset-0.5 bg-gradient-to-br from-bg-accent to-bg-accent/50 rounded-2xl blur opacity-20 group-hover:opacity-30 transition-opacity"></div>
-                <div className="relative bg-gradient-to-br from-bg-accent via-bg-accent/90 to-bg-accent/80 text-text-on-accent p-8 rounded-2xl shadow-xl h-full flex flex-col hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
-                  <div className="mb-6">
-                    <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center text-2xl mb-4">
+                <div className="absolute -inset-0.5 bg-gradient-to-br from-bg-accent to-bg-accent/50 rounded-xl sm:rounded-2xl blur opacity-20 group-hover:opacity-30 transition-opacity"></div>
+                <div className="relative bg-gradient-to-br from-bg-accent via-bg-accent/90 to-bg-accent/80 text-text-on-accent p-6 sm:p-8 rounded-xl sm:rounded-2xl shadow-xl h-full flex flex-col hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+                  <div className="mb-4 sm:mb-6">
+                    <div className="w-10 h-10 sm:w-12 sm:h-12 bg-white/20 backdrop-blur-sm rounded-lg sm:rounded-xl flex items-center justify-center text-xl sm:text-2xl mb-3 sm:mb-4">
                       ⚙️
                     </div>
-                    <h3 className="text-xl md:text-2xl font-bold mb-4">Strapping Machinery</h3>
+                    <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-3 sm:mb-4">Strapping Machinery</h3>
                   </div>
-                  <p className="text-lg leading-relaxed mb-4 flex-1">
+                  <p className="text-base sm:text-lg leading-relaxed mb-3 sm:mb-4 flex-1">
                     State-of-the-art automation solutions designed to boost productivity, reduce operational costs, and ensure consistent package security.
                   </p>
                   
-                  <div className="space-y-3 mb-4">
-                    <div className="bg-white/10 backdrop-blur-sm p-4 rounded-lg">
-                      <h4 className="font-bold mb-2 text-lg">Fully Automatic</h4>
-                      <p className="text-sm opacity-90">
+                  <div className="space-y-2 sm:space-y-3 mb-3 sm:mb-4">
+                    <div className="bg-white/10 backdrop-blur-sm p-3 sm:p-4 rounded-lg">
+                      <h4 className="font-bold mb-1 sm:mb-2 text-sm sm:text-base md:text-lg">Fully Automatic</h4>
+                      <p className="text-xs sm:text-sm opacity-90">
                         High-speed automation for production line integration with maximum throughput and energy-efficient operation.
                       </p>
                     </div>
-                    <div className="bg-white/10 backdrop-blur-sm p-4 rounded-lg">
-                      <h4 className="font-bold mb-2 text-lg">Semi Automatic</h4>
-                      <p className="text-sm opacity-90">
+                    <div className="bg-white/10 backdrop-blur-sm p-3 sm:p-4 rounded-lg">
+                      <h4 className="font-bold mb-1 sm:mb-2 text-sm sm:text-base md:text-lg">Semi Automatic</h4>
+                      <p className="text-xs sm:text-sm opacity-90">
                         Cost-effective, portable solution with rapid 2.5-second cycle time and adjustable tension (15-45 Kgs).
                       </p>
                     </div>
                   </div>
 
-                  <div className="pt-4 border-t border-white/20 flex items-center justify-between">
-                    <p className="text-sm opacity-90">
-                      <strong>Perfect for:</strong> High-volume operations, diverse product sizes, and mobile packaging stations
+                  <div className="pt-3 sm:pt-4 border-t border-white/20 flex items-center justify-between gap-2">
+                    <p className="text-xs sm:text-sm opacity-90">
+                      <strong>Perfect for:</strong> <span className="hidden sm:inline">High-volume operations, diverse product sizes, and mobile packaging stations</span><span className="sm:hidden">High-volume operations</span>
                     </p>
-                    <svg className="w-5 h-5 text-white group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-4 h-4 sm:w-5 sm:h-5 text-white group-hover:translate-x-1 transition-transform flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                     </svg>
                   </div>
@@ -524,80 +524,80 @@ export default function HomePageClient() {
             </div>
 
             {/* Individual Product Cards with Images */}
-            <div className="mb-8">
-              <h3 className="text-2xl md:text-3xl font-bold mb-6 text-text-heading text-center">
+            <div className="mb-6 sm:mb-8">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 sm:mb-6 text-text-heading text-center">
                 Our Product Range
               </h3>
               
               {/* Packaging Straps Products */}
-              <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+              <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6 mb-6 sm:mb-8">
                 <Link href="/products/custom-sized-strap" className="group relative block">
-                  <div className="absolute -inset-0.5 bg-gradient-to-br from-bg-accent to-bg-accent/50 rounded-2xl blur opacity-20 group-hover:opacity-30 transition-opacity"></div>
-                  <div className="relative bg-bg-card p-6 rounded-2xl shadow-xl border border-border-accent/20 h-full flex flex-col hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-                    <div className="relative h-48 mb-4 rounded-xl overflow-hidden bg-gradient-to-br from-bg-accent/10 to-bg-accent/5">
+                  <div className="absolute -inset-0.5 bg-gradient-to-br from-bg-accent to-bg-accent/50 rounded-xl sm:rounded-2xl blur opacity-20 group-hover:opacity-30 transition-opacity"></div>
+                  <div className="relative bg-bg-card p-3 sm:p-4 md:p-6 rounded-xl sm:rounded-2xl shadow-xl border border-border-accent/20 h-full flex flex-col hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+                    <div className="relative h-32 sm:h-40 md:h-48 mb-3 sm:mb-4 rounded-lg sm:rounded-xl overflow-hidden bg-gradient-to-br from-bg-accent/10 to-bg-accent/5">
                       <Image
                         src="/images/custom-sized-strap-alt.png"
                         alt="Custom sized packaging strap"
                         fill
-                        className="object-contain p-4 group-hover:scale-105 transition-transform duration-300"
+                        className="object-contain p-2 sm:p-3 md:p-4 group-hover:scale-105 transition-transform duration-300"
                       />
                     </div>
-                    <h4 className="font-bold mb-2 text-lg text-text-heading">Custom Sized Strap</h4>
-                    <p className="text-sm text-text-primary flex-1">
+                    <h4 className="font-bold mb-1 sm:mb-2 text-sm sm:text-base md:text-lg text-text-heading">Custom Sized Strap</h4>
+                    <p className="text-xs sm:text-sm text-text-primary flex-1">
                       Engineered to fit exact product geometry for specialized goods and irregularly shaped packages.
                     </p>
                   </div>
                 </Link>
 
                 <Link href="/products/printed-strap" className="group relative block">
-                  <div className="absolute -inset-0.5 bg-gradient-to-br from-bg-accent to-bg-accent/50 rounded-2xl blur opacity-20 group-hover:opacity-30 transition-opacity"></div>
-                  <div className="relative bg-bg-card p-6 rounded-2xl shadow-xl border border-border-accent/20 h-full flex flex-col hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-                    <div className="relative h-48 mb-4 rounded-xl overflow-hidden bg-gradient-to-br from-bg-accent/10 to-bg-accent/5">
+                  <div className="absolute -inset-0.5 bg-gradient-to-br from-bg-accent to-bg-accent/50 rounded-xl sm:rounded-2xl blur opacity-20 group-hover:opacity-30 transition-opacity"></div>
+                  <div className="relative bg-bg-card p-3 sm:p-4 md:p-6 rounded-xl sm:rounded-2xl shadow-xl border border-border-accent/20 h-full flex flex-col hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+                    <div className="relative h-32 sm:h-40 md:h-48 mb-3 sm:mb-4 rounded-lg sm:rounded-xl overflow-hidden bg-gradient-to-br from-bg-accent/10 to-bg-accent/5">
                       <Image
                         src="/images/printed-strap.png"
                         alt="Printed packaging strap"
                         fill
-                        className="object-contain p-4 group-hover:scale-105 transition-transform duration-300"
+                        className="object-contain p-2 sm:p-3 md:p-4 group-hover:scale-105 transition-transform duration-300"
                       />
                     </div>
-                    <h4 className="font-bold mb-2 text-lg text-text-heading">Printed Strap</h4>
-                    <p className="text-sm text-text-primary flex-1">
+                    <h4 className="font-bold mb-1 sm:mb-2 text-sm sm:text-base md:text-lg text-text-heading">Printed Strap</h4>
+                    <p className="text-xs sm:text-sm text-text-primary flex-1">
                       High-contrast, durable printing for branding, security marking, and logistics communication.
                     </p>
                   </div>
                 </Link>
 
                 <Link href="/products/coloured-strap" className="group relative block">
-                  <div className="absolute -inset-0.5 bg-gradient-to-br from-bg-accent to-bg-accent/50 rounded-2xl blur opacity-20 group-hover:opacity-30 transition-opacity"></div>
-                  <div className="relative bg-bg-card p-6 rounded-2xl shadow-xl border border-border-accent/20 h-full flex flex-col hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-                    <div className="relative h-48 mb-4 rounded-xl overflow-hidden bg-gradient-to-br from-bg-accent/10 to-bg-accent/5">
+                  <div className="absolute -inset-0.5 bg-gradient-to-br from-bg-accent to-bg-accent/50 rounded-xl sm:rounded-2xl blur opacity-20 group-hover:opacity-30 transition-opacity"></div>
+                  <div className="relative bg-bg-card p-3 sm:p-4 md:p-6 rounded-xl sm:rounded-2xl shadow-xl border border-border-accent/20 h-full flex flex-col hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+                    <div className="relative h-32 sm:h-40 md:h-48 mb-3 sm:mb-4 rounded-lg sm:rounded-xl overflow-hidden bg-gradient-to-br from-bg-accent/10 to-bg-accent/5">
                       <Image
                         src="/images/coloured-strap.png"
                         alt="Coloured packaging strap"
                         fill
-                        className="object-contain p-4 group-hover:scale-105 transition-transform duration-300"
+                        className="object-contain p-2 sm:p-3 md:p-4 group-hover:scale-105 transition-transform duration-300"
                       />
                     </div>
-                    <h4 className="font-bold mb-2 text-lg text-text-heading">Coloured Strap</h4>
-                    <p className="text-sm text-text-primary flex-1">
+                    <h4 className="font-bold mb-1 sm:mb-2 text-sm sm:text-base md:text-lg text-text-heading">Coloured Strap</h4>
+                    <p className="text-xs sm:text-sm text-text-primary flex-1">
                       Visual identification tool for warehouse management, tracking, and safety protocols.
                     </p>
                   </div>
                 </Link>
 
                 <Link href="/products/transparent-strap" className="group relative block">
-                  <div className="absolute -inset-0.5 bg-gradient-to-br from-bg-accent to-bg-accent/50 rounded-2xl blur opacity-20 group-hover:opacity-30 transition-opacity"></div>
-                  <div className="relative bg-bg-card p-6 rounded-2xl shadow-xl border border-border-accent/20 h-full flex flex-col hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-                    <div className="relative h-48 mb-4 rounded-xl overflow-hidden bg-gradient-to-br from-bg-accent/10 to-bg-accent/5">
+                  <div className="absolute -inset-0.5 bg-gradient-to-br from-bg-accent to-bg-accent/50 rounded-xl sm:rounded-2xl blur opacity-20 group-hover:opacity-30 transition-opacity"></div>
+                  <div className="relative bg-bg-card p-3 sm:p-4 md:p-6 rounded-xl sm:rounded-2xl shadow-xl border border-border-accent/20 h-full flex flex-col hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+                    <div className="relative h-32 sm:h-40 md:h-48 mb-3 sm:mb-4 rounded-lg sm:rounded-xl overflow-hidden bg-gradient-to-br from-bg-accent/10 to-bg-accent/5">
                       <Image
                         src="/images/transparent-strap.png"
                         alt="Transparent packaging strap"
                         fill
-                        className="object-contain p-4 group-hover:scale-105 transition-transform duration-300"
+                        className="object-contain p-2 sm:p-3 md:p-4 group-hover:scale-105 transition-transform duration-300"
                       />
                     </div>
-                    <h4 className="font-bold mb-2 text-lg text-text-heading">Transparent Strap</h4>
-                    <p className="text-sm text-text-primary flex-1">
+                    <h4 className="font-bold mb-1 sm:mb-2 text-sm sm:text-base md:text-lg text-text-heading">Transparent Strap</h4>
+                    <p className="text-xs sm:text-sm text-text-primary flex-1">
                       Sleek, professional hold for retail-facing goods where package design must remain visible.
                     </p>
                   </div>
@@ -605,38 +605,38 @@ export default function HomePageClient() {
               </div>
 
               {/* Strapping Machinery Products */}
-              <div className="grid sm:grid-cols-2 gap-6">
+              <div className="grid sm:grid-cols-2 gap-3 sm:gap-4 md:gap-6">
                 <Link href="/products/fully-automatic-strapping-machine" className="group relative block">
-                  <div className="absolute -inset-0.5 bg-gradient-to-br from-bg-accent to-bg-accent/50 rounded-2xl blur opacity-20 group-hover:opacity-30 transition-opacity"></div>
-                  <div className="relative bg-gradient-to-br from-bg-accent via-bg-accent/90 to-bg-accent/80 text-text-on-accent p-6 rounded-2xl shadow-xl border border-border-accent/20 h-full flex flex-col hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-                    <div className="relative h-64 mb-4 rounded-xl overflow-hidden bg-white/10">
+                  <div className="absolute -inset-0.5 bg-gradient-to-br from-bg-accent to-bg-accent/50 rounded-xl sm:rounded-2xl blur opacity-20 group-hover:opacity-30 transition-opacity"></div>
+                  <div className="relative bg-gradient-to-br from-bg-accent via-bg-accent/90 to-bg-accent/80 text-text-on-accent p-4 sm:p-5 md:p-6 rounded-xl sm:rounded-2xl shadow-xl border border-border-accent/20 h-full flex flex-col hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+                    <div className="relative h-48 sm:h-56 md:h-64 mb-3 sm:mb-4 rounded-lg sm:rounded-xl overflow-hidden bg-white/10">
                       <Image
                         src="/images/fully-automatic-strapping-machine-alt.png"
                         alt="Fully automatic strapping machine"
                         fill
-                        className="object-contain p-6 group-hover:scale-105 transition-transform duration-300"
+                        className="object-contain p-3 sm:p-4 md:p-6 group-hover:scale-105 transition-transform duration-300"
                       />
                     </div>
-                    <h4 className="font-bold mb-2 text-lg">Fully Automatic Strapping Machine</h4>
-                    <p className="text-sm opacity-90 flex-1">
+                    <h4 className="font-bold mb-1 sm:mb-2 text-sm sm:text-base md:text-lg">Fully Automatic Strapping Machine</h4>
+                    <p className="text-xs sm:text-sm opacity-90 flex-1">
                       High-speed automation for production line integration with maximum throughput and energy-efficient operation.
                     </p>
                   </div>
                 </Link>
 
                 <Link href="/products/semi-automatic-strapping-machine" className="group relative block">
-                  <div className="absolute -inset-0.5 bg-gradient-to-br from-bg-accent to-bg-accent/50 rounded-2xl blur opacity-20 group-hover:opacity-30 transition-opacity"></div>
-                  <div className="relative bg-gradient-to-br from-bg-accent via-bg-accent/90 to-bg-accent/80 text-text-on-accent p-6 rounded-2xl shadow-xl border border-border-accent/20 h-full flex flex-col hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-                    <div className="relative h-64 mb-4 rounded-xl overflow-hidden bg-white/10">
+                  <div className="absolute -inset-0.5 bg-gradient-to-br from-bg-accent to-bg-accent/50 rounded-xl sm:rounded-2xl blur opacity-20 group-hover:opacity-30 transition-opacity"></div>
+                  <div className="relative bg-gradient-to-br from-bg-accent via-bg-accent/90 to-bg-accent/80 text-text-on-accent p-4 sm:p-5 md:p-6 rounded-xl sm:rounded-2xl shadow-xl border border-border-accent/20 h-full flex flex-col hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+                    <div className="relative h-48 sm:h-56 md:h-64 mb-3 sm:mb-4 rounded-lg sm:rounded-xl overflow-hidden bg-white/10">
                       <Image
                         src="/images/semi-automatic-strapping-machine.png"
                         alt="Semi automatic strapping machine"
                         fill
-                        className="object-contain p-6 group-hover:scale-105 transition-transform duration-300"
+                        className="object-contain p-3 sm:p-4 md:p-6 group-hover:scale-105 transition-transform duration-300"
                       />
                     </div>
-                    <h4 className="font-bold mb-2 text-lg">Semi Automatic Strapping Machine</h4>
-                    <p className="text-sm opacity-90 flex-1">
+                    <h4 className="font-bold mb-1 sm:mb-2 text-sm sm:text-base md:text-lg">Semi Automatic Strapping Machine</h4>
+                    <p className="text-xs sm:text-sm opacity-90 flex-1">
                       Cost-effective, portable solution with rapid 2.5-second cycle time and adjustable tension (15-45 Kgs).
                     </p>
                   </div>
@@ -663,17 +663,17 @@ export default function HomePageClient() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-8 px-4 bg-bg-cta text-text-on-accent">
+        <section className="py-6 sm:py-8 px-4 sm:px-6 bg-bg-cta text-text-on-accent">
           <div className="container mx-auto text-center max-w-3xl">
-            <h2 className="text-2xl md:text-3xl font-bold mb-4">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-3 sm:mb-4">
               Ready to Secure Your Future?
             </h2>
-            <p className="text-xl mb-6">
+            <p className="text-base sm:text-lg md:text-xl mb-4 sm:mb-6">
               Contact us today for detailed product information, technical support, or to request a custom quote.
             </p>
             <Link 
               href="/contact" 
-              className="inline-block bg-bg-accent text-text-on-accent px-8 py-3 rounded-lg font-semibold hover:bg-bg-accent-hover transition-colors"
+              className="inline-block bg-bg-accent text-text-on-accent px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg font-semibold text-sm sm:text-base hover:bg-bg-accent-hover transition-colors"
             >
               Get in Touch
             </Link>

@@ -75,13 +75,13 @@ export default function Header() {
         }`}
       >
         <div className="container mx-auto px-4 lg:px-8">
-          <div className="flex items-center justify-between h-20 lg:h-24">
+          <div className="flex items-center justify-between h-16 sm:h-20 lg:h-24">
             {/* Logo */}
             <Link 
               href="/" 
               className="flex items-center group transition-all duration-300 hover:scale-105 active:scale-95 relative z-10"
             >
-              <div className="relative w-32 h-16 md:w-40 md:h-20 lg:w-48 lg:h-24">
+              <div className="relative w-24 h-12 sm:w-32 sm:h-16 md:w-40 md:h-20 lg:w-48 lg:h-24">
                 <Image 
                   src="/images/hb-sub-noor-industries-logo.png" 
                   alt="HB Sub Noor Industries Logo - Industrial Packaging and Strap Solutions" 

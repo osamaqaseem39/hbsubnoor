@@ -200,16 +200,22 @@ export default function FullyAutomaticStrappingMachinePage() {
           <div className="container mx-auto max-w-7xl">
             <div className="grid lg:grid-cols-2 gap-12 items-center mb-12">
               {/* Product Image */}
-              <div className="relative group">
+              <div className="relative group cursor-pointer">
                 <div className="absolute -inset-1 bg-gradient-to-r from-bg-accent via-bg-accent/50 to-bg-accent rounded-2xl blur-lg opacity-20 group-hover:opacity-30 transition-opacity"></div>
-                <div className="relative bg-bg-card p-8 rounded-2xl shadow-2xl border border-border-accent/20">
+                <div className="relative bg-bg-card p-8 rounded-2xl shadow-2xl border border-border-accent/20 group-hover:shadow-3xl transition-all duration-300">
                   <div className="relative h-[500px] rounded-xl overflow-hidden bg-gradient-to-br from-bg-accent/10 to-bg-accent/5">
                     <Image
                       src="/images/fully-automatic-strapping-machine-alt.png"
                       alt="Fully automatic strapping machine - HB Sub Noor Industries"
                       fill
-                      className="object-contain p-8"
+                      className="object-cover group-hover:scale-110 transition-transform duration-500 ease-out"
                     />
+                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors duration-300"></div>
+                    <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <div className="bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-semibold text-text-heading shadow-lg">
+                        Click to view larger
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
