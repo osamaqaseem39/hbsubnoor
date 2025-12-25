@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: '/images/semi-automatic-strapping-machine.png',
+        url: '/images/fully-automatic-strapping-machine-alt.png',
         width: 1200,
         height: 630,
         alt: 'Fully Automatic Strapping Machine - HB Sub Noor Industries',
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Fully Automatic Strapping Machine | High-Speed Automation',
     description: 'Fully automatic strapping machine for production line integration. High-speed automation available.',
-    images: ['/images/semi-automatic-strapping-machine.png'],
+    images: ['/images/fully-automatic-strapping-machine-alt.png'],
   },
   alternates: {
     canonical: '/products/fully-automatic-strapping-machine',
@@ -191,7 +191,7 @@ export default function FullyAutomaticStrappingMachinePage() {
                 <div className="relative bg-bg-card p-8 rounded-2xl shadow-2xl border border-border-accent/20">
                   <div className="relative h-[500px] rounded-xl overflow-hidden bg-gradient-to-br from-bg-accent/10 to-bg-accent/5">
                     <Image
-                      src="/images/semi-automatic-strapping-machine.png"
+                      src="/images/fully-automatic-strapping-machine-alt.png"
                       alt="Fully automatic strapping machine - HB Sub Noor Industries"
                       fill
                       className="object-contain p-8"

@@ -187,7 +187,7 @@ export default function Company() {
                 className="group relative w-full h-32 bg-bg-card rounded-xl border border-border-accent/20 hover:border-border-accent transition-all duration-300 hover:shadow-xl hover:-translate-y-2 flex items-center justify-center p-6"
               >
                 <Image
-                  src={`/images/clients (${num}).png`}
+                  src={`/images/client-logo-${num}.png`}
                   alt={`Client logo ${num}`}
                   width={200}
                   height={100}

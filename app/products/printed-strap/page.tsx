@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: '/images/polypropylene-pp-strapping-material.png',
+        url: '/images/printed-strap.png',
         width: 1200,
         height: 630,
         alt: 'Printed Packaging Strap - HB Sub Noor Industries',
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Printed Strap | Branded Packaging Straps',
     description: 'Printed packaging straps for branding and security. Custom logos and printing available.',
-    images: ['/images/polypropylene-pp-strapping-material.png'],
+    images: ['/images/printed-strap.png'],
   },
   alternates: {
     canonical: '/products/printed-strap',
@@ -185,7 +185,7 @@ export default function PrintedStrapPage() {
                 <div className="relative bg-bg-card p-8 rounded-2xl shadow-2xl border border-border-accent/20">
                   <div className="relative h-[500px] rounded-xl overflow-hidden bg-gradient-to-br from-bg-accent/10 to-bg-accent/5">
                     <Image
-                      src="/images/polypropylene-pp-strapping-material.png"
+                      src="/images/printed-strap.png"
                       alt="Printed packaging strap with custom branding - HB Sub Noor Industries"
                       fill
                       className="object-contain p-8"

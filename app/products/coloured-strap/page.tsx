@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: '/images/polypropylene-pp-strapping-material.png',
+        url: '/images/coloured-strap.png',
         width: 1200,
         height: 630,
         alt: 'Coloured Packaging Strap - HB Sub Noor Industries',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Coloured Strap | Color-Coded Packaging Straps',
     description: 'Coloured packaging straps for warehouse management and tracking. Full spectrum colors available.',
-    images: ['/images/polypropylene-pp-strapping-material.png'],
+    images: ['/images/coloured-strap.png'],
   },
   alternates: {
     canonical: '/products/coloured-strap',
@@ -184,7 +184,7 @@ export default function ColouredStrapPage() {
                 <div className="relative bg-bg-card p-8 rounded-2xl shadow-2xl border border-border-accent/20">
                   <div className="relative h-[500px] rounded-xl overflow-hidden bg-gradient-to-br from-bg-accent/10 to-bg-accent/5">
                     <Image
-                      src="/images/polypropylene-pp-strapping-material.png"
+                      src="/images/coloured-strap.png"
                       alt="Coloured packaging strap in various colors - HB Sub Noor Industries"
                       fill
                       className="object-contain p-8"

@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: '/images/polypropylene-pp-strapping-material.png',
+        url: '/images/custom-sized-strap-alt.png',
         width: 1200,
         height: 630,
         alt: 'Custom Sized Packaging Strap - HB Sub Noor Industries',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Custom Sized Strap | Custom Packaging Straps',
     description: 'Custom sized packaging straps engineered to fit exact product geometry. Perfect for specialized goods.',
-    images: ['/images/polypropylene-pp-strapping-material.png'],
+    images: ['/images/custom-sized-strap-alt.png'],
   },
   alternates: {
     canonical: '/products/custom-sized-strap',
@@ -197,7 +197,7 @@ export default function CustomSizedStrapPage() {
                 <div className="relative bg-bg-card p-8 rounded-2xl shadow-2xl border border-border-accent/20">
                   <div className="relative h-[500px] rounded-xl overflow-hidden bg-gradient-to-br from-bg-accent/10 to-bg-accent/5">
                     <Image
-                      src="/images/polypropylene-pp-strapping-material.png"
+                      src="/images/custom-sized-strap-alt.png"
                       alt="Custom sized packaging strap - HB Sub Noor Industries"
                       fill
                       className="object-contain p-8"

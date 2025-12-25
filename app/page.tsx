@@ -446,24 +446,56 @@ export default function Home() {
                 
                 <div className="grid grid-cols-2 gap-3 mb-4">
                   <div className="bg-bg-accent/10 backdrop-blur-sm p-4 rounded-lg border border-border-accent/20">
+                    <div className="relative h-24 mb-3 rounded-lg overflow-hidden bg-gradient-to-br from-bg-accent/10 to-bg-accent/5">
+                      <Image
+                        src="/images/custom-sized-strap-alt.png"
+                        alt="Custom sized packaging strap"
+                        fill
+                        className="object-contain p-2"
+                      />
+                    </div>
                     <h4 className="font-bold mb-2 text-lg text-text-heading">Custom Sized Strap</h4>
                     <p className="text-sm text-text-primary">
                       Engineered to fit exact product geometry for specialized goods and irregularly shaped packages.
                     </p>
                   </div>
                   <div className="bg-bg-accent/10 backdrop-blur-sm p-4 rounded-lg border border-border-accent/20">
+                    <div className="relative h-24 mb-3 rounded-lg overflow-hidden bg-gradient-to-br from-bg-accent/10 to-bg-accent/5">
+                      <Image
+                        src="/images/printed-strap.png"
+                        alt="Printed packaging strap"
+                        fill
+                        className="object-contain p-2"
+                      />
+                    </div>
                     <h4 className="font-bold mb-2 text-lg text-text-heading">Printed Strap</h4>
                     <p className="text-sm text-text-primary">
                       High-contrast, durable printing for branding, security marking, and logistics communication.
                     </p>
                   </div>
                   <div className="bg-bg-accent/10 backdrop-blur-sm p-4 rounded-lg border border-border-accent/20">
+                    <div className="relative h-24 mb-3 rounded-lg overflow-hidden bg-gradient-to-br from-bg-accent/10 to-bg-accent/5">
+                      <Image
+                        src="/images/coloured-strap.png"
+                        alt="Coloured packaging strap"
+                        fill
+                        className="object-contain p-2"
+                      />
+                    </div>
                     <h4 className="font-bold mb-2 text-lg text-text-heading">Coloured Strap</h4>
                     <p className="text-sm text-text-primary">
                       Visual identification tool for warehouse management, tracking, and safety protocols.
                     </p>
                   </div>
                   <div className="bg-bg-accent/10 backdrop-blur-sm p-4 rounded-lg border border-border-accent/20">
+                    <div className="relative h-24 mb-3 rounded-lg overflow-hidden bg-gradient-to-br from-bg-accent/10 to-bg-accent/5">
+                      <Image
+                        src="/images/transparent-strap.png"
+                        alt="Transparent packaging strap"
+                        fill
+                        className="object-contain p-2"
+                      />
+                    </div>
                     <h4 className="font-bold mb-2 text-lg text-text-heading">Transparent Strap</h4>
                     <p className="text-sm text-text-primary">
                       Sleek, professional hold for retail-facing goods where package design must remain visible.
@@ -495,12 +527,28 @@ export default function Home() {
                 
                 <div className="space-y-3 mb-4">
                   <div className="bg-white/10 backdrop-blur-sm p-4 rounded-lg">
+                    <div className="relative h-32 mb-3 rounded-lg overflow-hidden bg-white/5">
+                      <Image
+                        src="/images/fully-automatic-strapping-machine-alt.png"
+                        alt="Fully automatic strapping machine"
+                        fill
+                        className="object-contain p-3"
+                      />
+                    </div>
                     <h4 className="font-bold mb-2 text-lg">Fully Automatic</h4>
                     <p className="text-sm opacity-90">
                       High-speed automation for production line integration with maximum throughput and energy-efficient operation.
                     </p>
                   </div>
                   <div className="bg-white/10 backdrop-blur-sm p-4 rounded-lg">
+                    <div className="relative h-32 mb-3 rounded-lg overflow-hidden bg-white/5">
+                      <Image
+                        src="/images/semi-automatic-strapping-machine.png"
+                        alt="Semi automatic strapping machine"
+                        fill
+                        className="object-contain p-3"
+                      />
+                    </div>
                     <h4 className="font-bold mb-2 text-lg">Semi Automatic</h4>
                     <p className="text-sm opacity-90">
                       Cost-effective, portable solution with rapid 2.5-second cycle time and adjustable tension (15-45 Kgs).
