@@ -13,26 +13,25 @@ const montserrat = Montserrat({
 
 export const metadata: Metadata = {
   title: {
-    default: "Best Packaging Strap Manufacturer | Best Strapping Machine Manufacturer | HB Sub Noor Industries",
+    default: "Leading Packaging Strap Manufacturer | Premium Strapping Machines | HB Sub Noor Industries",
     template: "%s | HB Sub Noor Industries"
   },
-  description: "Best packaging strap manufacturer of polypropylene (PP) and polyester (PET) strap materials, best strapping machine manufacturer (semi-automatic & automatic). Top-rated packaging strap manufacturer in Pakistan with 25+ years excellence. Best quality industrial packaging strap solutions globally.",
+  description: "Leading packaging strap manufacturer of polypropylene (PP) and polyester (PET) strap materials, premium strapping machines (semi-automatic & automatic). Top-rated packaging strap manufacturer in Pakistan with 25+ years of excellence. Quality industrial packaging strap solutions globally.",
   keywords: [
-    "best manufacturer strapping machine",
-    "best strapping machine manufacturer",
-    "best packaging strap manufacturer",
-    "best PP strap manufacturer",
-    "best PET strap manufacturer",
-    "best automatic strapping machine",
-    "best semi-automatic strapping machine",
-    "top packaging strap manufacturer Pakistan",
-    "best industrial packaging strap manufacturer",
+    "packaging strap manufacturer",
+    "strapping machine manufacturer",
+    "PP strap manufacturer",
+    "PET strap manufacturer",
+    "automatic strapping machine",
+    "semi-automatic strapping machine",
+    "packaging strap manufacturer Pakistan",
+    "industrial packaging strap manufacturer",
     "leading strap manufacturer",
-    "best quality packaging straps",
-    "best strapping machine Pakistan",
-    "top-rated packaging solutions",
-    "best manufacturer packaging materials",
-    "premium strapping machine manufacturer"
+    "quality packaging straps",
+    "strapping machine Pakistan",
+    "packaging strap solutions",
+    "premium strapping machines",
+    "industrial strapping equipment"
   ],
   authors: [{ name: "HB Sub Noor Industries" }],
   creator: "HB Sub Noor Industries",
@@ -53,8 +52,8 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://hbsubnoor.com",
-    title: "Best Packaging Strap Manufacturer | Best Strapping Machine Manufacturer | HB Sub Noor Industries",
-    description: "Best packaging strap manufacturer of polypropylene (PP) and polyester (PET) strap materials, best strapping machine manufacturer (semi-automatic & automatic). Top-rated packaging strap manufacturer in Pakistan with 25+ years excellence.",
+    title: "Leading Packaging Strap Manufacturer | Premium Strapping Machines | HB Sub Noor Industries",
+    description: "Leading packaging strap manufacturer of polypropylene (PP) and polyester (PET) strap materials, premium strapping machines (semi-automatic & automatic). Top-rated packaging strap manufacturer in Pakistan with 25+ years of excellence.",
     siteName: "HB Sub Noor Industries",
     images: [
       {
@@ -82,8 +81,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Best Packaging Strap Manufacturer | Best Strapping Machine Manufacturer | HB Sub Noor Industries",
-    description: "Best packaging strap manufacturer of PP/PET strap materials and best strapping machine manufacturer. Top-rated packaging strap manufacturer in Pakistan with 25+ years excellence.",
+    title: "Leading Packaging Strap Manufacturer | Premium Strapping Machines | HB Sub Noor Industries",
+    description: "Leading packaging strap manufacturer of PP/PET strap materials and premium strapping machines. Top-rated packaging strap manufacturer in Pakistan with 25+ years of excellence.",
     images: ["/images/favicon.png"],
     creator: "@hbsubnoor", // Update with actual Twitter handle if available
     site: "@hbsubnoor", // Update with actual Twitter handle if available

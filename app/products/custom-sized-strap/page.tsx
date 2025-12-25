@@ -3,27 +3,27 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Best Custom Sized Packaging Straps | Top Quality Custom Straps | HB Sub Noor Industries',
-  description: 'Best custom sized packaging straps engineered to fit exact product geometry. Best quality custom straps for specialized goods, irregularly shaped packages, and heavy-duty applications. Best custom packaging straps from top manufacturer. Available in best PP and PET materials.',
+  title: 'Custom Sized Packaging Straps | Quality Custom Straps | HB Sub Noor Industries',
+  description: 'Custom sized packaging straps engineered to fit exact product geometry. Quality custom straps for specialized goods, irregularly shaped packages, and heavy-duty applications. Custom packaging straps from leading manufacturer. Available in PP and PET materials.',
   keywords: [
-    'best custom sized strap',
-    'best custom packaging strap',
-    'best custom length strap',
-    'best custom width strap',
-    'best irregular package strap',
-    'best specialized packaging strap',
-    'best custom PP strap',
-    'best custom PET strap',
-    'top custom packaging strap',
-    'best custom strap manufacturer',
-    'premium custom strap',
-    'best custom strap Pakistan',
-    'top-rated custom packaging straps',
-    'best quality custom straps'
+    'custom sized strap',
+    'custom packaging strap',
+    'custom length strap',
+    'custom width strap',
+    'irregular package strap',
+    'specialized packaging strap',
+    'custom PP strap',
+    'custom PET strap',
+    'custom packaging strap manufacturer',
+    'custom strap supplier',
+    'bespoke packaging strap',
+    'custom strap Pakistan',
+    'tailored packaging strap',
+    'quality custom straps'
   ],
   openGraph: {
-    title: 'Best Custom Sized Packaging Straps | Top Quality Custom Straps | HB Sub Noor Industries',
-    description: 'Best custom sized packaging straps engineered to fit exact product geometry. Best quality custom straps for specialized goods and irregularly shaped packages from best manufacturer.',
+    title: 'Custom Sized Packaging Straps | Quality Custom Straps | HB Sub Noor Industries',
+    description: 'Custom sized packaging straps engineered to fit exact product geometry. Quality custom straps for specialized goods and irregularly shaped packages from leading manufacturer.',
     url: 'https://hbsubnoor.com/products/custom-sized-strap',
     type: 'website',
     images: [
@@ -37,8 +37,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Best Custom Sized Packaging Straps | Top Quality Custom Straps',
-    description: 'Best custom sized packaging straps engineered to fit exact product geometry. Best quality custom straps for specialized goods from best manufacturer.',
+    title: 'Custom Sized Packaging Straps | Quality Custom Straps',
+    description: 'Custom sized packaging straps engineered to fit exact product geometry. Quality custom straps for specialized goods from leading manufacturer.',
     images: ['/images/custom-sized-strap-alt.png'],
   },
   alternates: {
@@ -65,7 +65,7 @@ export default function CustomSizedStrapPage() {
     "@context": "https://schema.org",
     "@type": "Product",
     "name": "Custom Sized Strap",
-    "description": "Best custom sized packaging straps engineered to fit exact product geometry, crucial for specialized goods or irregularly shaped packages. Best quality custom straps from top manufacturer.",
+    "description": "Custom sized packaging straps engineered to fit exact product geometry, crucial for specialized goods or irregularly shaped packages. Quality custom straps from leading manufacturer.",
     "brand": {
       "@type": "Brand",
       "name": "HB Sub Noor Industries",

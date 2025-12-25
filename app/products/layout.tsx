@@ -1,24 +1,24 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Best Strapping Machines & Packaging Straps | Top Quality Products | HB Sub Noor Industries',
-  description: 'Best strapping machines (automatic & semi-automatic) and best quality packaging straps (PP/PET). Best custom sized, printed, coloured, and transparent straps. Top-rated industrial packaging strap solutions from best packaging strap manufacturer.',
+  title: 'Premium Strapping Machines & Quality Packaging Straps | HB Sub Noor Industries',
+  description: 'Premium strapping machines (automatic & semi-automatic) and quality packaging straps (PP/PET). Custom sized, printed, coloured, and transparent straps available. Top-rated industrial packaging strap solutions from leading packaging strap manufacturer.',
   keywords: [
-    'best strapping machine',
-    'best automatic strapping machine',
-    'best semi-automatic strapping machine',
-    'best packaging straps',
-    'best PP strap',
-    'best PET strap',
-    'best custom sized strap',
-    'best printed strap',
-    'best coloured strap',
-    'best transparent strap',
-    'top quality strapping machines',
-    'best quality packaging straps',
-    'premium strapping machine',
-    'best manufacturer strapping machines',
-    'top-rated packaging solutions'
+    'strapping machine',
+    'automatic strapping machine',
+    'semi-automatic strapping machine',
+    'packaging straps',
+    'PP strap',
+    'PET strap',
+    'custom sized strap',
+    'printed strap',
+    'coloured strap',
+    'transparent strap',
+    'quality strapping machines',
+    'premium packaging straps',
+    'industrial strapping equipment',
+    'packaging strap manufacturer',
+    'strapping machine supplier'
   ],
   authors: [{ name: 'HB Sub Noor Industries' }],
   creator: 'HB Sub Noor Industries',
@@ -30,8 +30,8 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: 'https://hbsubnoor.com/products',
-    title: 'Best Strapping Machines & Packaging Straps | Top Quality Products | HB Sub Noor Industries',
-    description: 'Best strapping machines (automatic & semi-automatic) and best quality packaging straps (PP/PET). Top-rated industrial packaging strap solutions from best packaging strap manufacturer.',
+    title: 'Premium Strapping Machines & Quality Packaging Straps | HB Sub Noor Industries',
+    description: 'Premium strapping machines (automatic & semi-automatic) and quality packaging straps (PP/PET). Top-rated industrial packaging strap solutions from leading packaging strap manufacturer.',
     siteName: 'HB Sub Noor Industries',
     images: [
       {
@@ -52,8 +52,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Best Strapping Machines & Packaging Straps | Top Quality Products',
-    description: 'Best strapping machines (automatic & semi-automatic) and best quality packaging straps (PP/PET). Top-rated industrial packaging strap solutions from best packaging strap manufacturer.',
+    title: 'Premium Strapping Machines & Quality Packaging Straps',
+    description: 'Premium strapping machines (automatic & semi-automatic) and quality packaging straps (PP/PET). Top-rated industrial packaging strap solutions from leading packaging strap manufacturer.',
     images: ['/images/polypropylene-pp-strapping-material.png'],
     creator: '@hbsubnoor',
     site: '@hbsubnoor',

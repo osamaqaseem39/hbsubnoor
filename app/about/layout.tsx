@@ -1,21 +1,21 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'About Best Packaging Strap Manufacturer | Top Industrial Packaging Strap Manufacturer | HB Sub Noor Industries',
-  description: 'About best packaging strap manufacturer with three decades of excellence. Top industrial packaging strap manufacturer transforming the industry through cutting-edge technology. Best quality packaging strap manufacturer building trust through innovation. Learn about best packaging strap manufacturer journey, mission, and values.',
+  title: 'About Us | Leading Packaging Strap Manufacturer | HB Sub Noor Industries',
+  description: 'Leading packaging strap manufacturer with three decades of excellence. Top industrial packaging strap manufacturer transforming the industry through cutting-edge technology. Quality packaging strap manufacturer building trust through innovation. Learn about our journey, mission, and values.',
   keywords: [
-    'about best packaging strap manufacturer',
-    'best packaging strap manufacturer story',
-    'top packaging strap manufacturer history',
-    'best industrial packaging strap manufacturer about',
+    'packaging strap manufacturer about',
+    'packaging strap manufacturer story',
+    'packaging strap manufacturer history',
+    'industrial packaging strap manufacturer',
     'leading manufacturer company',
-    'best quality manufacturer',
-    'top-rated manufacturer',
-    'premium packaging manufacturer about',
-    'best manufacturer mission',
-    'best manufacturer vision',
-    'top manufacturer excellence',
-    'best manufacturer values'
+    'quality manufacturer',
+    'packaging strap manufacturer mission',
+    'packaging strap manufacturer vision',
+    'manufacturer excellence',
+    'packaging strap manufacturer values',
+    'packaging company Pakistan',
+    'strap manufacturer history'
   ],
   authors: [{ name: 'HB Sub Noor Industries' }],
   creator: 'HB Sub Noor Industries',
@@ -27,8 +27,8 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: 'https://hbsubnoor.com/about',
-    title: 'About Best Packaging Strap Manufacturer | Top Industrial Packaging Strap Manufacturer | HB Sub Noor Industries',
-    description: 'About best packaging strap manufacturer with three decades of excellence. Top industrial packaging strap manufacturer transforming the industry through cutting-edge technology and innovation.',
+    title: 'About Us | Leading Packaging Strap Manufacturer | HB Sub Noor Industries',
+    description: 'Leading packaging strap manufacturer with three decades of excellence. Top industrial packaging strap manufacturer transforming the industry through cutting-edge technology and innovation.',
     siteName: 'HB Sub Noor Industries',
     images: [
       {
@@ -42,8 +42,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'About Best Packaging Strap Manufacturer | Top Industrial Packaging Strap Manufacturer',
-    description: 'About best packaging strap manufacturer with three decades of excellence. Top industrial packaging strap manufacturer transforming the industry through cutting-edge technology.',
+    title: 'About Us | Leading Packaging Strap Manufacturer',
+    description: 'Leading packaging strap manufacturer with three decades of excellence. Top industrial packaging strap manufacturer transforming the industry through cutting-edge technology.',
     images: ['/images/hb-sub-noor-industries-logo.png'],
     creator: '@hbsubnoor',
     site: '@hbsubnoor',

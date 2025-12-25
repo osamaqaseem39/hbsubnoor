@@ -3,26 +3,26 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Best Semi Automatic Strapping Machine | Top Quality Portable Machine | HB Sub Noor Industries',
-  description: 'Best semi automatic strapping machine - best portable, cost-effective solution with rapid 2.5-second cycle time. Best semi automatic machine with adjustable tension 15-45 Kgs from top manufacturer. Compatible with 9mm, 12mm, and 15.5mm straps. Perfect for diverse product sizes and mobile packaging stations.',
+  title: 'Semi Automatic Strapping Machine | Portable Strapping Machine | HB Sub Noor Industries',
+  description: 'Semi automatic strapping machine - portable, cost-effective solution with rapid 2.5-second cycle time. Semi automatic machine with adjustable tension 15-45 Kgs from leading manufacturer. Compatible with 9mm, 12mm, and 15.5mm straps. Perfect for diverse product sizes and mobile packaging stations.',
   keywords: [
-    'best semi automatic strapping machine',
-    'best portable strapping machine',
-    'best cost effective strapping machine',
-    'best semi auto strapping machine',
-    'best mobile strapping machine',
-    'best portable packaging machine',
-    'best semi automatic PP strap machine',
-    'best adjustable tension strapping machine',
-    'top semi automatic strapping machine',
-    'best quality semi automatic machine',
+    'semi automatic strapping machine',
+    'portable strapping machine',
+    'cost effective strapping machine',
+    'semi auto strapping machine',
+    'mobile strapping machine',
+    'portable packaging machine',
+    'semi automatic PP strap machine',
+    'adjustable tension strapping machine',
+    'semi automatic strapping machine manufacturer',
+    'quality semi automatic machine',
     'premium semi automatic machine',
-    'top-rated semi automatic strapping machine',
-    'best 2.5 second cycle strapping'
+    'industrial strapping equipment',
+    '2.5 second cycle strapping'
   ],
   openGraph: {
-    title: 'Best Semi Automatic Strapping Machine | Top Quality Portable Machine | HB Sub Noor Industries',
-    description: 'Best semi automatic strapping machine - best portable, cost-effective solution with rapid 2.5-second cycle time from best manufacturer. Perfect for mobile packaging.',
+    title: 'Semi Automatic Strapping Machine | Portable Strapping Machine | HB Sub Noor Industries',
+    description: 'Semi automatic strapping machine - portable, cost-effective solution with rapid 2.5-second cycle time from leading manufacturer. Perfect for mobile packaging.',
     url: 'https://hbsubnoor.com/products/semi-automatic-strapping-machine',
     type: 'website',
     images: [
@@ -36,8 +36,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Best Semi Automatic Strapping Machine | Top Quality Portable Machine',
-    description: 'Best semi automatic strapping machine - best portable, cost-effective with rapid cycle time from best manufacturer.',
+    title: 'Semi Automatic Strapping Machine | Portable Strapping Machine',
+    description: 'Semi automatic strapping machine - portable, cost-effective with rapid cycle time from leading manufacturer.',
     images: ['/images/semi-automatic-strapping-machine.png'],
   },
   alternates: {
@@ -64,7 +64,7 @@ export default function SemiAutomaticStrappingMachinePage() {
     "@context": "https://schema.org",
     "@type": "Product",
     "name": "Semi Automatic Strapping Machine",
-      "description": "Best semi automatic strapping machine - best cost-effective, portable solution offering flexibility without compromising on sealing integrity or speed. Best semi automatic machine with rapid 2.5-second cycle time and adjustable tension from 15-45 Kgs from top manufacturer.",
+      "description": "Semi automatic strapping machine - cost-effective, portable solution offering flexibility without compromising on sealing integrity or speed. Rapid 2.5-second cycle time with adjustable tension from 15-45 Kgs from leading manufacturer.",
     "brand": {
       "@type": "Brand",
       "name": "HB Sub Noor Industries",

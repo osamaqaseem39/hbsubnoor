@@ -11,7 +11,7 @@ export default function HomePageClient() {
     "@type": "WebSite",
     "name": "HB Sub Noor Industries",
     "url": "https://hbsubnoor.com",
-    "description": "Best packaging strap manufacturer of polypropylene (PP) and polyester (PET) packaging strap materials, best strapping machine manufacturer (semi-automatic & automatic). Top-rated packaging strap manufacturer in Pakistan with 25+ years excellence. Best quality industrial packaging strap solutions globally.",
+    "description": "Leading packaging strap manufacturer of polypropylene (PP) and polyester (PET) packaging strap materials, premium strapping machines (semi-automatic & automatic). Top-rated packaging strap manufacturer in Pakistan with 25+ years of excellence. Quality industrial packaging strap solutions globally.",
     "potentialAction": {
       "@type": "SearchAction",
       "target": {
@@ -163,12 +163,12 @@ export default function HomePageClient() {
               <div className="relative h-[500px] lg:h-[700px] hidden lg:block overflow-hidden">
                 {/* Strapping Machine - Top Right */}
                 <div className="absolute top-10 right-10 bg-bg-accent/95 backdrop-blur-md p-6 rounded-3xl shadow-2xl border border-white/20 transform rotate-3 hover:rotate-0 transition-all duration-300 animate-float hover:scale-105">
-                  <div className="relative w-64 h-64 md:w-80 md:h-80">
+                  <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-xl overflow-hidden bg-gradient-to-br from-white/20 to-white/10">
                     <Image
                       src="/images/semi-automatic-strapping-machine.png"
                       alt="Semi-automatic strapping machine for industrial packaging - HB Sub Noor Industries"
                       fill
-                      className="object-contain drop-shadow-lg"
+                      className="object-contain drop-shadow-lg p-2"
                     />
                   </div>
                   <div className="text-center mt-4">
@@ -179,12 +179,12 @@ export default function HomePageClient() {
 
                 {/* PP Strap - Bottom Left */}
                 <div className="absolute bottom-20 left-10 bg-white/95 backdrop-blur-md p-6 rounded-3xl shadow-2xl border border-white/50 transform -rotate-3 hover:rotate-0 transition-all duration-300 animate-float hover:scale-105" style={{ animationDelay: '0.5s' }}>
-                  <div className="relative w-56 h-56 md:w-72 md:h-72">
+                  <div className="relative w-56 h-56 md:w-72 md:h-72 rounded-xl overflow-hidden bg-gradient-to-br from-bg-accent/10 to-bg-accent/5">
                     <Image
                       src="/images/polypropylene-pp-strapping-material.png"
                       alt="Polypropylene PP strap material roll for secure packaging - HB Sub Noor Industries"
                       fill
-                      className="object-contain drop-shadow-lg"
+                      className="object-contain drop-shadow-lg p-2"
                     />
                   </div>
                   <div className="text-center mt-4">
@@ -609,7 +609,7 @@ export default function HomePageClient() {
                 <Link href="/products/fully-automatic-strapping-machine" className="group relative block">
                   <div className="absolute -inset-0.5 bg-gradient-to-br from-bg-accent to-bg-accent/50 rounded-xl sm:rounded-2xl blur opacity-20 group-hover:opacity-30 transition-opacity"></div>
                   <div className="relative bg-gradient-to-br from-bg-accent via-bg-accent/90 to-bg-accent/80 text-text-on-accent p-4 sm:p-5 md:p-6 rounded-xl sm:rounded-2xl shadow-xl border border-border-accent/20 h-full flex flex-col hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-                    <div className="relative h-48 sm:h-56 md:h-64 mb-3 sm:mb-4 rounded-lg sm:rounded-xl overflow-hidden bg-white/10">
+                    <div className="relative h-48 sm:h-56 md:h-64 mb-3 sm:mb-4 rounded-lg sm:rounded-xl overflow-hidden bg-gradient-to-br from-white/20 to-white/10">
                       <Image
                         src="/images/fully-automatic-strapping-machine-alt.png"
                         alt="Fully automatic strapping machine"
@@ -627,7 +627,7 @@ export default function HomePageClient() {
                 <Link href="/products/semi-automatic-strapping-machine" className="group relative block">
                   <div className="absolute -inset-0.5 bg-gradient-to-br from-bg-accent to-bg-accent/50 rounded-xl sm:rounded-2xl blur opacity-20 group-hover:opacity-30 transition-opacity"></div>
                   <div className="relative bg-gradient-to-br from-bg-accent via-bg-accent/90 to-bg-accent/80 text-text-on-accent p-4 sm:p-5 md:p-6 rounded-xl sm:rounded-2xl shadow-xl border border-border-accent/20 h-full flex flex-col hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-                    <div className="relative h-48 sm:h-56 md:h-64 mb-3 sm:mb-4 rounded-lg sm:rounded-xl overflow-hidden bg-white/10">
+                    <div className="relative h-48 sm:h-56 md:h-64 mb-3 sm:mb-4 rounded-lg sm:rounded-xl overflow-hidden bg-gradient-to-br from-white/20 to-white/10">
                       <Image
                         src="/images/semi-automatic-strapping-machine.png"
                         alt="Semi automatic strapping machine"
