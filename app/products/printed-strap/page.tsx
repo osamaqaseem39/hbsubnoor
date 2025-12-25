@@ -3,26 +3,28 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Printed Strap | Branded Packaging Straps | Custom Printing | HB Sub Noor Industries',
-  description: 'Printed packaging straps turn your packaging into a mobile billboard. High-contrast, durable, fade-resistant printing for branding, security marking, and logistics communication. Custom logos, taglines, and handling instructions available.',
+  title: 'Best Printed Packaging Straps | Top Quality Branded Straps | HB Sub Noor Industries',
+  description: 'Best printed packaging straps turn your packaging into a mobile billboard. Best quality high-contrast, durable, fade-resistant printing for branding, security marking, and logistics communication. Best printed straps from top manufacturer. Custom logos, taglines, and handling instructions available.',
   keywords: [
-    'printed strap',
-    'branded strap',
-    'custom printed strap',
-    'logo strap',
-    'printed packaging strap',
-    'branded packaging strap',
-    'tamper evident strap',
-    'security marking strap',
-    'custom logo strap',
-    'printed PP strap',
-    'printed PET strap',
-    'packaging branding strap',
-    'HB Sub Noor Industries printed strap'
+    'best printed strap',
+    'best branded strap',
+    'best custom printed strap',
+    'best logo strap',
+    'best printed packaging strap',
+    'best branded packaging strap',
+    'best tamper evident strap',
+    'best security marking strap',
+    'best custom logo strap',
+    'best printed PP strap',
+    'best printed PET strap',
+    'top printed packaging strap',
+    'best quality printed straps',
+    'premium printed strap',
+    'top-rated printed packaging straps'
   ],
   openGraph: {
-    title: 'Printed Strap | Branded Packaging Straps | HB Sub Noor Industries',
-    description: 'Printed packaging straps for branding and security. High-contrast, durable, fade-resistant printing available.',
+    title: 'Best Printed Packaging Straps | Top Quality Branded Straps | HB Sub Noor Industries',
+    description: 'Best printed packaging straps for branding and security. Best quality high-contrast, durable, fade-resistant printing available from best manufacturer.',
     url: 'https://hbsubnoor.com/products/printed-strap',
     type: 'website',
     images: [
@@ -36,8 +38,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Printed Strap | Branded Packaging Straps',
-    description: 'Printed packaging straps for branding and security. Custom logos and printing available.',
+    title: 'Best Printed Packaging Straps | Top Quality Branded Straps',
+    description: 'Best printed packaging straps for branding and security. Best quality custom logos and printing available from best manufacturer.',
     images: ['/images/printed-strap.png'],
   },
   alternates: {
@@ -64,7 +66,7 @@ export default function PrintedStrapPage() {
     "@context": "https://schema.org",
     "@type": "Product",
     "name": "Printed Strap",
-    "description": "Printed packaging straps that turn your packaging into a mobile billboard with high-contrast, durable, fade-resistant printing for branding, security marking, and logistics communication.",
+    "description": "Best printed packaging straps that turn your packaging into a mobile billboard with best quality high-contrast, durable, fade-resistant printing for branding, security marking, and logistics communication. Best printed straps from top manufacturer.",
     "brand": {
       "@type": "Brand",
       "name": "HB Sub Noor Industries",

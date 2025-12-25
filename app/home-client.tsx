@@ -11,7 +11,7 @@ export default function HomePageClient() {
     "@type": "WebSite",
     "name": "HB Sub Noor Industries",
     "url": "https://hbsubnoor.com",
-    "description": "Leading manufacturer of polypropylene (PP) and polyester (PET) strap materials, semi-automatic and automatic strapping machines. Over 25 years of excellence in industrial packaging solutions.",
+    "description": "Best packaging strap manufacturer of polypropylene (PP) and polyester (PET) packaging strap materials, best strapping machine manufacturer (semi-automatic & automatic). Top-rated packaging strap manufacturer in Pakistan with 25+ years excellence. Best quality industrial packaging strap solutions globally.",
     "potentialAction": {
       "@type": "SearchAction",
       "target": {

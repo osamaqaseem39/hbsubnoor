@@ -9,7 +9,7 @@ export default function Products() {
     "@context": "https://schema.org",
     "@type": "ItemList",
     "name": "Packaging Solutions - HB Sub Noor Industries",
-    "description": "Complete ecosystem of packaging security with customizable strap materials and high-speed application machinery",
+    "description": "Best strapping machines (automatic & semi-automatic) and best quality packaging straps (PP/PET). Best custom sized, printed, coloured, and transparent straps. Top-rated industrial packaging strap solutions from best packaging strap manufacturer.",
     "itemListElement": [
       {
         "@type": "ListItem",

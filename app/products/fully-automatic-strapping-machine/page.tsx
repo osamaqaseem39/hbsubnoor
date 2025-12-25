@@ -3,24 +3,27 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Fully Automatic Strapping Machine | High-Speed Automation | Production Line | HB Sub Noor Industries',
-  description: 'Fully automatic strapping machine for high-speed production line integration. Auto-detects packages, tightens to precise settings, and fastens straps with heat-weld closure. Energy-efficient with auto-shutoff sensors. Ideal for 24/7 operations.',
+  title: 'Best Fully Automatic Strapping Machine | Top Quality High-Speed Automation | HB Sub Noor Industries',
+  description: 'Best fully automatic strapping machine for high-speed production line integration. Best automatic strapping machine auto-detects packages, tightens to precise settings, and fastens straps with heat-weld closure. Best energy-efficient machine with auto-shutoff sensors from top manufacturer. Ideal for 24/7 operations.',
   keywords: [
-    'fully automatic strapping machine',
-    'automatic strapping machine',
-    'high-speed strapping machine',
-    'production line strapping',
-    'automated packaging machine',
-    'industrial strapping machine',
-    'automatic PP strap machine',
-    'heat weld strapping machine',
-    'energy efficient strapping machine',
-    '24/7 strapping machine',
-    'HB Sub Noor Industries automatic machine'
+    'best fully automatic strapping machine',
+    'best automatic strapping machine',
+    'best high-speed strapping machine',
+    'best production line strapping',
+    'best automated packaging machine',
+    'best industrial strapping machine',
+    'best automatic PP strap machine',
+    'best heat weld strapping machine',
+    'best energy efficient strapping machine',
+    'top automatic strapping machine',
+    'best quality automatic machine',
+    'premium automatic strapping machine',
+    'top-rated automatic strapping machine',
+    'best 24/7 strapping machine'
   ],
   openGraph: {
-    title: 'Fully Automatic Strapping Machine | High-Speed Automation | HB Sub Noor Industries',
-    description: 'Fully automatic strapping machine for high-speed production line integration. Auto-detects and straps packages automatically.',
+    title: 'Best Fully Automatic Strapping Machine | Top Quality High-Speed Automation | HB Sub Noor Industries',
+    description: 'Best fully automatic strapping machine for high-speed production line integration. Best automatic machine auto-detects and straps packages automatically from best manufacturer.',
     url: 'https://hbsubnoor.com/products/fully-automatic-strapping-machine',
     type: 'website',
     images: [
@@ -34,8 +37,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Fully Automatic Strapping Machine | High-Speed Automation',
-    description: 'Fully automatic strapping machine for production line integration. High-speed automation available.',
+    title: 'Best Fully Automatic Strapping Machine | Top Quality High-Speed Automation',
+    description: 'Best fully automatic strapping machine for production line integration. Best high-speed automation available from best manufacturer.',
     images: ['/images/fully-automatic-strapping-machine-alt.png'],
   },
   alternates: {
@@ -62,7 +65,7 @@ export default function FullyAutomaticStrappingMachinePage() {
     "@context": "https://schema.org",
     "@type": "Product",
     "name": "Fully Automatic Strapping Machine",
-    "description": "High-speed automation solution engineered for production line integration and maximum throughput. Automatically detects packages, tightens to precise settings, and fastens straps with heat-weld closure.",
+    "description": "Best fully automatic strapping machine - best high-speed automation solution engineered for production line integration and maximum throughput. Best automatic machine automatically detects packages, tightens to precise settings, and fastens straps with heat-weld closure from top manufacturer.",
     "brand": {
       "@type": "Brand",
       "name": "HB Sub Noor Industries",

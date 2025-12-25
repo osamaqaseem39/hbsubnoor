@@ -9,12 +9,12 @@ export default function About() {
     "@context": "https://schema.org",
     "@type": "AboutPage",
     "name": "About Us - HB Sub Noor Industries",
-    "description": "Three decades of transforming industrial packaging through cutting-edge technology and unwavering commitment to quality. Building trust through innovation and excellence.",
+    "description": "About best packaging strap manufacturer with three decades of excellence. Top industrial packaging strap manufacturer transforming the industry through cutting-edge technology. Best quality packaging strap manufacturer building trust through innovation.",
     "mainEntity": {
       "@type": "Organization",
       "name": "HB Sub Noor Industries",
       "foundingDate": "1999",
-      "description": "A global leader in comprehensive packaging and strap solutions with over 25 years of operational excellence.",
+      "description": "Best packaging strap manufacturer and global leader in comprehensive packaging strap and strapping machine solutions with over 25 years of operational excellence. Top-rated packaging strap manufacturer of best quality packaging strap solutions.",
       "knowsAbout": [
         "Industrial Packaging",
         "Strap Solutions",

@@ -11,7 +11,7 @@ export default function Company() {
     "alternateName": "HB SUB NOOR",
     "url": "https://hbsubnoor.com",
     "logo": "https://hbsubnoor.com/images/favicon.png",
-    "description": "Excellence in every aspect of operations. Committed to quality, innovation, and building lasting partnerships with industry leaders worldwide.",
+    "description": "Best packaging strap manufacturer company in Pakistan. Leading industrial packaging strap manufacturer with excellence in operations. Top-rated packaging strap manufacturer trusted by industry leaders worldwide. Best quality assurance and innovation in packaging strap solutions.",
     "foundingDate": "1999",
     "address": [
       {

@@ -3,23 +3,26 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Semi Automatic Strapping Machine | Portable | Cost-Effective | HB Sub Noor Industries',
-  description: 'Semi automatic strapping machine - portable, cost-effective solution with rapid 2.5-second cycle time. Adjustable tension 15-45 Kgs. Compatible with 9mm, 12mm, and 15.5mm straps. Perfect for diverse product sizes and mobile packaging stations.',
+  title: 'Best Semi Automatic Strapping Machine | Top Quality Portable Machine | HB Sub Noor Industries',
+  description: 'Best semi automatic strapping machine - best portable, cost-effective solution with rapid 2.5-second cycle time. Best semi automatic machine with adjustable tension 15-45 Kgs from top manufacturer. Compatible with 9mm, 12mm, and 15.5mm straps. Perfect for diverse product sizes and mobile packaging stations.',
   keywords: [
-    'semi automatic strapping machine',
-    'portable strapping machine',
-    'cost effective strapping machine',
-    'semi auto strapping machine',
-    'mobile strapping machine',
-    'portable packaging machine',
-    'semi automatic PP strap machine',
-    'adjustable tension strapping machine',
-    '2.5 second cycle strapping',
-    'HB Sub Noor Industries semi automatic machine'
+    'best semi automatic strapping machine',
+    'best portable strapping machine',
+    'best cost effective strapping machine',
+    'best semi auto strapping machine',
+    'best mobile strapping machine',
+    'best portable packaging machine',
+    'best semi automatic PP strap machine',
+    'best adjustable tension strapping machine',
+    'top semi automatic strapping machine',
+    'best quality semi automatic machine',
+    'premium semi automatic machine',
+    'top-rated semi automatic strapping machine',
+    'best 2.5 second cycle strapping'
   ],
   openGraph: {
-    title: 'Semi Automatic Strapping Machine | Portable | Cost-Effective | HB Sub Noor Industries',
-    description: 'Semi automatic strapping machine - portable, cost-effective solution with rapid 2.5-second cycle time. Perfect for mobile packaging.',
+    title: 'Best Semi Automatic Strapping Machine | Top Quality Portable Machine | HB Sub Noor Industries',
+    description: 'Best semi automatic strapping machine - best portable, cost-effective solution with rapid 2.5-second cycle time from best manufacturer. Perfect for mobile packaging.',
     url: 'https://hbsubnoor.com/products/semi-automatic-strapping-machine',
     type: 'website',
     images: [
@@ -33,8 +36,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Semi Automatic Strapping Machine | Portable Solution',
-    description: 'Semi automatic strapping machine - portable, cost-effective with rapid cycle time.',
+    title: 'Best Semi Automatic Strapping Machine | Top Quality Portable Machine',
+    description: 'Best semi automatic strapping machine - best portable, cost-effective with rapid cycle time from best manufacturer.',
     images: ['/images/semi-automatic-strapping-machine.png'],
   },
   alternates: {
@@ -61,7 +64,7 @@ export default function SemiAutomaticStrappingMachinePage() {
     "@context": "https://schema.org",
     "@type": "Product",
     "name": "Semi Automatic Strapping Machine",
-    "description": "Cost-effective, portable solution offering flexibility without compromising on sealing integrity or speed. Rapid 2.5-second cycle time with adjustable tension from 15-45 Kgs.",
+      "description": "Best semi automatic strapping machine - best cost-effective, portable solution offering flexibility without compromising on sealing integrity or speed. Best semi automatic machine with rapid 2.5-second cycle time and adjustable tension from 15-45 Kgs from top manufacturer.",
     "brand": {
       "@type": "Brand",
       "name": "HB Sub Noor Industries",

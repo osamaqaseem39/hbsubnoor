@@ -8,7 +8,7 @@ export default function Services() {
   const serviceStructuredData = {
     "@context": "https://schema.org",
     "@type": "Service",
-    "serviceType": "Industrial Packaging Solutions",
+    "serviceType": "Best Industrial Packaging Strap Solutions",
     "provider": {
       "@type": "Organization",
       "name": "HB Sub Noor Industries",
@@ -20,7 +20,7 @@ export default function Services() {
     },
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
-      "name": "Packaging Services",
+      "name": "Best Packaging Strap Services",
       "itemListElement": [
         {
           "@type": "Offer",

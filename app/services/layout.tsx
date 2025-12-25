@@ -1,20 +1,22 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Services | Industrial Packaging Solutions & Support | HB Sub Noor Industries',
-  description: 'End-to-end packaging solutions that combine superior products with expert service and support. Custom manufacturing, machinery solutions, technical support, and supply chain solutions. Comprehensive packaging services across Pakistan and globally.',
+  title: 'Best Packaging Strap Services | Top Industrial Packaging Strap Solutions & Support | HB Sub Noor Industries',
+  description: 'Best packaging strap services from top packaging strap manufacturer. Best custom strap manufacturing, best strapping machinery solutions, best technical support, and best supply chain solutions. Top-rated packaging strap services across Pakistan and globally from best packaging strap manufacturer.',
   keywords: [
-    'packaging services',
-    'custom manufacturing',
-    'strapping machine solutions',
-    'technical support packaging',
-    'supply chain solutions',
-    'packaging consultation',
-    'industrial packaging services',
-    'custom strap manufacturing',
-    'packaging machinery support',
-    'HB Sub Noor Industries services',
-    'packaging solutions Pakistan'
+    'best packaging services',
+    'best custom manufacturing',
+    'best strapping machine solutions',
+    'best technical support packaging',
+    'best supply chain solutions',
+    'top packaging consultation',
+    'best industrial packaging services',
+    'best custom strap manufacturing',
+    'best packaging machinery support',
+    'top-rated packaging services',
+    'best manufacturer services',
+    'premium packaging solutions',
+    'best packaging services Pakistan'
   ],
   authors: [{ name: 'HB Sub Noor Industries' }],
   creator: 'HB Sub Noor Industries',
@@ -26,8 +28,8 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: 'https://hbsubnoor.com/services',
-    title: 'Services | Industrial Packaging Solutions & Support | HB Sub Noor Industries',
-    description: 'End-to-end packaging solutions that combine superior products with expert service and support. Custom manufacturing, machinery solutions, and technical support available.',
+    title: 'Best Packaging Strap Services | Top Industrial Packaging Strap Solutions & Support | HB Sub Noor Industries',
+    description: 'Best packaging strap services from top packaging strap manufacturer. Best custom strap manufacturing, best strapping machinery solutions, and best technical support available from best packaging strap manufacturer.',
     siteName: 'HB Sub Noor Industries',
     images: [
       {
@@ -41,8 +43,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Services | Industrial Packaging Solutions & Support',
-    description: 'End-to-end packaging solutions with expert service and support. Custom manufacturing and machinery solutions available.',
+    title: 'Best Packaging Strap Services | Top Industrial Packaging Strap Solutions & Support',
+    description: 'Best packaging strap services from top packaging strap manufacturer. Best custom strap manufacturing, best strapping machinery solutions, and best technical support available.',
     images: ['/images/hb-sub-noor-industries-logo.png'],
     creator: '@hbsubnoor',
     site: '@hbsubnoor',

@@ -3,25 +3,28 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Coloured Strap | Color-Coded Packaging Straps | Warehouse Management | HB Sub Noor Industries',
-  description: 'Coloured packaging straps for warehouse management, tracking, and safety protocols. Use different colors for inventory management (FIFO), product identification, destination coding, and safety marking. Reduces staging and shipping errors.',
+  title: 'Best Coloured Packaging Straps | Top Quality Color-Coded Straps | HB Sub Noor Industries',
+  description: 'Best coloured packaging straps for warehouse management, tracking, and safety protocols. Best quality color-coded straps for inventory management (FIFO), product identification, destination coding, and safety marking. Best coloured straps from top manufacturer. Reduces staging and shipping errors.',
   keywords: [
-    'coloured strap',
-    'colored strap',
-    'color coded strap',
-    'colored packaging strap',
-    'warehouse management strap',
-    'inventory management strap',
-    'FIFO strap',
-    'safety coded strap',
-    'product identification strap',
-    'colored PP strap',
-    'colored PET strap',
-    'HB Sub Noor Industries colored strap'
+    'best coloured strap',
+    'best colored strap',
+    'best color coded strap',
+    'best colored packaging strap',
+    'best warehouse management strap',
+    'best inventory management strap',
+    'best FIFO strap',
+    'best safety coded strap',
+    'best product identification strap',
+    'best colored PP strap',
+    'best colored PET strap',
+    'top colored packaging strap',
+    'best quality colored straps',
+    'premium colored strap',
+    'top-rated colored packaging straps'
   ],
   openGraph: {
-    title: 'Coloured Strap | Color-Coded Packaging Straps | HB Sub Noor Industries',
-    description: 'Coloured packaging straps for warehouse management, tracking, and safety protocols. Full spectrum colors available.',
+    title: 'Best Coloured Packaging Straps | Top Quality Color-Coded Straps | HB Sub Noor Industries',
+    description: 'Best coloured packaging straps for warehouse management, tracking, and safety protocols. Best quality full spectrum colors available from best manufacturer.',
     url: 'https://hbsubnoor.com/products/coloured-strap',
     type: 'website',
     images: [
@@ -35,8 +38,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Coloured Strap | Color-Coded Packaging Straps',
-    description: 'Coloured packaging straps for warehouse management and tracking. Full spectrum colors available.',
+    title: 'Best Coloured Packaging Straps | Top Quality Color-Coded Straps',
+    description: 'Best coloured packaging straps for warehouse management and tracking. Best quality full spectrum colors available from best manufacturer.',
     images: ['/images/coloured-strap.png'],
   },
   alternates: {
@@ -63,7 +66,7 @@ export default function ColouredStrapPage() {
     "@context": "https://schema.org",
     "@type": "Product",
     "name": "Coloured Strap",
-    "description": "Coloured packaging straps that serve as powerful tools for warehouse management, tracking, and safety protocols through visual identification.",
+    "description": "Best coloured packaging straps that serve as powerful tools for warehouse management, tracking, and safety protocols through visual identification. Best quality colored straps from top manufacturer.",
     "brand": {
       "@type": "Brand",
       "name": "HB Sub Noor Industries",

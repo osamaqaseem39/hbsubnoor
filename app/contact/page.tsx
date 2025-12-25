@@ -9,7 +9,7 @@ export default function Contact() {
     "@context": "https://schema.org",
     "@type": "ContactPage",
     "name": "Contact Us - HB Sub Noor Industries",
-    "description": "Get in touch with HB Sub Noor Industries for packaging solutions, quotes, and technical support.",
+    "description": "Contact best packaging strap manufacturer for best packaging strap solutions, best quotes, and best technical support. Contact best packaging strap manufacturer today for best product information or request a quote from top packaging strap manufacturer.",
     "mainEntity": {
       "@type": "Organization",
       "name": "HB Sub Noor Industries",
