@@ -42,6 +42,20 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/products/transparent-strap',
   },
+  authors: [{ name: 'HB Sub Noor Industries' }],
+  creator: 'HB Sub Noor Industries',
+  publisher: 'HB Sub Noor Industries',
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
 };
 
 export default function TransparentStrapPage() {
