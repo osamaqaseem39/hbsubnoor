@@ -109,13 +109,13 @@ export default function Company() {
         <div className="container mx-auto max-w-6xl relative z-10 text-center">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-black/20 backdrop-blur-sm rounded-full border border-white/20 mb-6">
             <span className="w-2 h-2 bg-white rounded-full animate-pulse"></span>
-            <span className="text-sm font-semibold text-black">Our Company</span>
+            <span className="text-sm font-semibold text-white">Our Company</span>
           </div>
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight mb-6 text-black">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight mb-6 text-white">
             <span className="block">Excellence in Every</span>
             <span className="block drop-shadow-2xl">Aspect of Operations</span>
           </h1>
-          <p className="text-xl md:text-2xl text-black/80 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl md:text-2xl text-white/80 max-w-3xl mx-auto leading-relaxed">
             Committed to quality, innovation, and building lasting partnerships with industry leaders worldwide
           </p>
         </div>
@@ -170,7 +170,7 @@ export default function Company() {
         </section>
       </AnimateOnScroll>
 
-      {/* Client Logos */}
+      {/* Trusted Partners */}
       <AnimateOnScroll animation="fadeInDown" delay={0}>
         <section className="py-12 px-4 bg-bg-primary relative overflow-hidden">
         <div className="absolute inset-0 opacity-[0.02]" style={{
@@ -181,11 +181,11 @@ export default function Company() {
         <div className="container mx-auto max-w-7xl relative z-10">
           <div className="max-w-4xl mx-auto text-center mb-4 sm:mb-5 md:mb-6">
             <p className="text-xs sm:text-sm md:text-base uppercase tracking-[0.3em] sm:tracking-[0.4em] text-bg-accent mb-2">
-              Our Clients
+              Trusted Partners
             </p>
             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-text-heading leading-tight mb-2">
-              <span className="block">Trusted by</span>
-              <span className="block drop-shadow-2xl">Industry Leaders</span>
+              <span className="block">Our Valued</span>
+              <span className="block drop-shadow-2xl">Partners</span>
             </h2>
           </div>
           <div className="text-center mb-8">

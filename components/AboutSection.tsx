@@ -41,13 +41,13 @@ export default function AboutSection({ showHero = false, variant = 'full' }: Abo
           <div className="container mx-auto max-w-6xl relative z-10 text-center">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-black/20 backdrop-blur-sm rounded-full border border-white/20 mb-6">
               <span className="w-2 h-2 bg-white rounded-full animate-pulse"></span>
-              <span className="text-sm font-semibold text-black">Our Story</span>
+              <span className="text-sm font-semibold text-white">Our Story</span>
             </div>
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight mb-6 text-black">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight mb-6 text-white">
               <span className="block">Building Trust Through</span>
               <span className="block drop-shadow-2xl">Innovation & Excellence</span>
             </h1>
-            <p className="text-xl md:text-2xl text-black/80 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl md:text-2xl text-white/80 max-w-3xl mx-auto leading-relaxed">
               Three decades of transforming industrial packaging through cutting-edge technology and unwavering commitment to quality
             </p>
           </div>
@@ -67,107 +67,127 @@ export default function AboutSection({ showHero = false, variant = 'full' }: Abo
             <AnimateOnScroll animation="fadeInUp" delay={100}>
               <div className="max-w-4xl mx-auto text-center mb-4 sm:mb-5 md:mb-6">
                 <p className="text-xs sm:text-sm md:text-base uppercase tracking-[0.3em] sm:tracking-[0.4em] text-bg-accent mb-2">
-                  Our Journey
+                  Our Story
                 </p>
                 <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-text-heading leading-tight mb-2">
-                  <span className="block">Our Journey</span>
+                  <span className="block">Two Decades of</span>
+                  <span className="block drop-shadow-2xl">Excellence</span>
                 </h2>
               </div>
               <div className="text-center mb-8">
                 <p className="text-lg text-text-secondary mt-6 max-w-2xl mx-auto">
-                  From a vision to a global leader—discover the milestones that shaped our company
+                  From humble beginnings to industry leadership—explore the milestones that define our commitment to innovation and quality
                 </p>
               </div>
             </AnimateOnScroll>
 
-            <div className="relative py-24 md:py-32 overflow-x-hidden min-h-[600px] md:min-h-[700px]">
-              <div className="absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-bg-accent via-bg-accent/50 to-bg-accent/20 hidden md:block -translate-y-1/2 z-0"></div>
+            <div className="relative py-8 md:py-12">
+              {/* Vertical timeline line - only visible on desktop, starts from first circle center */}
+              <div className="hidden md:block absolute top-[3.5rem] bottom-0 left-1/2 w-0.5 bg-gradient-to-b from-bg-accent via-bg-accent/50 to-bg-accent/20 -translate-x-1/2 z-0"></div>
 
               <AnimateOnScroll animation="stagger" delay={200}>
-                <div className="flex flex-col md:flex-row items-start md:items-stretch gap-8 md:gap-6 lg:gap-8 pb-8 md:pb-0 w-full relative md:h-[600px]">
-                <div className="relative flex flex-col items-center justify-center gap-4 min-w-[200px] md:min-w-0 flex-1 md:h-full">
-                  <div className="bg-bg-card p-4 rounded-xl border-t-4 border-border-accent shadow-lg text-center mb-4 md:mb-0 md:absolute md:top-0 md:left-1/2 md:-translate-x-1/2 md:-translate-y-full md:mb-8">
-                    <h3 className="text-lg font-bold mb-2 text-text-heading">Strategic Entry</h3>
-                    <p className="text-sm text-text-primary">
-                      Entered the strip packaging business, establishing our foundation in industrial packaging.
-                    </p>
+                <div className="relative max-w-5xl mx-auto space-y-8 md:space-y-10">
+                  {/* Timeline Item 1 - Left */}
+                  <div className="relative flex flex-col md:flex-row items-center gap-4 md:gap-6">
+                    <div className="w-full md:w-5/12 md:pr-6 order-2 md:order-1 md:text-right">
+                      <div className="bg-bg-card p-5 rounded-xl border-l-4 md:border-l-0 md:border-r-4 border-border-accent shadow-lg">
+                        <h3 className="text-xl font-bold mb-2 text-text-heading">Strategic Entry</h3>
+                        <p className="text-sm md:text-base text-text-primary">
+                          Entered the strip packaging business, establishing our foundation in industrial packaging.
+                        </p>
+                      </div>
+                    </div>
+                    <div className="w-24 h-24 md:w-28 md:h-28 bg-bg-accent rounded-full flex flex-col items-center justify-center text-white z-10 shadow-lg flex-shrink-0 order-1 md:order-2">
+                      <span className="text-2xl md:text-3xl mb-1">🚀</span>
+                      <span className="text-xs md:text-sm font-bold">2004</span>
+                    </div>
+                    <div className="hidden md:block w-5/12 order-3"></div>
                   </div>
-                  <div className="w-32 h-32 bg-bg-accent rounded-full flex flex-col items-center justify-center text-white z-10 shadow-lg relative md:absolute md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 md:transform">
-                    <span className="text-3xl mb-1">🚀</span>
-                    <span className="text-sm font-bold">2004</span>
-                  </div>
-                  <div className="hidden md:block h-40"></div>
-                </div>
 
-                <div className="relative flex flex-col items-center justify-center gap-4 min-w-[200px] md:min-w-0 flex-1 md:h-full">
-                  <div className="bg-bg-card p-4 rounded-xl border-t-4 border-border-accent shadow-lg text-center mb-4 md:mb-0 md:absolute md:top-0 md:left-1/2 md:-translate-x-1/2 md:-translate-y-full md:mb-8">
-                    <h3 className="text-lg font-bold mb-2 text-text-heading">First Production Line</h3>
-                    <p className="text-sm text-text-primary">
-                      Launched our first production line, expanding manufacturing capabilities.
-                    </p>
+                  {/* Timeline Item 2 - Right */}
+                  <div className="relative flex flex-col md:flex-row items-center gap-4 md:gap-6">
+                    <div className="hidden md:block w-5/12 order-1"></div>
+                    <div className="w-24 h-24 md:w-28 md:h-28 bg-bg-accent rounded-full flex flex-col items-center justify-center text-white z-10 shadow-lg flex-shrink-0 order-1 md:order-2">
+                      <span className="text-2xl md:text-3xl mb-1">🏭</span>
+                      <span className="text-xs md:text-sm font-bold">2008</span>
+                    </div>
+                    <div className="w-full md:w-5/12 md:pl-6 order-2 md:order-3 md:text-left">
+                      <div className="bg-bg-card p-5 rounded-xl border-l-4 border-border-accent shadow-lg">
+                        <h3 className="text-xl font-bold mb-2 text-text-heading">First Production Line</h3>
+                        <p className="text-sm md:text-base text-text-primary">
+                          Launched our first production line, expanding manufacturing capabilities.
+                        </p>
+                      </div>
+                    </div>
                   </div>
-                  <div className="w-32 h-32 bg-bg-accent rounded-full flex flex-col items-center justify-center text-white z-10 shadow-lg relative md:absolute md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 md:transform">
-                    <span className="text-3xl mb-1">🏭</span>
-                    <span className="text-sm font-bold">2008</span>
-                  </div>
-                  <div className="hidden md:block h-40"></div>
-                </div>
 
-                <div className="relative flex flex-col items-center justify-center gap-4 min-w-[200px] md:min-w-0 flex-1 md:h-full">
-                  <div className="bg-bg-card p-4 rounded-xl border-t-4 border-border-accent shadow-lg text-center mb-4 md:mb-0 md:absolute md:top-0 md:left-1/2 md:-translate-x-1/2 md:-translate-y-full md:mb-8">
-                    <h3 className="text-lg font-bold mb-2 text-text-heading">Scaling Up</h3>
-                    <p className="text-sm text-text-primary">
-                      Opened second production line, doubling capacity and market reach.
-                    </p>
+                  {/* Timeline Item 3 - Left */}
+                  <div className="relative flex flex-col md:flex-row items-center gap-4 md:gap-6">
+                    <div className="w-full md:w-5/12 md:pr-6 order-2 md:order-1 md:text-right">
+                      <div className="bg-bg-card p-5 rounded-xl border-l-4 md:border-l-0 md:border-r-4 border-border-accent shadow-lg">
+                        <h3 className="text-xl font-bold mb-2 text-text-heading">Scaling Up</h3>
+                        <p className="text-sm md:text-base text-text-primary">
+                          Opened second production line, doubling capacity and market reach.
+                        </p>
+                      </div>
+                    </div>
+                    <div className="w-24 h-24 md:w-28 md:h-28 bg-bg-accent rounded-full flex flex-col items-center justify-center text-white z-10 shadow-lg flex-shrink-0 order-1 md:order-2">
+                      <span className="text-2xl md:text-3xl mb-1">📈</span>
+                      <span className="text-xs md:text-sm font-bold">2011</span>
+                    </div>
+                    <div className="hidden md:block w-5/12 order-3"></div>
                   </div>
-                  <div className="w-32 h-32 bg-bg-accent rounded-full flex flex-col items-center justify-center text-white z-10 shadow-lg relative md:absolute md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 md:transform">
-                    <span className="text-3xl mb-1">📈</span>
-                    <span className="text-sm font-bold">2011</span>
-                  </div>
-                  <div className="hidden md:block h-40"></div>
-                </div>
 
-                <div className="relative flex flex-col items-center justify-center gap-4 min-w-[200px] md:min-w-0 flex-1 md:h-full">
-                  <div className="bg-bg-card p-4 rounded-xl border-t-4 border-border-accent shadow-lg text-center mb-4 md:mb-0 md:absolute md:top-0 md:left-1/2 md:-translate-x-1/2 md:-translate-y-full md:mb-8">
-                    <h3 className="text-lg font-bold mb-2 text-text-heading">Growing Up</h3>
-                    <p className="text-sm text-text-primary">
-                      Launched third production line, strengthening market position.
-                    </p>
+                  {/* Timeline Item 4 - Right */}
+                  <div className="relative flex flex-col md:flex-row items-center gap-4 md:gap-6">
+                    <div className="hidden md:block w-5/12 order-1"></div>
+                    <div className="w-24 h-24 md:w-28 md:h-28 bg-bg-accent rounded-full flex flex-col items-center justify-center text-white z-10 shadow-lg flex-shrink-0 order-1 md:order-2">
+                      <span className="text-2xl md:text-3xl mb-1">🌱</span>
+                      <span className="text-xs md:text-sm font-bold">2015</span>
+                    </div>
+                    <div className="w-full md:w-5/12 md:pl-6 order-2 md:order-3 md:text-left">
+                      <div className="bg-bg-card p-5 rounded-xl border-l-4 border-border-accent shadow-lg">
+                        <h3 className="text-xl font-bold mb-2 text-text-heading">Growing Up</h3>
+                        <p className="text-sm md:text-base text-text-primary">
+                          Launched third production line, strengthening market position.
+                        </p>
+                      </div>
+                    </div>
                   </div>
-                  <div className="w-32 h-32 bg-bg-accent rounded-full flex flex-col items-center justify-center text-white z-10 shadow-lg relative md:absolute md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 md:transform">
-                    <span className="text-3xl mb-1">🌱</span>
-                    <span className="text-sm font-bold">2015</span>
-                  </div>
-                  <div className="hidden md:block h-40"></div>
-                </div>
 
-                <div className="relative flex flex-col items-center justify-center gap-4 min-w-[200px] md:min-w-0 flex-1 md:h-full">
-                  <div className="bg-bg-card p-4 rounded-xl border-t-4 border-border-accent shadow-lg text-center mb-4 md:mb-0 md:absolute md:top-0 md:left-1/2 md:-translate-x-1/2 md:-translate-y-full md:mb-8">
-                    <h3 className="text-lg font-bold mb-2 text-text-heading">Global Expansion</h3>
-                    <p className="text-sm text-text-primary">
-                      Fourth production line online, expanding worldwide reach.
-                    </p>
+                  {/* Timeline Item 5 - Left */}
+                  <div className="relative flex flex-col md:flex-row items-center gap-4 md:gap-6">
+                    <div className="w-full md:w-5/12 md:pr-6 order-2 md:order-1 md:text-right">
+                      <div className="bg-bg-card p-5 rounded-xl border-l-4 md:border-l-0 md:border-r-4 border-border-accent shadow-lg">
+                        <h3 className="text-xl font-bold mb-2 text-text-heading">Global Expansion</h3>
+                        <p className="text-sm md:text-base text-text-primary">
+                          Fourth production line online, expanding worldwide reach.
+                        </p>
+                      </div>
+                    </div>
+                    <div className="w-24 h-24 md:w-28 md:h-28 bg-bg-accent rounded-full flex flex-col items-center justify-center text-white z-10 shadow-lg flex-shrink-0 order-1 md:order-2">
+                      <span className="text-2xl md:text-3xl mb-1">💪</span>
+                      <span className="text-xs md:text-sm font-bold">2018</span>
+                    </div>
+                    <div className="hidden md:block w-5/12 order-3"></div>
                   </div>
-                  <div className="w-32 h-32 bg-bg-accent rounded-full flex flex-col items-center justify-center text-white z-10 shadow-lg relative md:absolute md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 md:transform">
-                    <span className="text-3xl mb-1">💪</span>
-                    <span className="text-sm font-bold">2018</span>
-                  </div>
-                  <div className="hidden md:block h-40"></div>
-                </div>
 
-                <div className="relative flex flex-col items-center justify-center gap-4 min-w-[200px] md:min-w-0 flex-1 md:h-full">
-                  <div className="bg-bg-card p-4 rounded-xl border-t-4 border-border-accent shadow-lg text-center mb-4 md:mb-0 md:absolute md:top-0 md:left-1/2 md:-translate-x-1/2 md:-translate-y-full md:mb-8">
-                    <h3 className="text-lg font-bold mb-2 text-text-heading">Innovation Leader</h3>
-                    <p className="text-sm text-text-primary">
-                      Advancing automation and sustainable manufacturing practices.
-                    </p>
+                  {/* Timeline Item 6 - Right */}
+                  <div className="relative flex flex-col md:flex-row items-center gap-4 md:gap-6">
+                    <div className="hidden md:block w-5/12 order-1"></div>
+                    <div className="w-24 h-24 md:w-28 md:h-28 bg-bg-accent rounded-full flex flex-col items-center justify-center text-white z-10 shadow-lg flex-shrink-0 order-1 md:order-2">
+                      <span className="text-2xl md:text-3xl mb-1">🌟</span>
+                      <span className="text-xs md:text-sm font-bold">2025</span>
+                    </div>
+                    <div className="w-full md:w-5/12 md:pl-6 order-2 md:order-3 md:text-left">
+                      <div className="bg-bg-card p-5 rounded-xl border-l-4 border-border-accent shadow-lg">
+                        <h3 className="text-xl font-bold mb-2 text-text-heading">Innovation Leader</h3>
+                        <p className="text-sm md:text-base text-text-primary">
+                          Advancing automation and sustainable manufacturing practices.
+                        </p>
+                      </div>
+                    </div>
                   </div>
-                  <div className="w-32 h-32 bg-bg-accent rounded-full flex flex-col items-center justify-center text-white z-10 shadow-lg relative md:absolute md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 md:transform">
-                    <span className="text-3xl mb-1">🌟</span>
-                    <span className="text-sm font-bold">2025</span>
-                  </div>
-                  <div className="hidden md:block h-40"></div>
-                </div>
                 </div>
               </AnimateOnScroll>
             </div>
@@ -188,16 +208,16 @@ export default function AboutSection({ showHero = false, variant = 'full' }: Abo
           <AnimateOnScroll animation="fadeInUp" delay={100}>
             <div className="max-w-4xl mx-auto text-center mb-4 sm:mb-5 md:mb-6">
               <p className="text-xs sm:text-sm md:text-base uppercase tracking-[0.3em] sm:tracking-[0.4em] text-bg-accent mb-2">
-                Our Values
+                What We Stand For
               </p>
               <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-text-heading leading-tight mb-2">
-                <span className="block">Our Core</span>
-                <span className="block drop-shadow-2xl">Values</span>
+                <span className="block">Our Foundation</span>
+                <span className="block drop-shadow-2xl">of Excellence</span>
               </h2>
             </div>
             <div className="text-center mb-8">
               <p className="text-lg text-text-secondary mt-6 max-w-2xl mx-auto">
-                The principles that guide every decision, every product, and every relationship
+                The core principles that drive our commitment to quality, innovation, and lasting partnerships
               </p>
             </div>
           </AnimateOnScroll>
@@ -318,12 +338,12 @@ export default function AboutSection({ showHero = false, variant = 'full' }: Abo
               <p className="text-xs sm:text-sm md:text-base uppercase tracking-[0.3em] sm:tracking-[0.4em] text-bg-accent mb-2">
                 Connect With Us
               </p>
-              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-text-heading leading-tight mb-2">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-2">
                 <span className="block">Join Us on</span>
                 <span className="block drop-shadow-2xl">This Journey</span>
               </h2>
             </div>
-            <p className="text-xl mb-6">
+            <p className="text-xl mb-6 text-white">
               Whether you're a long-time partner or exploring new possibilities, we'd love to connect and discuss how we can support your packaging needs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -335,7 +355,7 @@ export default function AboutSection({ showHero = false, variant = 'full' }: Abo
               </Link>
               <Link 
                 href="/company" 
-                className="inline-block bg-white/10 backdrop-blur-md border-2 border-white/30 text-black px-8 py-3 rounded-lg font-semibold hover:bg-white/20 transition-colors"
+                className="inline-block bg-white/10 backdrop-blur-md border-2 border-white/30 text-white px-8 py-3 rounded-lg font-semibold hover:bg-white/20 transition-colors"
               >
                 Learn About Our Company
               </Link>

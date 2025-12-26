@@ -57,15 +57,15 @@ export default function ProductsSection({ showHero = false, variant = 'full' }: 
             <div className="text-center space-y-4">
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-black/20 backdrop-blur-sm rounded-full border border-white/20 animate-fade-in">
                 <span className="w-2 h-2 bg-white rounded-full animate-pulse"></span>
-                <span className="text-lg md:text-xl font-semibold text-black">Our Products</span>
+                <span className="text-lg md:text-xl font-semibold text-white">Our Products</span>
               </div>
 
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight animate-fade-in-up text-black">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight animate-fade-in-up text-white">
                 <span className="block">Comprehensive</span>
                 <span className="block drop-shadow-2xl">Packaging Solutions</span>
               </h1>
 
-              <p className="text-lg md:text-xl text-black/80 max-w-3xl mx-auto leading-relaxed animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+              <p className="text-lg md:text-xl text-white/80 max-w-3xl mx-auto leading-relaxed animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
                 Complete ecosystem of packaging security with customizable strap materials and high-speed application machinery
               </p>
             </div>

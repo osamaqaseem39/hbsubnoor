@@ -121,13 +121,13 @@ export default function Services() {
         <div className="container mx-auto max-w-6xl relative z-10 text-center">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-black/20 backdrop-blur-sm rounded-full border border-white/20 mb-6">
             <span className="w-2 h-2 bg-white rounded-full animate-pulse"></span>
-            <span className="text-sm font-semibold text-black">Our Services</span>
+            <span className="text-sm font-semibold text-white">Our Services</span>
           </div>
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight mb-6 text-black">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight mb-6 text-white">
             <span className="block">Comprehensive Packaging</span>
             <span className="block drop-shadow-2xl">Solutions & Support</span>
           </h1>
-          <p className="text-xl md:text-2xl text-black/80 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl md:text-2xl text-white/80 max-w-3xl mx-auto leading-relaxed">
             End-to-end packaging solutions that combine superior products with expert service and support
           </p>
         </div>

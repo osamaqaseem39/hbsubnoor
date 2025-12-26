@@ -180,13 +180,13 @@ export default function PrintedStrapPage() {
             <div className="text-center space-y-6">
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-black/20 backdrop-blur-sm rounded-full border border-white/20">
                 <span className="w-2 h-2 bg-white rounded-full animate-pulse"></span>
-                <span className="text-sm font-semibold text-black">Packaging Straps</span>
+                <span className="text-sm font-semibold text-white">Packaging Straps</span>
               </div>
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight text-black">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight text-white">
                 <span className="block">Printed</span>
                 <span className="block drop-shadow-2xl">Strap</span>
               </h1>
-              <p className="text-lg md:text-xl text-black/80 max-w-3xl mx-auto">
+              <p className="text-lg md:text-xl text-white/80 max-w-3xl mx-auto">
                 Turn your packaging into a mobile billboard with high-contrast, durable printing
               </p>
             </div>

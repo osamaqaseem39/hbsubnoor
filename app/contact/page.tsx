@@ -273,13 +273,13 @@ export default function Contact() {
         <div className="container mx-auto max-w-6xl relative z-10 text-center">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-black/20 backdrop-blur-sm rounded-full border border-white/20 mb-6">
             <span className="w-2 h-2 bg-white rounded-full animate-pulse"></span>
-            <span className="text-sm font-semibold text-black">Get in Touch</span>
+            <span className="text-sm font-semibold text-white">Get in Touch</span>
           </div>
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight mb-6 text-black">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight mb-6 text-white">
             <span className="block">Let's Start a</span>
             <span className="block drop-shadow-2xl">Conversation</span>
           </h1>
-          <p className="text-xl md:text-2xl text-black/80 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl md:text-2xl text-white/80 max-w-3xl mx-auto leading-relaxed">
             Ready to find the most cost-effective and secure packaging solution for your business? We're here to help.
           </p>
         </div>
@@ -539,8 +539,14 @@ export default function Contact() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="group bg-bg-card p-6 rounded-2xl border border-border-accent/20 hover:border-border-accent shadow-lg transition-all duration-300 hover:-translate-y-2">
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-12 h-12 bg-gradient-to-br from-bg-accent to-bg-accent/70 rounded-full flex items-center justify-center text-xl font-bold text-white">
-                  M
+                <div className="w-16 h-16 bg-white rounded-lg flex items-center justify-center p-2 border border-border-accent/20">
+                  <Image
+                    src="/images/master.png"
+                    alt="MASTER logo"
+                    width={60}
+                    height={60}
+                    className="object-contain w-full h-full"
+                  />
                 </div>
                 <h4 className="font-bold text-xl text-text-heading">MASTER</h4>
               </div>
@@ -551,8 +557,14 @@ export default function Contact() {
             
             <div className="group bg-bg-card p-6 rounded-2xl border border-border-accent/20 hover:border-border-accent shadow-lg transition-all duration-300 hover:-translate-y-2">
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-12 h-12 bg-gradient-to-br from-bg-accent to-bg-accent/70 rounded-full flex items-center justify-center text-xl font-bold text-white">
-                  P
+                <div className="w-16 h-16 bg-white rounded-lg flex items-center justify-center p-2 border border-border-accent/20">
+                  <Image
+                    src="/images/popular.png"
+                    alt="POPULAR PIPES logo"
+                    width={60}
+                    height={60}
+                    className="object-contain w-full h-full"
+                  />
                 </div>
                 <h4 className="font-bold text-xl text-text-heading">POPULAR PIPES</h4>
               </div>
@@ -563,8 +575,14 @@ export default function Contact() {
             
             <div className="group bg-bg-card p-6 rounded-2xl border border-border-accent/20 hover:border-border-accent shadow-lg transition-all duration-300 hover:-translate-y-2">
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-12 h-12 bg-gradient-to-br from-bg-accent to-bg-accent/70 rounded-full flex items-center justify-center text-xl font-bold text-white">
-                  W
+                <div className="w-16 h-16 bg-white rounded-lg flex items-center justify-center p-2 border border-border-accent/20">
+                  <Image
+                    src="/images/waves.png"
+                    alt="WAVES logo"
+                    width={60}
+                    height={60}
+                    className="object-contain w-full h-full"
+                  />
                 </div>
                 <h4 className="font-bold text-xl text-text-heading">WAVES</h4>
               </div>
@@ -575,8 +593,14 @@ export default function Contact() {
             
             <div className="group bg-bg-card p-6 rounded-2xl border border-border-accent/20 hover:border-border-accent shadow-lg transition-all duration-300 hover:-translate-y-2">
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-12 h-12 bg-gradient-to-br from-bg-accent to-bg-accent/70 rounded-full flex items-center justify-center text-xl font-bold text-white">
-                  S
+                <div className="w-16 h-16 bg-white rounded-lg flex items-center justify-center p-2 border border-border-accent/20">
+                  <Image
+                    src="/images/servo.png"
+                    alt="Servo Motor-Oil logo"
+                    width={60}
+                    height={60}
+                    className="object-contain w-full h-full"
+                  />
                 </div>
                 <h4 className="font-bold text-xl text-text-heading">Servo Motor-Oil</h4>
               </div>
@@ -587,8 +611,14 @@ export default function Contact() {
             
             <div className="group bg-bg-card p-6 rounded-2xl border border-border-accent/20 hover:border-border-accent shadow-lg transition-all duration-300 hover:-translate-y-2 md:col-span-2 lg:col-span-1">
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-12 h-12 bg-gradient-to-br from-bg-accent to-bg-accent/70 rounded-full flex items-center justify-center text-xl font-bold text-white">
-                  O
+                <div className="w-16 h-16 bg-white rounded-lg flex items-center justify-center p-2 border border-border-accent/20">
+                  <Image
+                    src="/images/ozone.png"
+                    alt="Ozone INTERNATIONAL logo"
+                    width={60}
+                    height={60}
+                    className="object-contain w-full h-full"
+                  />
                 </div>
                 <h4 className="font-bold text-xl text-text-heading">Ozone INTERNATIONAL</h4>
               </div>

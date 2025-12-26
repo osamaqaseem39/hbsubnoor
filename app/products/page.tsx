@@ -147,33 +147,33 @@ export default function Products() {
               {/* Badge */}
               <div className="inline-flex items-center gap-2 px-5 py-2.5 bg-black/20 backdrop-blur-sm rounded-full border border-white/20 animate-fade-in">
                 <span className="w-2.5 h-2.5 bg-white rounded-full animate-pulse"></span>
-                <span className="text-sm font-semibold text-black">Complete Packaging Solutions</span>
+                <span className="text-sm font-semibold text-white">Complete Packaging Solutions</span>
               </div>
 
               {/* Main Heading */}
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight animate-fade-in-up text-black">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight animate-fade-in-up text-white">
                 <span className="block">Premium</span>
                 <span className="block drop-shadow-2xl">Packaging Products</span>
               </h1>
 
               {/* Description */}
-              <p className="text-xl md:text-2xl lg:text-3xl text-black/80 max-w-4xl mx-auto leading-relaxed animate-fade-in-up font-medium" style={{ animationDelay: '0.2s' }}>
+              <p className="text-xl md:text-2xl lg:text-3xl text-white/80 max-w-4xl mx-auto leading-relaxed animate-fade-in-up font-medium" style={{ animationDelay: '0.2s' }}>
                 Straps & Machinery for Industrial Excellence
               </p>
 
               {/* Quick Stats */}
               <div className="flex flex-wrap justify-center gap-8 md:gap-16 pt-8 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
                 <div className="text-center">
-                  <div className="text-4xl md:text-5xl font-extrabold text-black mb-2">6</div>
-                  <div className="text-base md:text-lg text-black/70 font-semibold">Product Lines</div>
+                  <div className="text-4xl md:text-5xl font-extrabold text-white mb-2">6</div>
+                  <div className="text-base md:text-lg text-white/70 font-semibold">Product Lines</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-4xl md:text-5xl font-extrabold text-black mb-2">25+</div>
-                  <div className="text-base md:text-lg text-black/70 font-semibold">Years Experience</div>
+                  <div className="text-4xl md:text-5xl font-extrabold text-white mb-2">25+</div>
+                  <div className="text-base md:text-lg text-white/70 font-semibold">Years Experience</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-4xl md:text-5xl font-extrabold text-black mb-2">50+</div>
-                  <div className="text-base md:text-lg text-black/70 font-semibold">Countries Served</div>
+                  <div className="text-4xl md:text-5xl font-extrabold text-white mb-2">50+</div>
+                  <div className="text-base md:text-lg text-white/70 font-semibold">Countries Served</div>
                 </div>
               </div>
             </div>

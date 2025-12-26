@@ -96,11 +96,11 @@ export default function HomePageClient() {
                 {/* Badge */}
                 <div className="inline-flex items-center gap-2 px-4 py-2 bg-black/20 backdrop-blur-sm rounded-full border border-white/20 animate-fade-in">
                   <span className="w-2 h-2 bg-white rounded-full animate-pulse"></span>
-                  <span className="text-sm font-semibold text-black">25+ Years of Excellence</span>
+                  <span className="text-sm font-semibold text-white">25+ Years of Excellence</span>
                 </div>
 
                 {/* Main Heading */}
-                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight animate-fade-in-up text-black">
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight animate-fade-in-up text-white">
                   <span className="block">HB SUB NOOR</span>
                   <span className="block drop-shadow-2xl">
                     INDUSTRIES
@@ -109,16 +109,16 @@ export default function HomePageClient() {
 
                 {/* Subheading */}
                 <div className="space-y-1 sm:space-y-2 animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
-                  <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-black drop-shadow-lg">
+                  <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white drop-shadow-lg">
                     The Future of Industrial
                   </p>
-                  <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-black">
+                  <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white">
                     Packaging Security
                   </p>
                 </div>
 
                 {/* Description */}
-                <p className="text-base sm:text-lg md:text-xl text-black/80 max-w-xl mx-auto lg:mx-0 leading-relaxed animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+                <p className="text-base sm:text-lg md:text-xl text-white/80 max-w-xl mx-auto lg:mx-0 leading-relaxed animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
                   Elevate Your Logistics. Secure Your Future.
                 </p>
 
@@ -138,7 +138,7 @@ export default function HomePageClient() {
                   </Link>
                   <Link 
                     href="/products" 
-                    className="group px-6 sm:px-8 py-3 sm:py-4 bg-white/10 backdrop-blur-md border-2 border-black/30 text-black font-bold text-base sm:text-lg rounded-xl transition-all duration-300 hover:bg-white/20 hover:scale-105 hover:shadow-xl"
+                    className="group px-6 sm:px-8 py-3 sm:py-4 bg-white/10 backdrop-blur-md border-2 border-white/30 text-white font-bold text-base sm:text-lg rounded-xl transition-all duration-300 hover:bg-white/20 hover:scale-105 hover:shadow-xl"
                   >
                     View Products
                   </Link>
@@ -158,8 +158,8 @@ export default function HomePageClient() {
                     />
                   </div>
                   <div className="text-center mt-4">
-                    <div className="font-bold text-black text-xl">Strapping</div>
-                    <div className="text-black/70 text-base">Machinery</div>
+                    <div className="font-bold text-white text-xl">Strapping</div>
+                    <div className="text-white/70 text-base">Machinery</div>
                   </div>
                 </div>
 
@@ -187,8 +187,8 @@ export default function HomePageClient() {
 
           {/* Scroll Indicator */}
           <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10 animate-bounce">
-            <div className="w-6 h-10 border-2 border-black/30 rounded-full flex justify-center">
-              <div className="w-1.5 h-3 bg-black/50 rounded-full mt-2"></div>
+            <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center">
+              <div className="w-1.5 h-3 bg-white/50 rounded-full mt-2"></div>
             </div>
           </div>
         </section>

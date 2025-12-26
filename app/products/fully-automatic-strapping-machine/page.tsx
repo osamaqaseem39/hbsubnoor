@@ -187,13 +187,13 @@ export default function FullyAutomaticStrappingMachinePage() {
             <div className="text-center space-y-6">
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-black/20 backdrop-blur-sm rounded-full border border-white/20">
                 <span className="w-2 h-2 bg-white rounded-full animate-pulse"></span>
-                <span className="text-sm font-semibold text-black">Strapping Machinery</span>
+                <span className="text-sm font-semibold text-white">Strapping Machinery</span>
               </div>
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight text-black">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight text-white">
                 <span className="block">Fully Automatic</span>
                 <span className="block drop-shadow-2xl">Strapping Machine</span>
               </h1>
-              <p className="text-lg md:text-xl text-black/80 max-w-3xl mx-auto">
+              <p className="text-lg md:text-xl text-white/80 max-w-3xl mx-auto">
                 High-speed automation for production line integration and maximum throughput
               </p>
             </div>
