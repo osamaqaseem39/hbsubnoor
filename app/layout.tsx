@@ -4,6 +4,7 @@ import Script from "next/script";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Preloader from "@/components/Preloader";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -184,6 +185,7 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+        <Preloader />
         <Header />
         <main className="flex-grow">
           {children}

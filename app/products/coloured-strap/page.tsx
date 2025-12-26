@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+import AnimateOnScroll from '@/components/AnimateOnScroll';
 
 export const metadata: Metadata = {
   title: 'Coloured Packaging Straps | Color-Coded Packaging Straps | HB Sub Noor Industries',
@@ -171,7 +172,7 @@ export default function ColouredStrapPage() {
               src="/images/industrial-packaging-background.png"
               alt="Industrial packaging background"
               fill
-              className="object-cover opacity-30"
+              className="object-cover object-center opacity-30"
               priority
             />
           </div>
@@ -181,8 +182,9 @@ export default function ColouredStrapPage() {
                 <span className="w-2 h-2 bg-white rounded-full animate-pulse"></span>
                 <span className="text-sm font-semibold text-black">Packaging Straps</span>
               </div>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight text-black">
-                Coloured Strap
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight text-black">
+                <span className="block">Coloured</span>
+                <span className="block drop-shadow-2xl">Strap</span>
               </h1>
               <p className="text-lg md:text-xl text-black/80 max-w-3xl mx-auto">
                 Powerful tool for warehouse management, tracking, and safety protocols
@@ -192,8 +194,9 @@ export default function ColouredStrapPage() {
         </section>
 
         {/* Product Details */}
-        <section className="py-12 px-4 bg-gradient-to-br from-bg-primary via-bg-card/20 to-bg-primary">
-          <div className="container mx-auto max-w-7xl">
+        <AnimateOnScroll animation="fadeInRight" delay={0}>
+          <section className="py-12 px-4 bg-gradient-to-br from-bg-primary via-bg-card/20 to-bg-primary">
+            <div className="container mx-auto max-w-7xl">
             <div className="grid lg:grid-cols-2 gap-12 items-center mb-12">
               {/* Product Image */}
               <div className="relative group cursor-pointer">
@@ -221,8 +224,9 @@ export default function ColouredStrapPage() {
                 <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-bg-accent/20 rounded-full">
                   <span className="text-xs font-semibold text-text-heading">Visual Management</span>
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold text-text-heading">
-                  Color-Coded Efficiency
+                <h2 className="text-2xl md:text-3xl lg:text-4xl font-extrabold leading-tight text-text-heading">
+                  <span className="block">Color-Coded</span>
+                  <span className="block drop-shadow-2xl">Efficiency</span>
                 </h2>
                 <p className="text-lg text-text-primary leading-relaxed">
                   More than just aesthetics, colored strap is a powerful tool for warehouse management, tracking, and safety protocols. Different colors enable rapid visual identification and significantly reduce staging and shipping errors.
@@ -269,7 +273,7 @@ export default function ColouredStrapPage() {
             {/* Application Focus */}
             <div className="grid md:grid-cols-2 gap-8 mb-12">
               <div className="bg-bg-card p-8 rounded-2xl shadow-xl border border-border-accent/20">
-                <h3 className="text-2xl font-bold mb-4 text-text-heading">Application Focus</h3>
+                <h3 className="text-2xl font-extrabold leading-tight mb-4 text-text-heading">Application Focus</h3>
                 <ul className="space-y-3 text-text-primary">
                   <li className="flex items-start gap-2">
                     <span className="text-bg-accent mt-1">•</span>
@@ -289,8 +293,8 @@ export default function ColouredStrapPage() {
                   </li>
                 </ul>
               </div>
-              <div className="bg-gradient-to-br from-bg-accent via-bg-accent/90 to-bg-accent/80 text-text-on-accent p-8 rounded-2xl shadow-xl">
-                <h3 className="text-2xl font-bold mb-4">Key Business Benefits</h3>
+              <div className="bg-gradient-to-br from-bg-accent via-bg-accent/90 to-bg-accent/80 text-white p-8 rounded-2xl shadow-xl">
+                <h3 className="text-2xl font-extrabold leading-tight mb-4">Key Business Benefits</h3>
                 <p className="leading-relaxed mb-4">
                   <strong>Efficiency and Error Reduction.</strong> Different colors can designate product type, destination, inspection status, or hazard level, enabling rapid visual identification and significantly reducing staging and shipping errors.
                 </p>
@@ -302,7 +306,10 @@ export default function ColouredStrapPage() {
 
             {/* Color Options */}
             <div className="bg-bg-card p-8 rounded-2xl shadow-xl border border-border-accent/20 mb-12">
-              <h3 className="text-2xl font-bold mb-6 text-text-heading">Color Options & Uses</h3>
+              <h3 className="text-2xl font-extrabold leading-tight mb-6 text-text-heading">
+                <span className="block">Color Options</span>
+                <span className="block drop-shadow-2xl">& Uses</span>
+              </h3>
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
                   <h4 className="font-bold text-text-heading mb-3">Standard Colors</h4>
@@ -327,7 +334,10 @@ export default function ColouredStrapPage() {
 
             {/* FAQ Section */}
             <div className="bg-gradient-to-br from-bg-card/50 to-bg-primary p-8 rounded-2xl border border-border-accent/20 mb-12">
-              <h3 className="text-3xl font-bold mb-8 text-text-heading text-center">Frequently Asked Questions</h3>
+              <h3 className="text-2xl md:text-3xl font-extrabold leading-tight mb-8 text-text-heading text-center">
+                <span className="block">Frequently Asked</span>
+                <span className="block drop-shadow-2xl">Questions</span>
+              </h3>
               <div className="space-y-6 max-w-4xl mx-auto">
                 <div>
                   <h4 className="font-bold text-lg text-text-heading mb-2">What is a coloured strap?</h4>
@@ -352,7 +362,7 @@ export default function ColouredStrapPage() {
             <div className="text-center">
               <Link
                 href="/contact"
-                className="group relative inline-flex items-center gap-2 px-8 py-4 bg-bg-accent text-text-on-accent rounded-xl font-bold text-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+                className="group relative inline-flex items-center gap-2 px-8 py-4 bg-[#F9A634] text-white rounded-xl font-bold text-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:bg-[#e8951f]"
               >
                 <span className="relative z-10 flex items-center gap-2">
                   Request Color Samples
@@ -360,11 +370,12 @@ export default function ColouredStrapPage() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
                 </span>
-                <div className="absolute inset-0 bg-gradient-to-r from-bg-accent via-bg-accent/90 to-bg-accent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-[#F9A634] via-[#e8951f] to-[#F9A634] opacity-0 group-hover:opacity-100 transition-opacity"></div>
               </Link>
             </div>
           </div>
-        </section>
+          </section>
+        </AnimateOnScroll>
       </div>
     </>
   );

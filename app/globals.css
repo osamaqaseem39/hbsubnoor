@@ -100,8 +100,14 @@
 }
 
 .animate-marquee {
-  animation: marquee 30s linear infinite;
+  animation: marquee 15s linear infinite;
   will-change: transform;
+}
+
+@media (max-width: 640px) {
+  .animate-marquee {
+    animation: marquee 8s linear infinite;
+  }
 }
 
 @keyframes fade-in {
@@ -116,7 +122,62 @@
 @keyframes fade-in-up {
   from {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in-down {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.85);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
   }
   to {
     opacity: 1;
@@ -133,6 +194,87 @@
   }
 }
 
+/* Base animation classes - hidden by default */
+.animate-fadeIn,
+.animate-fadeInUp,
+.animate-fadeInDown,
+.animate-fadeInLeft,
+.animate-fadeInRight,
+.animate-scaleIn,
+.animate-slideUp {
+  opacity: 0;
+  will-change: opacity, transform;
+}
+
+/* When visible, apply animation with smooth easing */
+.animate-fadeIn.animate-visible {
+  animation: fade-in 0.7s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.animate-fadeInUp.animate-visible {
+  animation: fade-in-up 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-fadeInDown.animate-visible {
+  animation: fade-in-down 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-fadeInLeft.animate-visible {
+  animation: fade-in-left 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-fadeInRight.animate-visible {
+  animation: fade-in-right 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-scaleIn.animate-visible {
+  animation: scale-in 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-slideUp.animate-visible {
+  animation: slide-up 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Staggered animation support */
+.animate-stagger > * {
+  opacity: 0;
+  transform: translateY(40px);
+  will-change: opacity, transform;
+}
+
+.animate-stagger.animate-visible > *:nth-child(1) {
+  animation: fade-in-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.1s forwards;
+}
+
+.animate-stagger.animate-visible > *:nth-child(2) {
+  animation: fade-in-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.2s forwards;
+}
+
+.animate-stagger.animate-visible > *:nth-child(3) {
+  animation: fade-in-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.3s forwards;
+}
+
+.animate-stagger.animate-visible > *:nth-child(4) {
+  animation: fade-in-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.4s forwards;
+}
+
+.animate-stagger.animate-visible > *:nth-child(5) {
+  animation: fade-in-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.5s forwards;
+}
+
+.animate-stagger.animate-visible > *:nth-child(6) {
+  animation: fade-in-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.6s forwards;
+}
+
+.animate-stagger.animate-visible > *:nth-child(7) {
+  animation: fade-in-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.7s forwards;
+}
+
+.animate-stagger.animate-visible > *:nth-child(8) {
+  animation: fade-in-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.8s forwards;
+}
+
+/* Legacy classes (for backward compatibility) */
 .animate-fade-in {
   animation: fade-in 1s ease-out;
 }
@@ -144,4 +286,87 @@
 
 .animate-float {
   animation: float 3s ease-in-out infinite;
+}
+
+@keyframes spin-reverse {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.animate-spin-reverse {
+  animation: spin-reverse 1s linear infinite;
+}
+
+/* Stacked Cards Animation */
+.stacked-cards-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  perspective: 1000px;
+  min-height: 400px;
+}
+
+@media (min-width: 640px) {
+  .stacked-cards-container {
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    min-height: 450px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .stacked-cards-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+
+.stacked-card {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 90%;
+  max-width: 400px;
+  opacity: calc(1 - var(--card-index) * 0.15);
+  transform: translateX(-50%) translateY(calc(var(--card-index) * 12px)) 
+             rotate(calc(var(--card-index) * -3deg)) 
+             scale(calc(1 - var(--card-index) * 0.04));
+  z-index: calc(10 - var(--card-index));
+  transition: all 0.9s cubic-bezier(0.34, 1.56, 0.64, 1);
+  transition-delay: calc(var(--card-index) * 0.4s);
+}
+
+@media (min-width: 640px) {
+  .stacked-card {
+    max-width: 450px;
+  }
+}
+
+/* Distributed state - cards spread to their grid positions */
+.stacked-cards-container[data-visible="true"] {
+  min-height: auto;
+}
+
+.stacked-cards-container[data-visible="true"] .stacked-card {
+  position: relative;
+  left: auto;
+  width: 100%;
+  max-width: none;
+  opacity: 1;
+  transform: translateX(0) translateY(0) rotate(0deg) scale(1);
+  z-index: 1;
+}
+
+/* Glass effect */
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
 }

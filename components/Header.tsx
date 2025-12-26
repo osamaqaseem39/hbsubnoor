@@ -14,7 +14,7 @@ export default function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10);
+      setIsScrolled(window.scrollY > 200);
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
@@ -67,13 +67,8 @@ export default function Header() {
         />
       )}
 
-      <header 
-        className={`sticky top-0 left-0 right-0 z-50 transition-all duration-500 ease-out ${
-          isScrolled 
-            ? 'bg-bg-primary/98 backdrop-blur-xl shadow-lg border-b border-border-accent/10' 
-            : 'bg-transparent'
-        }`}
-      >
+      {/* Default Header - Non-sticky, scrolls with page */}
+      <header className="relative w-full z-50 bg-transparent">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="flex items-center justify-between h-16 sm:h-20 lg:h-24">
             {/* Logo */}
@@ -92,7 +87,7 @@ export default function Header() {
               </div>
             </Link>
             
-            {/* Desktop Navigation */}
+            {/* Default Desktop Navigation */}
             <nav className="hidden lg:flex items-center space-x-1">
               {navLinks.map((link) => {
                 const active = isActive(link.href);
@@ -108,15 +103,7 @@ export default function Header() {
                     >
                       <Link
                         href={link.href}
-                        className={`relative px-5 py-2.5 text-sm font-semibold tracking-wide transition-all duration-300 group flex items-center gap-1 ${
-                          active
-                            ? isScrolled
-                              ? 'text-text-heading'
-                              : 'text-text-on-accent'
-                            : isScrolled
-                              ? 'text-text-primary/90 hover:text-text-heading'
-                              : 'text-text-on-accent/90 hover:text-text-on-accent'
-                        }`}
+                        className="relative px-5 py-2.5 text-sm font-semibold tracking-wide transition-all duration-300 group flex items-center gap-1 text-text-on-accent/90 hover:text-text-on-accent"
                       >
                         <span className="relative z-10">{link.label}</span>
                         <svg 
@@ -130,17 +117,13 @@ export default function Header() {
                         {/* Active indicator underline */}
                         {active && (
                           <span 
-                            className={`absolute bottom-0 left-0 right-0 h-0.5 rounded-full transition-all duration-300 ${
-                              isScrolled ? 'bg-text-heading' : 'bg-text-on-accent'
-                            }`}
+                            className="absolute bottom-0 left-0 right-0 h-0.5 rounded-full transition-all duration-300 bg-text-on-accent"
                           />
                         )}
                         {/* Hover underline animation */}
                         {!active && (
                           <span 
-                            className={`absolute bottom-0 left-0 h-0.5 rounded-full transition-all duration-300 w-0 group-hover:w-full ${
-                              isScrolled ? 'bg-text-heading' : 'bg-text-on-accent'
-                            }`}
+                            className="absolute bottom-0 left-0 h-0.5 rounded-full transition-all duration-300 w-0 group-hover:w-full bg-text-on-accent"
                           />
                         )}
                       </Link>
@@ -180,31 +163,19 @@ export default function Header() {
                   <Link
                     key={link.href}
                     href={link.href}
-                    className={`relative px-5 py-2.5 text-sm font-semibold tracking-wide transition-all duration-300 group ${
-                      active
-                        ? isScrolled
-                          ? 'text-text-heading'
-                          : 'text-text-on-accent'
-                        : isScrolled
-                          ? 'text-text-primary/90 hover:text-text-heading'
-                          : 'text-text-on-accent/90 hover:text-text-on-accent'
-                    }`}
+                    className="relative px-5 py-2.5 text-sm font-semibold tracking-wide transition-all duration-300 group text-text-on-accent/90 hover:text-text-on-accent"
                   >
                     <span className="relative z-10">{link.label}</span>
                     {/* Active indicator underline */}
                     {active && (
                       <span 
-                        className={`absolute bottom-0 left-0 right-0 h-0.5 rounded-full transition-all duration-300 ${
-                          isScrolled ? 'bg-text-heading' : 'bg-text-on-accent'
-                        }`}
+                        className="absolute bottom-0 left-0 right-0 h-0.5 rounded-full transition-all duration-300 bg-text-on-accent"
                       />
                     )}
                     {/* Hover underline animation */}
                     {!active && (
                       <span 
-                        className={`absolute bottom-0 left-0 h-0.5 rounded-full transition-all duration-300 w-0 group-hover:w-full ${
-                          isScrolled ? 'bg-text-heading' : 'bg-text-on-accent'
-                        }`}
+                        className="absolute bottom-0 left-0 h-0.5 rounded-full transition-all duration-300 w-0 group-hover:w-full bg-text-on-accent"
                       />
                     )}
                   </Link>
@@ -214,11 +185,7 @@ export default function Header() {
 
             {/* Mobile Menu Button */}
             <button
-              className={`lg:hidden relative p-3 rounded-xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 ${
-                isScrolled
-                  ? 'text-text-primary hover:bg-bg-accent/10 focus:ring-text-heading'
-                  : 'text-text-on-accent hover:bg-white/10 focus:ring-text-on-accent'
-              }`}
+              className="lg:hidden relative p-3 rounded-xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 text-text-on-accent hover:bg-white/10 focus:ring-text-on-accent"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               aria-label="Toggle menu"
               aria-expanded={isMenuOpen}
@@ -251,11 +218,7 @@ export default function Header() {
                 : 'max-h-0 opacity-0'
             }`}
           >
-            <nav className={`py-4 space-y-1 ${
-              isScrolled 
-                ? 'border-t border-border-accent/20' 
-                : 'border-t border-white/20'
-            }`}>
+            <nav className="py-4 space-y-1 border-t border-white/20">
               {navLinks.map((link, index) => {
                 const active = isActive(link.href);
                 
@@ -266,18 +229,10 @@ export default function Header() {
                         onClick={() => setIsProductsDropdownOpen(!isProductsDropdownOpen)}
                         className={`w-full flex items-center justify-between px-4 py-3.5 rounded-xl font-semibold text-base transition-all duration-300 transform ${
                           isMenuOpen ? 'translate-x-0 opacity-100' : '-translate-x-4 opacity-0'
-                        } ${
-                          active
-                            ? isScrolled
-                              ? 'text-text-heading bg-bg-accent/15 border-l-4 border-border-accent'
-                              : 'text-text-on-accent bg-white/20 border-l-4 border-white/60'
-                            : isScrolled
-                              ? 'text-text-primary hover:text-text-heading hover:bg-bg-accent/10'
-                              : 'text-text-on-accent/90 hover:text-text-on-accent hover:bg-white/10'
-                        }`}
+                        } text-text-on-accent/90 hover:text-text-on-accent hover:bg-white/10`}
                         style={{ transitionDelay: isMenuOpen ? `${index * 50}ms` : '0ms' }}
                       >
-                        {link.label}
+                        <span>{link.label}</span>
                         <svg 
                           className={`w-4 h-4 transition-transform duration-300 ${isProductsDropdownOpen ? 'rotate-180' : ''}`}
                           fill="none" 
@@ -305,18 +260,15 @@ export default function Header() {
                                 }}
                                 className={`block px-4 py-2.5 rounded-lg text-sm font-medium transition-all duration-300 ${
                                   isMenuOpen ? 'translate-x-0 opacity-100' : '-translate-x-4 opacity-0'
-                                } ${
-                                  itemActive
-                                    ? isScrolled
-                                      ? 'text-text-heading bg-bg-accent/15'
-                                      : 'text-text-on-accent bg-white/20'
-                                    : isScrolled
-                                      ? 'text-text-primary hover:text-text-heading hover:bg-bg-accent/10'
-                                      : 'text-text-on-accent/80 hover:text-text-on-accent hover:bg-white/10'
-                                }`}
+                                } text-text-on-accent/80 hover:text-text-on-accent hover:bg-white/10`}
                                 style={{ transitionDelay: isMenuOpen ? `${(index * 50) + (itemIndex * 30) + 100}ms` : '0ms' }}
                               >
-                                {item.label}
+                                <span className="flex items-center gap-2">
+                                  {itemActive && (
+                                    <span className="w-1.5 h-1.5 rounded-full bg-text-on-accent transition-all duration-300"></span>
+                                  )}
+                                  {item.label}
+                                </span>
                               </Link>
                             );
                           })}
@@ -333,15 +285,7 @@ export default function Header() {
                     onClick={() => setIsMenuOpen(false)}
                     className={`block px-4 py-3.5 rounded-xl font-semibold text-base transition-all duration-300 transform ${
                       isMenuOpen ? 'translate-x-0 opacity-100' : '-translate-x-4 opacity-0'
-                    } ${
-                      active
-                        ? isScrolled
-                          ? 'text-text-heading bg-bg-accent/15 border-l-4 border-border-accent'
-                          : 'text-text-on-accent bg-white/20 border-l-4 border-white/60'
-                        : isScrolled
-                          ? 'text-text-primary hover:text-text-heading hover:bg-bg-accent/10'
-                          : 'text-text-on-accent/90 hover:text-text-on-accent hover:bg-white/10'
-                    }`}
+                    } text-text-on-accent/90 hover:text-text-on-accent hover:bg-white/10`}
                     style={{ transitionDelay: isMenuOpen ? `${index * 50}ms` : '0ms' }}
                   >
                     {link.label}
@@ -352,6 +296,211 @@ export default function Header() {
           </div>
         </div>
       </header>
+
+      {/* Floating Deck Menu - Appears after 200px scroll */}
+      <nav className={`hidden lg:flex items-center fixed top-6 left-1/2 -translate-x-1/2 z-50 transition-all duration-300 ease-out ${
+        isScrolled
+          ? 'opacity-100 pointer-events-auto scale-100 translate-y-0'
+          : 'opacity-0 pointer-events-none scale-95 -translate-y-2'
+      }`}>
+        <div className="gap-1 bg-bg-primary/95 backdrop-blur-xl shadow-2xl rounded-full px-6 py-3 border border-border-accent/20 flex items-center">
+          {navLinks.map((link) => {
+            const active = isActive(link.href);
+            
+            if (link.hasDropdown) {
+              return (
+                <div
+                  key={link.href}
+                  ref={dropdownRef}
+                  className="relative"
+                  onMouseEnter={() => setIsProductsDropdownOpen(true)}
+                  onMouseLeave={() => setIsProductsDropdownOpen(false)}
+                >
+                  <Link
+                    href={link.href}
+                    className="relative px-4 py-2 text-sm font-semibold tracking-wide rounded-full transition-all duration-300 group flex items-center gap-1 text-text-primary/90 hover:text-text-heading hover:bg-bg-accent/10"
+                  >
+                    <span className="relative z-10 flex items-center gap-2">
+                      {active && (
+                        <span className="w-1.5 h-1.5 rounded-full bg-text-heading transition-all duration-300"></span>
+                      )}
+                      {link.label}
+                    </span>
+                    <svg 
+                      className={`w-4 h-4 transition-transform duration-300 ${isProductsDropdownOpen ? 'rotate-180' : ''}`}
+                      fill="none" 
+                      stroke="currentColor" 
+                      viewBox="0 0 24 24"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </Link>
+                  
+                  {/* Dropdown Menu */}
+                  <div
+                    className={`absolute top-full left-1/2 -translate-x-1/2 mt-2 w-64 bg-bg-card border border-border-accent/20 rounded-xl shadow-2xl backdrop-blur-xl z-50 overflow-hidden transition-all duration-300 ${
+                      isProductsDropdownOpen
+                        ? 'opacity-100 visible translate-y-0'
+                        : 'opacity-0 invisible -translate-y-2'
+                    }`}
+                  >
+                    <div className="py-2">
+                      {productItems.map((item) => {
+                        const itemActive = pathname === item.href;
+                        return (
+                          <Link
+                            key={item.href}
+                            href={item.href}
+                            className="block px-4 py-3 text-sm font-medium transition-colors duration-200 text-text-primary hover:bg-bg-accent/10 hover:text-text-heading relative"
+                          >
+                            <span className="flex items-center gap-2">
+                              {itemActive && (
+                                <span className="w-1.5 h-1.5 rounded-full bg-text-heading transition-all duration-300"></span>
+                              )}
+                              {item.label}
+                            </span>
+                          </Link>
+                        );
+                      })}
+                    </div>
+                  </div>
+                </div>
+              );
+            }
+            
+            return (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="relative px-4 py-2 text-sm font-semibold tracking-wide rounded-full transition-all duration-300 group text-text-primary/90 hover:text-text-heading hover:bg-bg-accent/10"
+              >
+                <span className="relative z-10 flex items-center gap-2">
+                  {active && (
+                    <span className="w-1.5 h-1.5 rounded-full bg-text-heading transition-all duration-300"></span>
+                  )}
+                  {link.label}
+                </span>
+              </Link>
+            );
+          })}
+        </div>
+      </nav>
+
+      {/* Floating Mobile Menu when scrolled */}
+      <div className={`lg:hidden fixed left-1/2 -translate-x-1/2 z-50 transition-all duration-300 ease-out ${
+        isScrolled
+          ? 'top-7 opacity-100 pointer-events-auto scale-100 translate-y-0'
+          : 'top-3 opacity-0 pointer-events-none scale-95 -translate-y-2'
+      }`}>
+        <div className="bg-bg-primary/95 backdrop-blur-xl shadow-2xl rounded-full px-4 py-2 border border-border-accent/20">
+          <button
+            className="relative p-2 rounded-full transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 text-text-primary hover:bg-bg-accent/10 focus:ring-text-heading"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-label="Toggle menu"
+            aria-expanded={isMenuOpen}
+          >
+            <div className="w-5 h-4 relative">
+              <span 
+                className={`absolute left-0 top-0 w-full h-0.5 bg-current transition-all duration-300 ${
+                  isMenuOpen ? 'rotate-45 top-1.5' : ''
+                }`}
+              />
+              <span 
+                className={`absolute left-0 top-1.5 w-full h-0.5 bg-current transition-all duration-300 ${
+                  isMenuOpen ? 'opacity-0' : 'opacity-100'
+                }`}
+              />
+              <span 
+                className={`absolute left-0 top-3 w-full h-0.5 bg-current transition-all duration-300 ${
+                  isMenuOpen ? '-rotate-45 top-1.5' : ''
+                }`}
+              />
+            </div>
+          </button>
+        </div>
+      </div>
+
+      {/* Floating Mobile Navigation when scrolled and menu is open */}
+      {isScrolled && isMenuOpen && (
+        <div className="lg:hidden fixed top-20 left-1/2 -translate-x-1/2 z-50 w-11/12 max-w-md bg-bg-primary/95 backdrop-blur-xl shadow-2xl rounded-2xl border border-border-accent/20 p-4 max-h-[80vh] overflow-y-auto">
+          <nav className="space-y-1">
+            {navLinks.map((link, index) => {
+              const active = isActive(link.href);
+              
+              if (link.hasDropdown) {
+                return (
+                  <div key={link.href}>
+                    <button
+                      onClick={() => setIsProductsDropdownOpen(!isProductsDropdownOpen)}
+                      className="w-full flex items-center justify-between px-4 py-3.5 rounded-xl font-semibold text-base transition-all duration-300 text-text-primary hover:text-text-heading hover:bg-bg-accent/10"
+                    >
+                      <span className="flex items-center gap-2">
+                        {active && (
+                          <span className="w-1.5 h-1.5 rounded-full bg-text-heading transition-all duration-300"></span>
+                        )}
+                        {link.label}
+                      </span>
+                      <svg 
+                        className={`w-4 h-4 transition-transform duration-300 ${isProductsDropdownOpen ? 'rotate-180' : ''}`}
+                        fill="none" 
+                        stroke="currentColor" 
+                        viewBox="0 0 24 24"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </button>
+                    <div
+                      className={`overflow-hidden transition-all duration-300 ${
+                        isProductsDropdownOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                      }`}
+                    >
+                      <div className="pl-8 pt-2 space-y-1">
+                        {productItems.map((item) => {
+                          const itemActive = pathname === item.href;
+                          return (
+                            <Link
+                              key={item.href}
+                              href={item.href}
+                              onClick={() => {
+                                setIsMenuOpen(false);
+                                setIsProductsDropdownOpen(false);
+                              }}
+                              className="block px-4 py-2.5 rounded-lg text-sm font-medium transition-all duration-300 text-text-primary hover:text-text-heading hover:bg-bg-accent/10"
+                            >
+                              <span className="flex items-center gap-2">
+                                {itemActive && (
+                                  <span className="w-1.5 h-1.5 rounded-full bg-text-heading transition-all duration-300"></span>
+                                )}
+                                {item.label}
+                              </span>
+                            </Link>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  </div>
+                );
+              }
+              
+              return (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  onClick={() => setIsMenuOpen(false)}
+                  className="block px-4 py-3.5 rounded-xl font-semibold text-base transition-all duration-300 text-text-primary hover:text-text-heading hover:bg-bg-accent/10"
+                >
+                  <span className="flex items-center gap-2">
+                    {active && (
+                      <span className="w-1.5 h-1.5 rounded-full bg-text-heading transition-all duration-300"></span>
+                    )}
+                    {link.label}
+                  </span>
+                </Link>
+              );
+            })}
+          </nav>
+        </div>
+      )}
     </>
   );
 }

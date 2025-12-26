@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
+import AnimateOnScroll from '@/components/AnimateOnScroll';
 
 export default function Company() {
   const organizationStructuredData = {
@@ -100,7 +101,7 @@ export default function Company() {
             src="/images/industrial-packaging-background.png"
             alt="Industrial packaging background"
             fill
-            className="object-cover opacity-20"
+            className="object-cover object-center opacity-20"
             priority
           />
         </div>
@@ -110,9 +111,9 @@ export default function Company() {
             <span className="w-2 h-2 bg-white rounded-full animate-pulse"></span>
             <span className="text-sm font-semibold text-black">Our Company</span>
           </div>
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight mb-6 text-black">
-            Excellence in Every
-            <span className="block">Aspect of Operations</span>
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight mb-6 text-black">
+            <span className="block">Excellence in Every</span>
+            <span className="block drop-shadow-2xl">Aspect of Operations</span>
           </h1>
           <p className="text-xl md:text-2xl text-black/80 max-w-3xl mx-auto leading-relaxed">
             Committed to quality, innovation, and building lasting partnerships with industry leaders worldwide
@@ -120,7 +121,8 @@ export default function Company() {
         </div>
       </section>
       {/* Leadership Message */}
-      <section className="py-16 px-4 bg-gradient-to-br from-bg-primary via-bg-card/20 to-bg-primary relative overflow-hidden">
+      <AnimateOnScroll animation="scaleIn" delay={0}>
+        <section className="py-16 px-4 bg-gradient-to-br from-bg-primary via-bg-card/20 to-bg-primary relative overflow-hidden">
         <div className="absolute inset-0 opacity-[0.03]" style={{
           backgroundImage: 'linear-gradient(rgba(0,0,0,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,0.1) 1px, transparent 1px)',
           backgroundSize: '60px 60px',
@@ -144,7 +146,10 @@ export default function Company() {
                     <span className="w-2 h-2 bg-bg-accent rounded-full animate-pulse"></span>
                     <span className="text-xs font-semibold text-text-heading uppercase tracking-wide">Leadership</span>
                   </div>
-                  <h2 className="text-3xl md:text-4xl font-extrabold mb-2 text-text-heading leading-tight">A Message from Leadership</h2>
+                  <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold mb-2 text-text-heading leading-tight">
+                    <span className="block">A Message from</span>
+                    <span className="block drop-shadow-2xl">Leadership</span>
+                  </h2>
                   <p className="text-sm text-text-secondary font-medium">CEO, HB Sub Noor Industries</p>
                 </div>
               </div>
@@ -162,20 +167,29 @@ export default function Company() {
             </div>
           </div>
         </div>
-      </section>
+        </section>
+      </AnimateOnScroll>
 
       {/* Client Logos */}
-      <section className="py-12 px-4 bg-bg-primary relative overflow-hidden">
+      <AnimateOnScroll animation="fadeInDown" delay={0}>
+        <section className="py-12 px-4 bg-bg-primary relative overflow-hidden">
         <div className="absolute inset-0 opacity-[0.02]" style={{
           backgroundImage: 'linear-gradient(rgba(0,0,0,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,0.1) 1px, transparent 1px)',
           backgroundSize: '60px 60px',
         }}></div>
 
         <div className="container mx-auto max-w-7xl relative z-10">
+          <div className="max-w-4xl mx-auto text-center mb-4 sm:mb-5 md:mb-6">
+            <p className="text-xs sm:text-sm md:text-base uppercase tracking-[0.3em] sm:tracking-[0.4em] text-bg-accent mb-2">
+              Our Clients
+            </p>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-text-heading leading-tight mb-2">
+              <span className="block">Trusted by</span>
+              <span className="block drop-shadow-2xl">Industry Leaders</span>
+            </h2>
+          </div>
           <div className="text-center mb-8">
-            <h2 className="text-3xl md:text-4xl font-extrabold mb-4 text-text-heading leading-tight">Trusted by Industry Leaders</h2>
-            <div className="w-32 h-1.5 bg-gradient-to-r from-bg-accent to-transparent mx-auto"></div>
-            <p className="text-lg text-text-secondary mt-6 max-w-2xl mx-auto">
+            <p className="text-lg text-text-secondary max-w-2xl mx-auto">
               Companies worldwide rely on our packaging solutions to secure their products and streamline operations
             </p>
           </div>
@@ -197,19 +211,27 @@ export default function Company() {
             ))}
           </div>
         </div>
-      </section>
+        </section>
+      </AnimateOnScroll>
 
       {/* Future Vision */}
-      <section className="py-12 px-4 bg-gradient-to-br from-bg-card/30 via-bg-primary to-bg-card/20 relative overflow-hidden">
+      <AnimateOnScroll animation="fadeInRight" delay={0}>
+        <section className="py-12 px-4 bg-gradient-to-br from-bg-card/30 via-bg-primary to-bg-card/20 relative overflow-hidden">
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute top-20 right-10 w-72 h-72 bg-bg-accent/10 rounded-full blur-3xl animate-pulse"></div>
           <div className="absolute bottom-20 left-10 w-96 h-96 bg-bg-accent/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
         </div>
 
         <div className="container mx-auto max-w-6xl relative z-10">
+          <div className="max-w-4xl mx-auto text-center mb-4 sm:mb-5 md:mb-6">
+            <p className="text-xs sm:text-sm md:text-base uppercase tracking-[0.3em] sm:tracking-[0.4em] text-bg-accent mb-2">
+              Future Vision
+            </p>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-text-heading leading-tight mb-2">
+              <span className="block">Looking Forward</span>
+            </h2>
+          </div>
           <div className="text-center mb-8">
-            <h2 className="text-3xl md:text-4xl font-extrabold mb-4 text-text-heading leading-tight">Looking Forward</h2>
-            <div className="w-32 h-1.5 bg-gradient-to-r from-bg-accent to-transparent mx-auto"></div>
             <p className="text-lg text-text-secondary mt-6 max-w-2xl mx-auto">
               Our roadmap for continued innovation and global expansion
             </p>
@@ -218,7 +240,10 @@ export default function Company() {
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-bg-card p-8 rounded-2xl border border-border-accent/20 shadow-lg">
               <div className="text-5xl mb-6">🚀</div>
-              <h3 className="text-2xl font-bold mb-4 text-text-heading">Technological Advancement</h3>
+              <h3 className="text-2xl font-extrabold leading-tight mb-4 text-text-heading">
+                <span className="block">Technological</span>
+                <span className="block drop-shadow-2xl">Advancement</span>
+              </h3>
               <p className="text-text-primary leading-relaxed mb-4">
                 Investing in next-generation manufacturing technologies, including AI-driven quality control, automated production lines, and smart packaging solutions that integrate with Industry 4.0 systems.
               </p>
@@ -226,7 +251,10 @@ export default function Company() {
 
             <div className="bg-bg-card p-8 rounded-2xl border border-border-accent/20 shadow-lg">
               <div className="text-5xl mb-6">🌱</div>
-              <h3 className="text-2xl font-bold mb-4 text-text-heading">Sustainability Initiative</h3>
+              <h3 className="text-2xl font-extrabold leading-tight mb-4 text-text-heading">
+                <span className="block">Sustainability</span>
+                <span className="block drop-shadow-2xl">Initiative</span>
+              </h3>
               <p className="text-text-primary leading-relaxed mb-4">
                 Expanding our eco-friendly product lines, implementing circular economy principles, and achieving carbon-neutral manufacturing processes by 2030.
               </p>
@@ -234,7 +262,10 @@ export default function Company() {
 
             <div className="bg-bg-card p-8 rounded-2xl border border-border-accent/20 shadow-lg">
               <div className="text-5xl mb-6">🌐</div>
-              <h3 className="text-2xl font-bold mb-4 text-text-heading">Global Expansion</h3>
+              <h3 className="text-2xl font-extrabold leading-tight mb-4 text-text-heading">
+                <span className="block">Global</span>
+                <span className="block drop-shadow-2xl">Expansion</span>
+              </h3>
               <p className="text-text-primary leading-relaxed mb-4">
                 Establishing regional manufacturing facilities and distribution centers to serve customers faster, reduce shipping costs, and strengthen our international presence.
               </p>
@@ -242,22 +273,33 @@ export default function Company() {
 
             <div className="bg-bg-card p-8 rounded-2xl border border-border-accent/20 shadow-lg">
               <div className="text-5xl mb-6">🤝</div>
-              <h3 className="text-2xl font-bold mb-4 text-text-heading">Partnership Growth</h3>
+              <h3 className="text-2xl font-extrabold leading-tight mb-4 text-text-heading">
+                <span className="block">Partnership</span>
+                <span className="block drop-shadow-2xl">Growth</span>
+              </h3>
               <p className="text-text-primary leading-relaxed mb-4">
                 Building strategic alliances with logistics companies, e-commerce platforms, and industrial manufacturers to create integrated packaging ecosystems.
               </p>
             </div>
           </div>
         </div>
-      </section>
+        </section>
+      </AnimateOnScroll>
 
       {/* CTA Section */}
-      <section className="py-12 px-4 bg-bg-cta text-text-on-accent">
-        <div className="container mx-auto text-center max-w-3xl">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6">
-            Partner With Us
-          </h2>
-          <p className="text-xl mb-8">
+      <AnimateOnScroll animation="fadeInUp" delay={0}>
+        <section className="py-12 px-4 bg-bg-cta text-text-on-accent">
+        <div className="container mx-auto text-center max-w-4xl">
+          <div className="mb-4 sm:mb-5 md:mb-6">
+            <p className="text-xs sm:text-sm md:text-base uppercase tracking-[0.3em] sm:tracking-[0.4em] text-white mb-2">
+              Get Started
+            </p>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-2">
+              <span className="block">Partner</span>
+              <span className="block drop-shadow-2xl">With Us</span>
+            </h2>
+          </div>
+          <p className="text-xl mb-8 text-white/90">
             Discover how our commitment to excellence can support your business goals and packaging needs.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -275,7 +317,8 @@ export default function Company() {
             </Link>
           </div>
         </div>
-      </section>
+        </section>
+      </AnimateOnScroll>
     </div>
     </>
   );

@@ -3,6 +3,8 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import ProductMarquee from '@/components/ProductMarquee';
+import AnimateOnScroll from '@/components/AnimateOnScroll';
+import ProductsCarouselSection from '@/components/ProductsCarouselSection';
 import { useEffect, useState } from 'react';
 
 export default function HomePageClient() {
@@ -63,7 +65,7 @@ export default function HomePageClient() {
               src="/images/industrial-packaging-background.png"
               alt="Industrial packaging and strap solutions background - HB Sub Noor Industries"
               fill
-              className="object-cover opacity-30 transition-transform duration-700 ease-out"
+              className="object-cover object-center opacity-30 transition-transform duration-700 ease-out"
               style={{
                 transform: `translate(${mousePosition.x * 0.01}px, ${mousePosition.y * 0.01}px) scale(1.1)`,
               }}
@@ -98,7 +100,7 @@ export default function HomePageClient() {
                 </div>
 
                 {/* Main Heading */}
-                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold leading-tight animate-fade-in-up text-black">
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight animate-fade-in-up text-black">
                   <span className="block">HB SUB NOOR</span>
                   <span className="block drop-shadow-2xl">
                     INDUSTRIES
@@ -141,22 +143,6 @@ export default function HomePageClient() {
                     View Products
                   </Link>
                 </div>
-
-                {/* Stats */}
-                <div className="flex flex-wrap gap-4 sm:gap-6 justify-center lg:justify-start pt-6 sm:pt-8 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
-                  <div className="text-center lg:text-left">
-                    <div className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-black">25+</div>
-                    <div className="text-xs sm:text-sm text-black/70 font-medium">Years Experience</div>
-                  </div>
-                  <div className="text-center lg:text-left">
-                    <div className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-black">1000+</div>
-                    <div className="text-xs sm:text-sm text-black/70 font-medium">Happy Clients</div>
-                  </div>
-                  <div className="text-center lg:text-left">
-                    <div className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-black">50+</div>
-                    <div className="text-xs sm:text-sm text-black/70 font-medium">Countries Served</div>
-                  </div>
-                </div>
               </div>
 
               {/* Right Column - Product Images */}
@@ -165,10 +151,10 @@ export default function HomePageClient() {
                 <div className="absolute top-10 right-10 bg-bg-accent/95 backdrop-blur-md p-6 rounded-3xl shadow-2xl border border-white/20 transform rotate-3 hover:rotate-0 transition-all duration-300 animate-float hover:scale-105">
                   <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-xl overflow-hidden bg-gradient-to-br from-white/20 to-white/10">
                     <Image
-                      src="/images/semi-automatic-strapping-machine.png"
+                      src="/images/fully-automatic-strapping-machine-alt-2.png"
                       alt="Semi-automatic strapping machine for industrial packaging - HB Sub Noor Industries"
                       fill
-                      className="object-contain drop-shadow-lg p-2"
+                      className="object-cover drop-shadow-lg"
                     />
                   </div>
                   <div className="text-center mt-4">
@@ -210,8 +196,187 @@ export default function HomePageClient() {
         {/* Product Marquee */}
         <ProductMarquee />
 
+        {/* Products Section with Carousel */}
+        <ProductsCarouselSection
+          products={[
+            {
+              name: "Custom Sized Strap",
+              href: "/products/custom-sized-strap",
+              imageSrc: "/images/custom-sized-strap.png",
+              imageAlt: "Custom sized packaging strap",
+              description: "Engineered to fit exact product geometry for specialized goods and irregularly shaped packages. Eliminates material waste and provides custom-level security hold.",
+              specifications: ["PP/PET Materials", "Custom Dimensions", "Full Color Spectrum", "Various Thickness"],
+              features: [
+                "Perfect fit for irregular packages",
+                "Eliminates material waste",
+                "Optimized unitization",
+                "Reduced shipping costs",
+              ],
+              useCases: [
+                "Specialized goods",
+                "Irregular packages",
+                "Heavy-duty applications",
+                "Custom pallet unitization",
+              ],
+            },
+            {
+              name: "Printed Strap",
+              href: "/products/printed-strap",
+              imageSrc: "/images/printed-packaging-straps.png",
+              imageAlt: "Printed packaging strap",
+              description: "High-contrast, durable printing for branding, security marking, and logistics communication. Professional appearance with excellent print quality.",
+              specifications: ["PP/PET Materials", "Custom Printing", "High-Contrast Design", "Durable Ink"],
+              features: [
+                "Brand customization",
+                "Security marking",
+                "Logistics communication",
+                "Professional appearance",
+              ],
+              useCases: [
+                "Branded packaging",
+                "Security marking",
+                "Warehouse organization",
+                "Product identification",
+              ],
+            },
+            {
+              name: "Coloured Strap",
+              href: "/products/coloured-strap",
+              imageSrc: "/images/coloured-strap.png",
+              imageAlt: "Coloured packaging strap",
+              description: "Visual identification tool for warehouse management, tracking, and safety protocols. Available in vibrant colors for easy product categorization.",
+              specifications: ["PP/PET Materials", "Vibrant Colors", "High Visibility", "Color Coding"],
+              features: [
+                "Visual identification",
+                "Warehouse management",
+                "Easy tracking",
+                "Safety protocols",
+              ],
+              useCases: [
+                "Product categorization",
+                "Warehouse organization",
+                "Safety protocols",
+                "Visual tracking",
+              ],
+            },
+            {
+              name: "Transparent Strap",
+              href: "/products/transparent-strap",
+              imageSrc: "/images/transparent-staps.png",
+              imageAlt: "Transparent packaging strap",
+              description: "Sleek, professional hold for retail-facing goods where package design must remain visible. Invisible security with visible quality.",
+              specifications: ["PP/PET Materials", "Crystal Clear", "High Strength", "Professional Look"],
+              features: [
+                "Package design visibility",
+                "Professional appearance",
+                "High-level security",
+                "Discreet hold",
+              ],
+              useCases: [
+                "Retail packaging",
+                "Product display",
+                "Professional presentation",
+                "Visible package design",
+              ],
+            },
+            {
+              name: "Fully Automatic Strapping Machine",
+              href: "/products/fully-automatic-strapping-machine",
+              imageSrc: "/images/automatic-strapping-machine.png",
+              imageAlt: "Fully automatic strapping machine",
+              description: "High-speed automation for production line integration with maximum throughput and energy-efficient operation. Zero manual intervention required.",
+              specifications: ["Auto-Detection", "Heat-Weld Closure", "Precise Tension Control", "Energy Efficient"],
+              features: [
+                "Automatic package detection",
+                "Maximum throughput",
+                "Energy-efficient operation",
+                "Production line integration",
+              ],
+              useCases: [
+                "Production lines",
+                "High-volume operations",
+                "Automated packaging",
+                "Industrial applications",
+              ],
+            },
+            {
+              name: "Semi Automatic Strapping Machine",
+              href: "/products/semi-automatic-strapping-machine",
+              imageSrc: "/images/semi-automatic strapping machine.png",
+              imageAlt: "Semi automatic strapping machine",
+              description: "Cost-effective, portable solution with rapid 2.5-second cycle time and adjustable tension (15-45 Kgs). Perfect for flexible production needs.",
+              specifications: ["2.5s Cycle Time", "15-45 Kgs Tension", "Portable Design", "Manual Feeding"],
+              features: [
+                "Rapid cycle time",
+                "Adjustable tension",
+                "Portable design",
+                "Cost-effective solution",
+              ],
+              useCases: [
+                "Mobile packaging stations",
+                "Flexible production",
+                "Small to medium operations",
+                "Diverse product sizes",
+              ],
+            },
+          ]}
+        />
+
+        {/* Stats Section - Full Width */}
+        <AnimateOnScroll animation="fadeInUp" delay={100}>
+          <section className="w-full py-12 sm:py-16 md:py-20 px-4 sm:px-6 bg-gradient-to-br from-bg-accent via-bg-accent/95 to-bg-accent text-white relative overflow-hidden">
+            {/* Animated Background Elements */}
+            <div className="absolute inset-0 overflow-hidden">
+              <div className="absolute top-20 left-10 w-72 h-72 bg-white/10 rounded-full blur-3xl animate-pulse"></div>
+              <div className="absolute bottom-20 right-10 w-96 h-96 bg-white/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-white/5 rounded-full blur-3xl"></div>
+            </div>
+
+            {/* Grid Pattern Overlay */}
+            <div className="absolute inset-0 opacity-10" style={{
+              backgroundImage: 'linear-gradient(rgba(0,0,0,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,0.1) 1px, transparent 1px)',
+              backgroundSize: '60px 60px',
+            }}></div>
+
+            <div className="container mx-auto max-w-7xl relative z-10">
+              <AnimateOnScroll animation="stagger" delay={200}>
+                <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
+                  <div className="group text-center p-4 sm:p-6 rounded-xl sm:rounded-2xl bg-white/10 backdrop-blur-sm border border-white/20 shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300">
+                    <div className="text-4xl sm:text-5xl md:text-6xl mb-3 sm:mb-4">🏭</div>
+                    <div className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mb-2">30+</div>
+                    <div className="text-base sm:text-lg font-bold text-white mb-1">Years</div>
+                    <div className="text-sm sm:text-base text-white/90">Industry Experience</div>
+                  </div>
+
+                  <div className="group text-center p-4 sm:p-6 rounded-xl sm:rounded-2xl bg-white/10 backdrop-blur-sm border border-white/20 shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300">
+                    <div className="text-4xl sm:text-5xl md:text-6xl mb-3 sm:mb-4">🌍</div>
+                    <div className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mb-2">50+</div>
+                    <div className="text-base sm:text-lg font-bold text-white mb-1">Countries</div>
+                    <div className="text-sm sm:text-base text-white/90">Global Reach</div>
+                  </div>
+
+                  <div className="group text-center p-4 sm:p-6 rounded-xl sm:rounded-2xl bg-white/10 backdrop-blur-sm border border-white/20 shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300">
+                    <div className="text-4xl sm:text-5xl md:text-6xl mb-3 sm:mb-4">✨</div>
+                    <div className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white mb-2">Premium</div>
+                    <div className="text-base sm:text-lg font-bold text-white mb-1">Quality</div>
+                    <div className="text-sm sm:text-base text-white/90">Superior Products</div>
+                  </div>
+
+                  <div className="group text-center p-4 sm:p-6 rounded-xl sm:rounded-2xl bg-white/10 backdrop-blur-sm border border-white/20 shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300">
+                    <div className="text-4xl sm:text-5xl md:text-6xl mb-3 sm:mb-4">💼</div>
+                    <div className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mb-2">1000+</div>
+                    <div className="text-base sm:text-lg font-bold text-white mb-1">Clients</div>
+                    <div className="text-sm sm:text-base text-white/90">Trusted Worldwide</div>
+                  </div>
+                </div>
+              </AnimateOnScroll>
+            </div>
+          </section>
+        </AnimateOnScroll>
+
         {/* About Us Section */}
-        <section className="py-6 sm:py-8 px-4 sm:px-6 bg-gradient-to-br from-bg-primary via-bg-card/20 to-bg-primary relative overflow-hidden">
+        <AnimateOnScroll animation="fadeInLeft" delay={100}>
+          <section className="pt-6 sm:pt-8 md:pt-10 pb-12 sm:pb-16 md:pb-20 px-4 sm:px-6 bg-gradient-to-br from-bg-primary via-bg-card/20 to-bg-primary relative overflow-hidden">
           {/* Animated Background Elements */}
           <div className="absolute inset-0 overflow-hidden">
             <div className="absolute top-20 left-10 w-72 h-72 bg-bg-accent/10 rounded-full blur-3xl animate-pulse"></div>
@@ -227,29 +392,21 @@ export default function HomePageClient() {
 
           <div className="container mx-auto max-w-7xl relative z-10">
             {/* Section Header with Split Design */}
-            <div className="mb-8">
-              <div className="flex flex-col md:flex-row items-center justify-between gap-6 mb-6">
-                <div className="flex-1">
-                  <div className="inline-flex items-center gap-2 px-4 py-2 bg-bg-accent/10 rounded-full mb-4">
-                    <span className="w-2 h-2 bg-bg-accent rounded-full animate-pulse"></span>
-                    <span className="text-sm font-semibold text-text-heading">About Us</span>
-                  </div>
-                  <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold mb-4 text-text-heading leading-tight">
-                    Welcome to HB Sub Noor Industries
-                  </h2>
-                  <div className="w-32 h-1.5 bg-gradient-to-r from-bg-accent to-transparent"></div>
-                </div>
-                <div className="flex-1 text-right">
-                  <div className="inline-block bg-gradient-to-br from-bg-accent/20 to-bg-accent/5 p-6 rounded-2xl backdrop-blur-sm border border-border-accent/30">
-                    <div className="text-5xl font-extrabold text-bg-accent mb-2">25+</div>
-                    <div className="text-lg font-semibold text-text-heading">Years of Excellence</div>
-                  </div>
-                </div>
+            <AnimateOnScroll animation="fadeInUp" delay={100}>
+              <div className="max-w-4xl mx-auto text-center mb-4 sm:mb-5 md:mb-6">
+                <p className="text-xs sm:text-sm md:text-base uppercase tracking-[0.3em] sm:tracking-[0.4em] text-bg-accent mb-2">
+                  About Us
+                </p>
+                <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-text-heading leading-tight mb-2">
+                  <span className="block">Welcome to HB Sub Noor</span>
+                  <span className="block drop-shadow-2xl">Industries</span>
+                </h2>
               </div>
-            </div>
+            </AnimateOnScroll>
 
             {/* Main Story - Large Feature Card */}
-            <div className="mb-12">
+            <AnimateOnScroll animation="fadeInUp" delay={200}>
+              <div className="mb-10 sm:mb-12">
               <div className="relative group">
                 <div className="absolute -inset-1 bg-gradient-to-r from-bg-accent via-bg-accent/50 to-bg-accent rounded-3xl blur-lg opacity-20 group-hover:opacity-30 transition-opacity"></div>
                 <div className="relative bg-bg-card p-6 sm:p-8 md:p-10 lg:p-12 rounded-2xl sm:rounded-3xl shadow-2xl border border-border-accent/20">
@@ -258,8 +415,9 @@ export default function HomePageClient() {
                       🏆
                     </div>
                     <div className="flex-1">
-                      <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-3 sm:mb-4 text-text-heading">
-                        A Legacy of Excellence
+                      <h3 className="text-lg sm:text-xl md:text-2xl font-extrabold leading-tight mb-3 sm:mb-4 text-text-heading">
+                        <span className="block">A Legacy of</span>
+                        <span className="block drop-shadow-2xl">Excellence</span>
                       </h3>
                       <div className="space-y-2 sm:space-y-3 text-base sm:text-lg text-text-primary leading-relaxed">
                         <p>
@@ -273,412 +431,74 @@ export default function HomePageClient() {
                   </div>
                 </div>
               </div>
-            </div>
+              </div>
+            </AnimateOnScroll>
 
             {/* Mission & Vision - Side by Side Cards */}
-            <div className="grid md:grid-cols-2 gap-4 sm:gap-6 mb-6 sm:mb-8">
-              {/* Mission Card */}
-              <div className="group relative">
-                <div className="absolute -inset-0.5 bg-gradient-to-br from-bg-accent to-bg-accent/50 rounded-xl sm:rounded-2xl blur opacity-20 group-hover:opacity-30 transition-opacity"></div>
-                <div className="relative bg-gradient-to-br from-bg-accent via-bg-accent/90 to-bg-accent/80 text-text-on-accent p-6 sm:p-8 rounded-xl sm:rounded-2xl shadow-xl h-full flex flex-col">
-                  <div className="mb-4 sm:mb-6">
-                    <div className="w-10 h-10 sm:w-12 sm:h-12 bg-white/20 backdrop-blur-sm rounded-lg sm:rounded-xl flex items-center justify-center text-xl sm:text-2xl mb-3 sm:mb-4">
-                      🎯
-                    </div>
-                    <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-3 sm:mb-4">Our Mission</h3>
-                  </div>
-                  <p className="text-base sm:text-lg leading-relaxed flex-1">
-                    To provide our customers with the best and affordable custom plastic poly packaging straps, which are <strong className="text-white">Easy to Use, Safe, Reliable and Long Lasting</strong>.
-                  </p>
-                </div>
-              </div>
-
-              {/* Vision Card */}
-              <div className="group relative">
-                <div className="absolute -inset-0.5 bg-gradient-to-br from-bg-accent/50 to-bg-accent rounded-xl sm:rounded-2xl blur opacity-20 group-hover:opacity-30 transition-opacity"></div>
-                <div className="relative bg-bg-card p-5 sm:p-6 rounded-xl sm:rounded-2xl shadow-xl border border-border-accent/20 h-full flex flex-col">
-                  <div className="mb-3 sm:mb-4">
-                    <div className="w-10 h-10 sm:w-12 sm:h-12 bg-bg-accent/20 rounded-lg sm:rounded-xl flex items-center justify-center text-xl sm:text-2xl mb-2 sm:mb-3">
-                      👁️
-                    </div>
-                    <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-3 sm:mb-4 text-text-heading">Our Vision</h3>
-                  </div>
-                  <p className="text-base sm:text-lg text-text-primary leading-relaxed flex-1">
-                    To become a leading manufacturer of custom plastic poly packaging straps in the world by focusing on <strong className="text-text-heading">Quality</strong>.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Why Choose Us - Enhanced Stats Grid */}
-            <div className="relative">
-              <div className="text-center mb-6">
-                <h3 className="text-xl md:text-2xl font-bold mb-3 text-text-heading">Why Choose Us?</h3>
-                <p className="text-lg text-text-secondary max-w-2xl mx-auto">
-                  Trusted by companies worldwide for our commitment to excellence and innovation
-                </p>
-              </div>
-              
-              <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
-                <div className="group bg-bg-card p-4 sm:p-6 rounded-xl sm:rounded-2xl shadow-lg border border-border-accent/20 hover:border-border-accent transition-all duration-300 hover:shadow-xl hover:-translate-y-2 text-center">
-                  <div className="w-14 h-14 sm:w-20 sm:h-20 bg-gradient-to-br from-bg-accent/20 to-bg-accent/10 rounded-xl sm:rounded-2xl flex items-center justify-center text-3xl sm:text-5xl mb-3 sm:mb-4 mx-auto group-hover:scale-110 transition-transform">
-                    🏭
-                  </div>
-                  <div className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-bg-accent mb-1 sm:mb-2">30+</div>
-                  <div className="font-bold text-text-heading mb-1 text-sm sm:text-base">Years</div>
-                  <div className="text-xs sm:text-sm text-text-primary">Industry Experience</div>
-                </div>
-
-                <div className="group bg-bg-card p-4 sm:p-6 rounded-xl sm:rounded-2xl shadow-lg border border-border-accent/20 hover:border-border-accent transition-all duration-300 hover:shadow-xl hover:-translate-y-2 text-center">
-                  <div className="w-14 h-14 sm:w-20 sm:h-20 bg-gradient-to-br from-bg-accent/20 to-bg-accent/10 rounded-xl sm:rounded-2xl flex items-center justify-center text-3xl sm:text-5xl mb-3 mx-auto group-hover:scale-110 transition-transform">
-                    🌍
-                  </div>
-                  <div className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-bg-accent mb-1 sm:mb-2">50+</div>
-                  <div className="font-bold text-text-heading mb-1 text-sm sm:text-base">Countries</div>
-                  <div className="text-xs sm:text-sm text-text-primary">Global Reach</div>
-                </div>
-
-                <div className="group bg-bg-card p-4 sm:p-6 rounded-xl sm:rounded-2xl shadow-lg border border-border-accent/20 hover:border-border-accent transition-all duration-300 hover:shadow-xl hover:-translate-y-2 text-center">
-                  <div className="w-14 h-14 sm:w-20 sm:h-20 bg-gradient-to-br from-bg-accent/20 to-bg-accent/10 rounded-xl sm:rounded-2xl flex items-center justify-center text-3xl sm:text-5xl mb-3 mx-auto group-hover:scale-110 transition-transform">
-                    ✨
-                  </div>
-                  <div className="text-xl sm:text-2xl md:text-3xl font-extrabold text-bg-accent mb-1 sm:mb-2">Premium</div>
-                  <div className="font-bold text-text-heading mb-1 text-sm sm:text-base">Quality</div>
-                  <div className="text-xs sm:text-sm text-text-primary">Superior Products</div>
-                </div>
-
-                <div className="group bg-bg-card p-4 sm:p-6 rounded-xl sm:rounded-2xl shadow-lg border border-border-accent/20 hover:border-border-accent transition-all duration-300 hover:shadow-xl hover:-translate-y-2 text-center">
-                  <div className="w-14 h-14 sm:w-20 sm:h-20 bg-gradient-to-br from-bg-accent/20 to-bg-accent/10 rounded-xl sm:rounded-2xl flex items-center justify-center text-3xl sm:text-5xl mb-3 mx-auto group-hover:scale-110 transition-transform">
-                    💼
-                  </div>
-                  <div className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-bg-accent mb-1 sm:mb-2">1000+</div>
-                  <div className="font-bold text-text-heading mb-1 text-sm sm:text-base">Clients</div>
-                  <div className="text-xs sm:text-sm text-text-primary">Trusted Worldwide</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Products Section */}
-        <section className="py-6 sm:py-8 px-4 sm:px-6 bg-gradient-to-br from-bg-card/30 via-bg-primary to-bg-card/20 relative overflow-hidden">
-          {/* Animated Background Elements */}
-          <div className="absolute inset-0 overflow-hidden">
-            <div className="absolute top-20 right-10 w-72 h-72 bg-bg-accent/10 rounded-full blur-3xl animate-pulse"></div>
-            <div className="absolute bottom-20 left-10 w-96 h-96 bg-bg-accent/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-bg-accent/5 rounded-full blur-3xl"></div>
-          </div>
-
-          {/* Grid Pattern Overlay */}
-          <div className="absolute inset-0 opacity-[0.02]" style={{
-            backgroundImage: 'linear-gradient(rgba(0,0,0,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,0.1) 1px, transparent 1px)',
-            backgroundSize: '60px 60px',
-          }}></div>
-
-          <div className="container mx-auto max-w-7xl relative z-10">
-            {/* Section Header with Split Design */}
-            <div className="mb-8">
-              <div className="flex flex-col md:flex-row items-center justify-between gap-6 mb-6">
-                <div className="flex-1">
-                  <div className="inline-flex items-center gap-2 px-4 py-2 bg-bg-accent/10 rounded-full mb-4">
-                    <span className="w-2 h-2 bg-bg-accent rounded-full animate-pulse"></span>
-                    <span className="text-sm font-semibold text-text-heading">Our Products</span>
-                  </div>
-                  <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold mb-4 text-text-heading leading-tight">
-                    Comprehensive Packaging Solutions
-                  </h2>
-                  <div className="w-32 h-1.5 bg-gradient-to-r from-bg-accent to-transparent"></div>
-                </div>
-                <div className="flex-1 text-right">
-                  <div className="inline-block bg-gradient-to-br from-bg-accent/20 to-bg-accent/5 p-6 rounded-2xl backdrop-blur-sm border border-border-accent/30">
-                    <div className="text-5xl font-extrabold text-bg-accent mb-2">2</div>
-                    <div className="text-lg font-semibold text-text-heading">Main Categories</div>
-                  </div>
-                </div>
-              </div>
-              <p className="text-lg text-text-secondary max-w-3xl">
-                Complete ecosystem of packaging security with customizable strap materials and high-speed application machinery
-              </p>
-            </div>
-
-            {/* Main Product Overview - Large Feature Card */}
-            <div className="mb-12">
-              <div className="relative group">
-                <div className="absolute -inset-1 bg-gradient-to-r from-bg-accent via-bg-accent/50 to-bg-accent rounded-3xl blur-lg opacity-20 group-hover:opacity-30 transition-opacity"></div>
-                <div className="relative bg-bg-card p-6 sm:p-8 md:p-10 lg:p-12 rounded-2xl sm:rounded-3xl shadow-2xl border border-border-accent/20">
-                  <div className="flex items-start gap-4 sm:gap-6 mb-4 sm:mb-6">
-                    <div className="flex-shrink-0 w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-bg-accent to-bg-accent/70 rounded-xl sm:rounded-2xl flex items-center justify-center text-2xl sm:text-3xl">
-                      📦
-                    </div>
-                    <div className="flex-1">
-                      <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-3 sm:mb-4 text-text-heading">
-                        Complete Packaging Ecosystem
-                      </h3>
-                      <div className="space-y-2 sm:space-y-3 text-base sm:text-lg text-text-primary leading-relaxed">
-                        <p>
-                          We provide a comprehensive range of <strong className="text-text-heading text-xl">high-performance packaging straps</strong> and <strong className="text-text-heading text-xl">state-of-the-art strapping machinery</strong> designed to protect your goods, streamline operations, and enhance productivity.
-                        </p>
-                        <p>
-                          From customizable Polypropylene (PP) and Polyester (PET) straps to fully automated and semi-automatic machines, we deliver intelligent, cost-effective solutions engineered for maximum efficiency and reliability.
-                        </p>
+            <AnimateOnScroll animation="stagger" delay={200}>
+              <div className="grid md:grid-cols-2 gap-6 sm:gap-8 mb-10 sm:mb-12">
+                {/* Mission Card */}
+                <div className="group relative">
+                  <div className="absolute -inset-0.5 bg-gradient-to-br from-bg-accent to-bg-accent/50 rounded-xl sm:rounded-2xl blur opacity-20 group-hover:opacity-30 transition-opacity"></div>
+                  <div className="relative bg-gradient-to-br from-bg-accent via-bg-accent/90 to-bg-accent/80 text-white p-6 sm:p-8 rounded-xl sm:rounded-2xl shadow-xl h-full flex flex-col">
+                    <div className="mb-4 sm:mb-6">
+                      <div className="w-10 h-10 sm:w-12 sm:h-12 bg-white/20 backdrop-blur-sm rounded-lg sm:rounded-xl flex items-center justify-center text-xl sm:text-2xl mb-4">
+                        🎯
                       </div>
+                      <h3 className="text-lg sm:text-xl md:text-2xl font-extrabold leading-tight mb-4">Our Mission</h3>
                     </div>
+                    <p className="text-base sm:text-lg leading-relaxed flex-1">
+                      To provide our customers with the best and affordable custom plastic poly packaging straps, which are <strong className="text-white">Easy to Use, Safe, Reliable and Long Lasting</strong>.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Vision Card */}
+                <div className="group relative">
+                  <div className="absolute -inset-0.5 bg-gradient-to-br from-bg-accent/50 to-bg-accent rounded-xl sm:rounded-2xl blur opacity-20 group-hover:opacity-30 transition-opacity"></div>
+                  <div className="relative bg-bg-card p-6 sm:p-8 rounded-xl sm:rounded-2xl shadow-xl border border-border-accent/20 h-full flex flex-col">
+                    <div className="mb-4 sm:mb-6">
+                      <div className="w-10 h-10 sm:w-12 sm:h-12 bg-bg-accent/20 rounded-lg sm:rounded-xl flex items-center justify-center text-xl sm:text-2xl mb-4">
+                        👁️
+                      </div>
+                      <h3 className="text-lg sm:text-xl md:text-2xl font-extrabold leading-tight mb-4 text-text-heading">Our Vision</h3>
+                    </div>
+                    <p className="text-base sm:text-lg text-text-primary leading-relaxed flex-1">
+                      To become a leading manufacturer of custom plastic poly packaging straps in the world by focusing on <strong className="text-text-heading">Quality</strong>.
+                    </p>
                   </div>
                 </div>
               </div>
-            </div>
-
-            {/* Product Categories - Side by Side Cards */}
-            <div className="grid md:grid-cols-2 gap-4 sm:gap-6 mb-6 sm:mb-8">
-              {/* Packaging Straps Card */}
-              <Link href="/products" className="group relative block">
-                <div className="absolute -inset-0.5 bg-gradient-to-br from-bg-accent to-bg-accent/50 rounded-xl sm:rounded-2xl blur opacity-20 group-hover:opacity-30 transition-opacity"></div>
-                <div className="relative bg-bg-card p-5 sm:p-6 rounded-xl sm:rounded-2xl shadow-xl border border-border-accent/20 h-full flex flex-col hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
-                  <div className="mb-3 sm:mb-4">
-                    <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-bg-accent to-bg-accent/70 rounded-lg sm:rounded-xl flex items-center justify-center text-xl sm:text-2xl mb-2 sm:mb-3">
-                      📦
-                    </div>
-                    <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-3 sm:mb-4 text-text-heading">Packaging Straps</h3>
-                  </div>
-                  <p className="text-base sm:text-lg text-text-primary leading-relaxed mb-3 sm:mb-4 flex-1">
-                    High-performance Polypropylene (PP) and Polyester (PET) straps engineered for maximum tensile strength, shock absorption, and reliable elongation recovery.
-                  </p>
-                  
-                  <div className="grid grid-cols-2 gap-2 sm:gap-3 mb-3 sm:mb-4">
-                    <div className="bg-bg-accent/10 backdrop-blur-sm p-3 sm:p-4 rounded-lg border border-border-accent/20">
-                      <h4 className="font-bold mb-1 sm:mb-2 text-sm sm:text-base md:text-lg text-text-heading">Custom Sized Strap</h4>
-                      <p className="text-xs sm:text-sm text-text-primary">
-                        Engineered to fit exact product geometry for specialized goods and irregularly shaped packages.
-                      </p>
-                    </div>
-                    <div className="bg-bg-accent/10 backdrop-blur-sm p-3 sm:p-4 rounded-lg border border-border-accent/20">
-                      <h4 className="font-bold mb-1 sm:mb-2 text-sm sm:text-base md:text-lg text-text-heading">Printed Strap</h4>
-                      <p className="text-xs sm:text-sm text-text-primary">
-                        High-contrast, durable printing for branding, security marking, and logistics communication.
-                      </p>
-                    </div>
-                    <div className="bg-bg-accent/10 backdrop-blur-sm p-3 sm:p-4 rounded-lg border border-border-accent/20">
-                      <h4 className="font-bold mb-1 sm:mb-2 text-sm sm:text-base md:text-lg text-text-heading">Coloured Strap</h4>
-                      <p className="text-xs sm:text-sm text-text-primary">
-                        Visual identification tool for warehouse management, tracking, and safety protocols.
-                      </p>
-                    </div>
-                    <div className="bg-bg-accent/10 backdrop-blur-sm p-3 sm:p-4 rounded-lg border border-border-accent/20">
-                      <h4 className="font-bold mb-1 sm:mb-2 text-sm sm:text-base md:text-lg text-text-heading">Transparent Strap</h4>
-                      <p className="text-xs sm:text-sm text-text-primary">
-                        Sleek, professional hold for retail-facing goods where package design must remain visible.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="pt-3 sm:pt-4 border-t border-border-accent/20 flex items-center justify-between gap-2">
-                    <p className="text-xs sm:text-sm text-text-secondary">
-                      <strong className="text-text-heading">Customizable:</strong> <span className="hidden sm:inline">Length, Width, Thickness, Colour, Printing</span><span className="sm:hidden">Fully Customizable</span>
-                    </p>
-                    <svg className="w-4 h-4 sm:w-5 sm:h-5 text-bg-accent group-hover:translate-x-1 transition-transform flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                    </svg>
-                  </div>
-                </div>
-              </Link>
-
-              {/* Strapping Machinery Card */}
-              <Link href="/products" className="group relative block">
-                <div className="absolute -inset-0.5 bg-gradient-to-br from-bg-accent to-bg-accent/50 rounded-xl sm:rounded-2xl blur opacity-20 group-hover:opacity-30 transition-opacity"></div>
-                <div className="relative bg-gradient-to-br from-bg-accent via-bg-accent/90 to-bg-accent/80 text-text-on-accent p-6 sm:p-8 rounded-xl sm:rounded-2xl shadow-xl h-full flex flex-col hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
-                  <div className="mb-4 sm:mb-6">
-                    <div className="w-10 h-10 sm:w-12 sm:h-12 bg-white/20 backdrop-blur-sm rounded-lg sm:rounded-xl flex items-center justify-center text-xl sm:text-2xl mb-3 sm:mb-4">
-                      ⚙️
-                    </div>
-                    <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-3 sm:mb-4">Strapping Machinery</h3>
-                  </div>
-                  <p className="text-base sm:text-lg leading-relaxed mb-3 sm:mb-4 flex-1">
-                    State-of-the-art automation solutions designed to boost productivity, reduce operational costs, and ensure consistent package security.
-                  </p>
-                  
-                  <div className="space-y-2 sm:space-y-3 mb-3 sm:mb-4">
-                    <div className="bg-white/10 backdrop-blur-sm p-3 sm:p-4 rounded-lg">
-                      <h4 className="font-bold mb-1 sm:mb-2 text-sm sm:text-base md:text-lg">Fully Automatic</h4>
-                      <p className="text-xs sm:text-sm opacity-90">
-                        High-speed automation for production line integration with maximum throughput and energy-efficient operation.
-                      </p>
-                    </div>
-                    <div className="bg-white/10 backdrop-blur-sm p-3 sm:p-4 rounded-lg">
-                      <h4 className="font-bold mb-1 sm:mb-2 text-sm sm:text-base md:text-lg">Semi Automatic</h4>
-                      <p className="text-xs sm:text-sm opacity-90">
-                        Cost-effective, portable solution with rapid 2.5-second cycle time and adjustable tension (15-45 Kgs).
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="pt-3 sm:pt-4 border-t border-white/20 flex items-center justify-between gap-2">
-                    <p className="text-xs sm:text-sm opacity-90">
-                      <strong>Perfect for:</strong> <span className="hidden sm:inline">High-volume operations, diverse product sizes, and mobile packaging stations</span><span className="sm:hidden">High-volume operations</span>
-                    </p>
-                    <svg className="w-4 h-4 sm:w-5 sm:h-5 text-white group-hover:translate-x-1 transition-transform flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                    </svg>
-                  </div>
-                </div>
-              </Link>
-            </div>
-
-            {/* Individual Product Cards with Images */}
-            <div className="mb-6 sm:mb-8">
-              <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 sm:mb-6 text-text-heading text-center">
-                Our Product Range
-              </h3>
-              
-              {/* Packaging Straps Products */}
-              <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6 mb-6 sm:mb-8">
-                <Link href="/products/custom-sized-strap" className="group relative block">
-                  <div className="absolute -inset-0.5 bg-gradient-to-br from-bg-accent to-bg-accent/50 rounded-xl sm:rounded-2xl blur opacity-20 group-hover:opacity-30 transition-opacity"></div>
-                  <div className="relative bg-bg-card p-3 sm:p-4 md:p-6 rounded-xl sm:rounded-2xl shadow-xl border border-border-accent/20 h-full flex flex-col hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-                    <div className="relative h-32 sm:h-40 md:h-48 mb-3 sm:mb-4 rounded-lg sm:rounded-xl overflow-hidden bg-gradient-to-br from-bg-accent/10 to-bg-accent/5">
-                      <Image
-                        src="/images/custom-sized-strap-alt.png"
-                        alt="Custom sized packaging strap"
-                        fill
-                        className="object-contain p-2 sm:p-3 md:p-4 group-hover:scale-105 transition-transform duration-300"
-                      />
-                    </div>
-                    <h4 className="font-bold mb-1 sm:mb-2 text-sm sm:text-base md:text-lg text-text-heading">Custom Sized Strap</h4>
-                    <p className="text-xs sm:text-sm text-text-primary flex-1">
-                      Engineered to fit exact product geometry for specialized goods and irregularly shaped packages.
-                    </p>
-                  </div>
-                </Link>
-
-                <Link href="/products/printed-strap" className="group relative block">
-                  <div className="absolute -inset-0.5 bg-gradient-to-br from-bg-accent to-bg-accent/50 rounded-xl sm:rounded-2xl blur opacity-20 group-hover:opacity-30 transition-opacity"></div>
-                  <div className="relative bg-bg-card p-3 sm:p-4 md:p-6 rounded-xl sm:rounded-2xl shadow-xl border border-border-accent/20 h-full flex flex-col hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-                    <div className="relative h-32 sm:h-40 md:h-48 mb-3 sm:mb-4 rounded-lg sm:rounded-xl overflow-hidden bg-gradient-to-br from-bg-accent/10 to-bg-accent/5">
-                      <Image
-                        src="/images/printed-strap.png"
-                        alt="Printed packaging strap"
-                        fill
-                        className="object-contain p-2 sm:p-3 md:p-4 group-hover:scale-105 transition-transform duration-300"
-                      />
-                    </div>
-                    <h4 className="font-bold mb-1 sm:mb-2 text-sm sm:text-base md:text-lg text-text-heading">Printed Strap</h4>
-                    <p className="text-xs sm:text-sm text-text-primary flex-1">
-                      High-contrast, durable printing for branding, security marking, and logistics communication.
-                    </p>
-                  </div>
-                </Link>
-
-                <Link href="/products/coloured-strap" className="group relative block">
-                  <div className="absolute -inset-0.5 bg-gradient-to-br from-bg-accent to-bg-accent/50 rounded-xl sm:rounded-2xl blur opacity-20 group-hover:opacity-30 transition-opacity"></div>
-                  <div className="relative bg-bg-card p-3 sm:p-4 md:p-6 rounded-xl sm:rounded-2xl shadow-xl border border-border-accent/20 h-full flex flex-col hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-                    <div className="relative h-32 sm:h-40 md:h-48 mb-3 sm:mb-4 rounded-lg sm:rounded-xl overflow-hidden bg-gradient-to-br from-bg-accent/10 to-bg-accent/5">
-                      <Image
-                        src="/images/coloured-strap.png"
-                        alt="Coloured packaging strap"
-                        fill
-                        className="object-contain p-2 sm:p-3 md:p-4 group-hover:scale-105 transition-transform duration-300"
-                      />
-                    </div>
-                    <h4 className="font-bold mb-1 sm:mb-2 text-sm sm:text-base md:text-lg text-text-heading">Coloured Strap</h4>
-                    <p className="text-xs sm:text-sm text-text-primary flex-1">
-                      Visual identification tool for warehouse management, tracking, and safety protocols.
-                    </p>
-                  </div>
-                </Link>
-
-                <Link href="/products/transparent-strap" className="group relative block">
-                  <div className="absolute -inset-0.5 bg-gradient-to-br from-bg-accent to-bg-accent/50 rounded-xl sm:rounded-2xl blur opacity-20 group-hover:opacity-30 transition-opacity"></div>
-                  <div className="relative bg-bg-card p-3 sm:p-4 md:p-6 rounded-xl sm:rounded-2xl shadow-xl border border-border-accent/20 h-full flex flex-col hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-                    <div className="relative h-32 sm:h-40 md:h-48 mb-3 sm:mb-4 rounded-lg sm:rounded-xl overflow-hidden bg-gradient-to-br from-bg-accent/10 to-bg-accent/5">
-                      <Image
-                        src="/images/transparent-strap.png"
-                        alt="Transparent packaging strap"
-                        fill
-                        className="object-contain p-2 sm:p-3 md:p-4 group-hover:scale-105 transition-transform duration-300"
-                      />
-                    </div>
-                    <h4 className="font-bold mb-1 sm:mb-2 text-sm sm:text-base md:text-lg text-text-heading">Transparent Strap</h4>
-                    <p className="text-xs sm:text-sm text-text-primary flex-1">
-                      Sleek, professional hold for retail-facing goods where package design must remain visible.
-                    </p>
-                  </div>
-                </Link>
-              </div>
-
-              {/* Strapping Machinery Products */}
-              <div className="grid sm:grid-cols-2 gap-3 sm:gap-4 md:gap-6">
-                <Link href="/products/fully-automatic-strapping-machine" className="group relative block">
-                  <div className="absolute -inset-0.5 bg-gradient-to-br from-bg-accent to-bg-accent/50 rounded-xl sm:rounded-2xl blur opacity-20 group-hover:opacity-30 transition-opacity"></div>
-                  <div className="relative bg-gradient-to-br from-bg-accent via-bg-accent/90 to-bg-accent/80 text-text-on-accent p-4 sm:p-5 md:p-6 rounded-xl sm:rounded-2xl shadow-xl border border-border-accent/20 h-full flex flex-col hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-                    <div className="relative h-48 sm:h-56 md:h-64 mb-3 sm:mb-4 rounded-lg sm:rounded-xl overflow-hidden bg-gradient-to-br from-white/20 to-white/10">
-                      <Image
-                        src="/images/fully-automatic-strapping-machine-alt.png"
-                        alt="Fully automatic strapping machine"
-                        fill
-                        className="object-contain p-3 sm:p-4 md:p-6 group-hover:scale-105 transition-transform duration-300"
-                      />
-                    </div>
-                    <h4 className="font-bold mb-1 sm:mb-2 text-sm sm:text-base md:text-lg">Fully Automatic Strapping Machine</h4>
-                    <p className="text-xs sm:text-sm opacity-90 flex-1">
-                      High-speed automation for production line integration with maximum throughput and energy-efficient operation.
-                    </p>
-                  </div>
-                </Link>
-
-                <Link href="/products/semi-automatic-strapping-machine" className="group relative block">
-                  <div className="absolute -inset-0.5 bg-gradient-to-br from-bg-accent to-bg-accent/50 rounded-xl sm:rounded-2xl blur opacity-20 group-hover:opacity-30 transition-opacity"></div>
-                  <div className="relative bg-gradient-to-br from-bg-accent via-bg-accent/90 to-bg-accent/80 text-text-on-accent p-4 sm:p-5 md:p-6 rounded-xl sm:rounded-2xl shadow-xl border border-border-accent/20 h-full flex flex-col hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-                    <div className="relative h-48 sm:h-56 md:h-64 mb-3 sm:mb-4 rounded-lg sm:rounded-xl overflow-hidden bg-gradient-to-br from-white/20 to-white/10">
-                      <Image
-                        src="/images/semi-automatic-strapping-machine.png"
-                        alt="Semi automatic strapping machine"
-                        fill
-                        className="object-contain p-3 sm:p-4 md:p-6 group-hover:scale-105 transition-transform duration-300"
-                      />
-                    </div>
-                    <h4 className="font-bold mb-1 sm:mb-2 text-sm sm:text-base md:text-lg">Semi Automatic Strapping Machine</h4>
-                    <p className="text-xs sm:text-sm opacity-90 flex-1">
-                      Cost-effective, portable solution with rapid 2.5-second cycle time and adjustable tension (15-45 Kgs).
-                    </p>
-                  </div>
-                </Link>
-              </div>
-            </div>
-
-            {/* CTA Link */}
-            <div className="text-center">
-              <Link 
-                href="/products" 
-                className="group relative inline-flex items-center gap-2 px-8 py-4 bg-bg-accent text-text-on-accent rounded-xl font-bold text-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl"
-              >
-                <span className="relative z-10 flex items-center gap-2">
-                  View All Products
-                  <svg className="w-5 h-5 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                  </svg>
-                </span>
-                <div className="absolute inset-0 bg-gradient-to-r from-bg-accent via-bg-accent/90 to-bg-accent opacity-0 group-hover:opacity-100 transition-opacity"></div>
-              </Link>
-            </div>
+            </AnimateOnScroll>
           </div>
-        </section>
+          </section>
+        </AnimateOnScroll>
 
         {/* CTA Section */}
-        <section className="py-6 sm:py-8 px-4 sm:px-6 bg-bg-cta text-text-on-accent">
-          <div className="container mx-auto text-center max-w-3xl">
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-3 sm:mb-4">
-              Ready to Secure Your Future?
-            </h2>
-            <p className="text-base sm:text-lg md:text-xl mb-4 sm:mb-6">
+        <AnimateOnScroll animation="fadeInUp" delay={100}>
+          <section className="py-6 sm:py-8 px-4 sm:px-6 bg-bg-cta text-text-on-accent">
+          <div className="container mx-auto text-center max-w-4xl">
+            <div className="mb-4 sm:mb-5 md:mb-6">
+              <p className="text-xs sm:text-sm md:text-base uppercase tracking-[0.3em] sm:tracking-[0.4em] text-white mb-2">
+                Get Started
+              </p>
+              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-2">
+                <span className="block">Ready to Secure</span>
+                <span className="block drop-shadow-2xl">Your Future?</span>
+              </h2>
+            </div>
+            <p className="text-base sm:text-lg md:text-xl mb-4 sm:mb-6 text-white/90">
               Contact us today for detailed product information, technical support, or to request a custom quote.
             </p>
             <Link 
               href="/contact" 
-              className="inline-block bg-bg-accent text-text-on-accent px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg font-semibold text-sm sm:text-base hover:bg-bg-accent-hover transition-colors"
+              className="inline-block bg-[#F9A634] text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg font-semibold text-sm sm:text-base hover:bg-[#e8951f] transition-colors border-2 border-white/20 hover:border-white/40"
             >
               Get in Touch
             </Link>
           </div>
-        </section>
+          </section>
+        </AnimateOnScroll>
       </div>
     </>
   );
