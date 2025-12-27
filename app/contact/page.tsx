@@ -16,10 +16,11 @@ export default function Contact() {
       "name": "HB Sub Noor Industries",
       "email": "info@strapack.com.pk",
       "telephone": [
+        "+92-300-0887966",
         "+92-322-4722707",
-        "+92-322-4054078",
         "+92-323-3093336",
-        "+92-301-4914797"
+        "+92-301-4914797",
+        "+92-322-4054078"
       ],
       "address": [
         {
@@ -406,30 +407,36 @@ export default function Contact() {
                     <h3 className="font-bold text-lg mb-3 text-text-heading flex items-center gap-2">
                       <span>☎️</span> Phone Numbers
                     </h3>
-                    <ul className="space-y-2 text-text-primary">
-                      <li className="flex items-center gap-2">
-                        <span className="text-text-heading font-bold">•</span>
-                        <a href="tel:+923224722707" className="hover:text-text-heading transition-colors">
+                    <ul className="space-y-3 text-text-primary">
+                      <li className="flex flex-col gap-1">
+                        <a href="tel:+923000887966" className="hover:text-text-heading transition-colors font-semibold">
+                          0300 0887966
+                        </a>
+                        <span className="text-sm text-text-secondary">Mr. Faraz - Sales Executive Punjab</span>
+                      </li>
+                      <li className="flex flex-col gap-1">
+                        <a href="tel:+923224722707" className="hover:text-text-heading transition-colors font-semibold">
                           +92 322 4722707
                         </a>
+                        <span className="text-sm text-text-secondary">Mr. Waris - Head of Sales Operations</span>
                       </li>
-                      <li className="flex items-center gap-2">
-                        <span className="text-text-heading font-bold">•</span>
-                        <a href="tel:+923224054078" className="hover:text-text-heading transition-colors">
-                          +92 322 4054078
-                        </a>
-                      </li>
-                      <li className="flex items-center gap-2">
-                        <span className="text-text-heading font-bold">•</span>
-                        <a href="tel:+923233093336" className="hover:text-text-heading transition-colors">
+                      <li className="flex flex-col gap-1">
+                        <a href="tel:+923233093336" className="hover:text-text-heading transition-colors font-semibold">
                           +92 323 3093336
                         </a>
+                        <span className="text-sm text-text-secondary">Mr. Usman - Sales Executive Karachi</span>
                       </li>
-                      <li className="flex items-center gap-2">
-                        <span className="text-text-heading font-bold">•</span>
-                        <a href="tel:+923014914797" className="hover:text-text-heading transition-colors">
+                      <li className="flex flex-col gap-1">
+                        <a href="tel:+923014914797" className="hover:text-text-heading transition-colors font-semibold">
                           +92 301 4914797
                         </a>
+                        <span className="text-sm text-text-secondary">Mr. Fazal - Sales Executive Punjab</span>
+                      </li>
+                      <li className="flex flex-col gap-1">
+                        <a href="tel:+923224054078" className="hover:text-text-heading transition-colors font-semibold">
+                          +92 322 4054078
+                        </a>
+                        <span className="text-sm text-text-secondary">Mr. Moaz - Head Office</span>
                       </li>
                     </ul>
                   </div>

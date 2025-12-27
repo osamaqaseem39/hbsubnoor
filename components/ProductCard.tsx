@@ -29,12 +29,12 @@ export default function ProductCard({
       : 'bg-bg-card';
   
   const titleClass = variant === 'long-title'
-    ? 'font-bold text-black text-lg sm:text-xl md:text-2xl lg:text-3xl drop-shadow-lg leading-tight transform translate-y-12 group-hover:translate-y-0 transition-all duration-300 ease-out mb-2'
-    : 'font-bold text-black text-lg sm:text-xl md:text-2xl lg:text-3xl drop-shadow-lg leading-none transform translate-y-24 group-hover:translate-y-8 transition-all duration-300 ease-out mb-2';
+    ? 'font-bold text-white text-lg sm:text-xl md:text-2xl lg:text-3xl drop-shadow-lg leading-tight transform translate-y-12 group-hover:translate-y-0 transition-all duration-300 ease-out mb-2'
+    : 'font-bold text-white text-lg sm:text-xl md:text-2xl lg:text-3xl drop-shadow-lg leading-none transform translate-y-24 group-hover:translate-y-8 transition-all duration-300 ease-out mb-2';
   
   const descriptionClass = variant === 'long-title'
-    ? 'text-sm sm:text-base text-black/95 leading-relaxed transform translate-y-12 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 ease-out font-medium max-w-full line-clamp-3'
-    : 'text-sm sm:text-base text-black/95 leading-relaxed transform translate-y-20 opacity-0 group-hover:translate-y-8 group-hover:opacity-100 transition-all duration-300 ease-out font-medium max-w-full line-clamp-3';
+    ? 'text-sm sm:text-base text-white/95 leading-relaxed transform translate-y-12 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 ease-out font-medium max-w-full line-clamp-3'
+    : 'text-sm sm:text-base text-white/95 leading-relaxed transform translate-y-20 opacity-0 group-hover:translate-y-8 group-hover:opacity-100 transition-all duration-300 ease-out font-medium max-w-full line-clamp-3';
 
   const cardContent = (
     <Link href={href} className="group relative block aspect-square">

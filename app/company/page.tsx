@@ -33,7 +33,28 @@ export default function Company() {
     "contactPoint": [
       {
         "@type": "ContactPoint",
+        "telephone": "+92-300-0887966",
+        "contactType": "Sales",
+        "areaServed": "PK",
+        "availableLanguage": "en"
+      },
+      {
+        "@type": "ContactPoint",
         "telephone": "+92-322-4722707",
+        "contactType": "Sales",
+        "areaServed": "PK",
+        "availableLanguage": "en"
+      },
+      {
+        "@type": "ContactPoint",
+        "telephone": "+92-323-3093336",
+        "contactType": "Sales",
+        "areaServed": "PK",
+        "availableLanguage": "en"
+      },
+      {
+        "@type": "ContactPoint",
+        "telephone": "+92-301-4914797",
         "contactType": "Sales",
         "areaServed": "PK",
         "availableLanguage": "en"

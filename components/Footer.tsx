@@ -59,7 +59,7 @@ export default function Footer() {
               <h4 className="font-semibold mb-3 sm:mb-4 text-black text-sm sm:text-base">Contact</h4>
               <ul className="space-y-1.5 sm:space-y-2 text-xs sm:text-sm">
                 <li>Email: info@strapack.com.pk</li>
-                <li>Phone: +92 3224 722 707</li>
+                <li>Phone: +92 322 4054078</li>
                 <li>
                   <Link href="/contact" className="hover:text-accent-primary transition-colors">
                     Get a Quote

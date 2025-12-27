@@ -440,6 +440,85 @@ export default function Products() {
           </section>
         </AnimateOnScroll>
 
+        {/* Videos Section */}
+        <AnimateOnScroll animation="fadeInUp" delay={0}>
+          <section className="py-16 md:py-20 px-4 bg-gradient-to-br from-bg-card/30 via-bg-primary to-bg-card/20 relative overflow-hidden">
+            <div className="absolute inset-0 overflow-hidden">
+              <div className="absolute top-20 left-10 w-72 h-72 bg-bg-accent/10 rounded-full blur-3xl animate-pulse"></div>
+              <div className="absolute bottom-20 right-10 w-96 h-96 bg-bg-accent/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+            </div>
+
+            <div className="container mx-auto max-w-7xl relative z-10">
+              <div className="max-w-4xl mx-auto text-center mb-8 md:mb-12">
+                <p className="text-xs sm:text-sm md:text-base uppercase tracking-[0.3em] sm:tracking-[0.4em] text-bg-accent mb-2">
+                  Watch & Learn
+                </p>
+                <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-text-heading leading-tight mb-2">
+                  <span className="block">Strapping Machines</span>
+                  <span className="block drop-shadow-2xl">in Action</span>
+                </h2>
+                <p className="text-lg text-text-secondary mt-6 max-w-2xl mx-auto">
+                  See our strapping machines in operation and discover how they can streamline your packaging process
+                </p>
+              </div>
+
+              <div className="grid md:grid-cols-2 gap-6 md:gap-8 max-w-5xl mx-auto">
+                {/* Video 1 - Semi-Automatic Strapping Machine */}
+                <AnimateOnScroll animation="fadeInLeft" delay={100}>
+                  <div className="group relative bg-bg-card rounded-2xl overflow-hidden border border-border-accent/20 hover:border-border-accent transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
+                    <div className="aspect-video bg-gradient-to-br from-bg-primary to-bg-card relative">
+                      {/* Video placeholder - Replace with actual video embed */}
+                      <div className="absolute inset-0 flex items-center justify-center">
+                        <div className="text-center p-8">
+                          <div className="w-20 h-20 mx-auto mb-4 bg-bg-accent/20 rounded-full flex items-center justify-center group-hover:bg-bg-accent/30 transition-colors">
+                            <svg className="w-10 h-10 text-bg-accent" fill="currentColor" viewBox="0 0 24 24">
+                              <path d="M8 5v14l11-7z"/>
+                            </svg>
+                          </div>
+                          <p className="text-text-secondary text-sm">Semi-Automatic Strapping Machine Video</p>
+                          <p className="text-text-primary text-xs mt-2">Click to play</p>
+                        </div>
+                      </div>
+                      {/* Replace the div above with actual video embed when video URL is available */}
+                      {/* Example: <iframe className="absolute inset-0 w-full h-full" src="YOUR_VIDEO_URL" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
+                    </div>
+                    <div className="p-6">
+                      <h3 className="text-xl font-bold text-text-heading mb-2">Semi-Automatic Strapping Machine</h3>
+                      <p className="text-text-primary text-sm">Watch how our semi-automatic machine efficiently secures your packages with precision and speed.</p>
+                    </div>
+                  </div>
+                </AnimateOnScroll>
+
+                {/* Video 2 - Fully Automatic Strapping Machine */}
+                <AnimateOnScroll animation="fadeInRight" delay={200}>
+                  <div className="group relative bg-bg-card rounded-2xl overflow-hidden border border-border-accent/20 hover:border-border-accent transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
+                    <div className="aspect-video bg-gradient-to-br from-bg-primary to-bg-card relative">
+                      {/* Video placeholder - Replace with actual video embed */}
+                      <div className="absolute inset-0 flex items-center justify-center">
+                        <div className="text-center p-8">
+                          <div className="w-20 h-20 mx-auto mb-4 bg-bg-accent/20 rounded-full flex items-center justify-center group-hover:bg-bg-accent/30 transition-colors">
+                            <svg className="w-10 h-10 text-bg-accent" fill="currentColor" viewBox="0 0 24 24">
+                              <path d="M8 5v14l11-7z"/>
+                            </svg>
+                          </div>
+                          <p className="text-text-secondary text-sm">Fully Automatic Strapping Machine Video</p>
+                          <p className="text-text-primary text-xs mt-2">Click to play</p>
+                        </div>
+                      </div>
+                      {/* Replace the div above with actual video embed when video URL is available */}
+                      {/* Example: <iframe className="absolute inset-0 w-full h-full" src="YOUR_VIDEO_URL" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
+                    </div>
+                    <div className="p-6">
+                      <h3 className="text-xl font-bold text-text-heading mb-2">Fully Automatic Strapping Machine</h3>
+                      <p className="text-text-primary text-sm">Experience the power of automation with our fully automatic strapping solution for high-volume operations.</p>
+                    </div>
+                  </div>
+                </AnimateOnScroll>
+              </div>
+            </div>
+          </section>
+        </AnimateOnScroll>
+
         {/* CTA Section */}
         <AnimateOnScroll animation="fadeInUp" delay={0}>
           <section className="py-6 md:py-10 px-4 bg-gradient-to-br from-bg-cta via-bg-cta/90 to-bg-cta text-text-on-accent relative overflow-hidden">

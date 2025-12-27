@@ -24,6 +24,7 @@ function ProductCarousel({ products }: { products: Product[] }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [touchStart, setTouchStart] = useState<number | null>(null);
   const [touchEnd, setTouchEnd] = useState<number | null>(null);
+  const [isMobile, setIsMobile] = useState(false);
 
   // Minimum swipe distance (in pixels)
   const minSwipeDistance = 50;
@@ -32,6 +33,18 @@ function ProductCarousel({ products }: { products: Product[] }) {
   const [swipeDirection, setSwipeDirection] = useState<'left' | 'right' | null>(null);
   const [prevIndex, setPrevIndex] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
+
+  // Check if mobile on mount and resize
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
 
   const goToPrevious = () => {
     if (isTransitioning || products.length === 0) return;
@@ -101,7 +114,11 @@ function ProductCarousel({ products }: { products: Product[] }) {
   };
 
   const getVisibleProducts = () => {
-    // Always show 5 cards, with currentIndex at center (position 2)
+    if (isMobile) {
+      // On mobile, only show the current card
+      return [products[currentIndex]];
+    }
+    // Desktop: show 5 cards, with currentIndex at center (position 2)
     const visible: Product[] = [];
     for (let i = -2; i <= 2; i++) {
       // Calculate index with proper wrapping for infinite loop
@@ -115,16 +132,17 @@ function ProductCarousel({ products }: { products: Product[] }) {
   };
 
   const visibleProducts = getVisibleProducts();
-  const rotations = [-8, -4, 0, 4, 8]; // degrees for each card position - more subtle for left-to-right flow
-  const zDepths = [-80, -40, 0, -40, -80]; // z-axis depth: outer cards further back, center closest
-  const scales = [0.9, 0.95, 1, 0.95, 0.9]; // scale: outer cards smaller, center full size
-  const blurs = [4, 1, 0, 1, 4]; // blur: outer cards blurry, cards next to center less blurry, center sharp
-  const opacities = [0.7, 0.85, 1, 0.85, 0.7]; // opacity: outer cards more transparent
+  // Mobile: simple single card display
+  const rotations = isMobile ? [0] : [-8, -4, 0, 4, 8]; // degrees for each card position - more subtle for left-to-right flow
+  const zDepths = isMobile ? [0] : [-80, -40, 0, -40, -80]; // z-axis depth: outer cards further back, center closest
+  const scales = isMobile ? [1] : [0.9, 0.95, 1, 0.95, 0.9]; // scale: outer cards smaller, center full size
+  const blurs = isMobile ? [0] : [4, 1, 0, 1, 4]; // blur: outer cards blurry, cards next to center less blurry, center sharp
+  const opacities = isMobile ? [1] : [0.7, 0.85, 1, 0.85, 0.7]; // opacity: outer cards more transparent
 
   return (
-    <div className="relative w-full">
-      {/* Navigation Buttons */}
-      {products.length > 0 && (
+    <div className="relative w-full overflow-hidden">
+      {/* Navigation Buttons - Hidden on mobile, visible on desktop */}
+      {products.length > 0 && !isMobile && (
         <>
           <button
             onClick={goToPrevious}
@@ -151,8 +169,8 @@ function ProductCarousel({ products }: { products: Product[] }) {
 
       {/* Carousel Container */}
       <motion.div 
-        className="flex justify-center items-center gap-8 md:gap-10 px-12 md:px-20"
-        style={{ perspective: '1200px' }}
+        className={`flex justify-center items-center ${isMobile ? 'gap-0 px-4' : 'gap-8 md:gap-10 px-12 md:px-20'}`}
+        style={{ perspective: isMobile ? 'none' : '1200px' }}
         onTouchStart={onTouchStart}
         onTouchMove={onTouchMove}
         onTouchEnd={onTouchEnd}
@@ -180,19 +198,18 @@ function ProductCarousel({ products }: { products: Product[] }) {
           // Calculate position for smooth one-by-one scrolling
           const getInitialX = () => {
             if (!swipeDirection || !isTransitioning) return 0;
-            if (swipeDirection === 'left') {
-              return 400;
-            } else {
-              return -400;
-            }
+            return swipeDirection === 'left' ? 400 : -400;
           };
+          
+          // On mobile, only the current card is visible (index 0 in visibleProducts array)
+          const isVisible = true; // Always visible since getVisibleProducts handles filtering
           
           return (
             <motion.div
               key={`${product.name}-${currentIndex}-${index}`}
               initial={{
                 x: swipeDirection && isTransitioning ? getInitialX() : 0,
-                opacity: swipeDirection && isTransitioning ? (index === (swipeDirection === 'left' ? 4 : 0) ? 0 : cardOpacity) : cardOpacity,
+                opacity: swipeDirection && isTransitioning ? (isMobile ? 0 : (index === (swipeDirection === 'left' ? 4 : 0) ? 0 : cardOpacity)) : cardOpacity,
                 scale: cardScale,
                 rotateY: rotationY,
                 z: zDepth,
@@ -207,14 +224,14 @@ function ProductCarousel({ products }: { products: Product[] }) {
                 filter: `blur(${blurAmount}px)`
               }}
               transition={{ 
-                duration: 0.4,
-                delay: swipeDirection && isTransitioning ? (index * 0.05) : 0,
+                duration: isMobile ? 0.3 : 0.4,
+                delay: swipeDirection && isTransitioning ? (isMobile ? 0 : index * 0.05) : 0,
                 type: "spring",
-                stiffness: 200,
-                damping: 30,
+                stiffness: isMobile ? 300 : 200,
+                damping: isMobile ? 30 : 30,
                 mass: 0.5
               }}
-              whileHover={{ 
+              whileHover={isMobile ? {} : { 
                 scale: 1.05, 
                 y: -10, 
                 z: 50,
@@ -222,17 +239,19 @@ function ProductCarousel({ products }: { products: Product[] }) {
                 opacity: 1
               }}
               style={{ 
-                transformStyle: 'preserve-3d',
-                width: '480px',
+                transformStyle: isMobile ? 'flat' : 'preserve-3d',
+                width: isMobile ? '100%' : '480px',
+                maxWidth: isMobile ? '100%' : '480px',
                 flexShrink: 0,
-                perspective: '1000px'
+                perspective: isMobile ? 'none' : '1000px',
+                display: isVisible ? 'block' : 'none'
               }}
               className="relative"
-              onMouseEnter={() => setIsHovered(true)}
-              onMouseLeave={() => setIsHovered(false)}
+              onMouseEnter={() => !isMobile && setIsHovered(true)}
+              onMouseLeave={() => !isMobile && setIsHovered(false)}
             >
-              {/* Glow effect on center card (index 2) */}
-              {index === 2 && (
+              {/* Glow effect on center card (index 2 on desktop, index 0 on mobile) */}
+              {((isMobile && index === 0) || (!isMobile && index === 2)) && (
                 <motion.div
                   className="absolute inset-0 bg-gradient-to-r from-transparent via-bg-accent/20 to-transparent rounded-xl sm:rounded-2xl -z-10"
                   animate={{
@@ -262,6 +281,32 @@ function ProductCarousel({ products }: { products: Product[] }) {
           );
         })}
       </motion.div>
+
+      {/* Mobile Navigation Dots */}
+      {isMobile && products.length > 0 && (
+        <div className="flex items-center justify-center gap-2 mt-6">
+          {products.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => {
+                if (isTransitioning || index === currentIndex) return;
+                setIsTransitioning(true);
+                setSwipeDirection(index > currentIndex ? 'left' : 'right');
+                setPrevIndex(currentIndex);
+                setCurrentIndex(index);
+                setTimeout(() => {
+                  setIsTransitioning(false);
+                  setSwipeDirection(null);
+                }, 400);
+              }}
+              className={`h-2 rounded-full transition-all duration-300 ${
+                currentIndex === index ? 'w-8 bg-bg-accent' : 'w-2 bg-white/30'
+              }`}
+              aria-label={`Go to ${products[index].name}`}
+            />
+          ))}
+        </div>
+      )}
     </div>
   );
 }
