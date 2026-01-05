@@ -171,10 +171,6 @@ export default function Products() {
                   <div className="text-4xl md:text-5xl font-extrabold text-white mb-2">25+</div>
                   <div className="text-base md:text-lg text-white/70 font-semibold">Years Experience</div>
                 </div>
-                <div className="text-center">
-                  <div className="text-4xl md:text-5xl font-extrabold text-white mb-2">50+</div>
-                  <div className="text-base md:text-lg text-white/70 font-semibold">Countries Served</div>
-                </div>
               </div>
             </div>
           </div>

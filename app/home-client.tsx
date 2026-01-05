@@ -348,12 +348,6 @@ export default function HomePageClient() {
                     <div className="text-sm sm:text-base text-white/90">Industry Experience</div>
                   </div>
 
-                  <div className="group text-center p-4 sm:p-6 rounded-xl sm:rounded-2xl bg-white/10 backdrop-blur-sm border border-white/20 shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300">
-                    <div className="text-4xl sm:text-5xl md:text-6xl mb-3 sm:mb-4">🌍</div>
-                    <div className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mb-2">50+</div>
-                    <div className="text-base sm:text-lg font-bold text-white mb-1">Countries</div>
-                    <div className="text-sm sm:text-base text-white/90">Global Reach</div>
-                  </div>
 
                   <div className="group text-center p-4 sm:p-6 rounded-xl sm:rounded-2xl bg-white/10 backdrop-blur-sm border border-white/20 shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300">
                     <div className="text-4xl sm:text-5xl md:text-6xl mb-3 sm:mb-4">✨</div>

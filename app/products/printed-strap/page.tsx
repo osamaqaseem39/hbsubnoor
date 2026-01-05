@@ -204,7 +204,7 @@ export default function PrintedStrapPage() {
                 <div className="relative bg-bg-card p-8 rounded-2xl shadow-2xl border border-border-accent/20 group-hover:shadow-3xl transition-all duration-300">
                   <div className="relative h-[500px] rounded-xl overflow-hidden bg-gradient-to-br from-bg-accent/10 to-bg-accent/5">
                     <Image
-                      src="/images/printed-strap.png"
+                      src="/images/printed-packaging-straps.png"
                       alt="Printed packaging strap with custom branding - HB Sub Noor Industries"
                       fill
                       className="object-cover group-hover:scale-110 transition-transform duration-500 ease-out"
