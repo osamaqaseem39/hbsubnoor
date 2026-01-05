@@ -140,7 +140,7 @@ function ProductCarousel({ products }: { products: Product[] }) {
   const opacities = isMobile ? [1] : [0.7, 0.85, 1, 0.85, 0.7]; // opacity: outer cards more transparent
 
   return (
-    <div className="relative w-full overflow-hidden">
+    <div className="relative w-full overflow-visible">
       {/* Navigation Buttons - Hidden on mobile, visible on desktop */}
       {products.length > 0 && !isMobile && (
         <>

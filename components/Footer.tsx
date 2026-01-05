@@ -56,14 +56,27 @@ export default function Footer() {
           
           <AnimateOnScroll animation="fadeInUp" delay={200}>
             <div>
-              <h4 className="font-semibold mb-3 sm:mb-4 text-black text-sm sm:text-base">Contact</h4>
+              <h4 className="font-semibold mb-3 sm:mb-4 text-black text-sm sm:text-base">Head Office</h4>
               <ul className="space-y-1.5 sm:space-y-2 text-xs sm:text-sm">
-                <li>Email: info@strapack.com.pk</li>
-                <li>Phone: +92 322 4054078</li>
                 <li>
-                  <Link href="/contact" className="hover:text-accent-primary transition-colors">
-                    Get a Quote
-                  </Link>
+                  <strong>Address:</strong><br />
+                  9/E, G-Block, Mushtaq Ahmed Gurmani Road,<br />
+                  Main Boulevard Gulberg-II,<br />
+                  Lahore, Pakistan
+                </li>
+                <li>
+                  <strong>Phone:</strong><br />
+                  <a href="tel:+923224054078" className="hover:text-accent-primary transition-colors">
+                    +92 322 4054078
+                  </a>
+                  <br />
+                  <span className="text-gray-600">Mr. Moaz - Head Office</span>
+                </li>
+                <li>
+                  <strong>Email:</strong><br />
+                  <a href="mailto:info@strapack.com.pk" className="hover:text-accent-primary transition-colors">
+                    info@strapack.com.pk
+                  </a>
                 </li>
               </ul>
             </div>
@@ -71,12 +84,27 @@ export default function Footer() {
           
           <AnimateOnScroll animation="fadeInUp" delay={300}>
             <div>
-              <h4 className="font-semibold mb-3 sm:mb-4 text-black text-sm sm:text-base">Locations</h4>
+              <h4 className="font-semibold mb-3 sm:mb-4 text-black text-sm sm:text-base">Quick Links</h4>
               <ul className="space-y-1.5 sm:space-y-2 text-xs sm:text-sm">
                 <li>
-                  <strong>Head Office:</strong><br />
-                  9/E, G-Block, Mushtaq Ahmed Gurmani Road,<br />
-                  Main Boulevard Gulberg-II, Lahore, Pakistan
+                  <Link href="/contact" className="hover:text-accent-primary transition-colors">
+                    Get a Quote
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/company" className="hover:text-accent-primary transition-colors">
+                    About Company
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/products" className="hover:text-accent-primary transition-colors">
+                    Our Products
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/services" className="hover:text-accent-primary transition-colors">
+                    Our Services
+                  </Link>
                 </li>
               </ul>
             </div>

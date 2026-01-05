@@ -340,8 +340,8 @@ export default function HomePageClient() {
 
             <div className="container mx-auto max-w-7xl relative z-10">
               <AnimateOnScroll animation="stagger" delay={200}>
-                <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
-                  <div className="group text-center p-4 sm:p-6 rounded-xl sm:rounded-2xl bg-white/10 backdrop-blur-sm border border-white/20 shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300">
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 justify-items-center max-w-5xl mx-auto">
+                  <div className="group text-center p-4 sm:p-6 rounded-xl sm:rounded-2xl bg-white/10 backdrop-blur-sm border border-white/20 shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 w-full max-w-sm">
                     <div className="text-4xl sm:text-5xl md:text-6xl mb-3 sm:mb-4">🏭</div>
                     <div className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mb-2">30+</div>
                     <div className="text-base sm:text-lg font-bold text-white mb-1">Years</div>
@@ -349,14 +349,14 @@ export default function HomePageClient() {
                   </div>
 
 
-                  <div className="group text-center p-4 sm:p-6 rounded-xl sm:rounded-2xl bg-white/10 backdrop-blur-sm border border-white/20 shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300">
+                  <div className="group text-center p-4 sm:p-6 rounded-xl sm:rounded-2xl bg-white/10 backdrop-blur-sm border border-white/20 shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 w-full max-w-sm">
                     <div className="text-4xl sm:text-5xl md:text-6xl mb-3 sm:mb-4">✨</div>
                     <div className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white mb-2">Premium</div>
                     <div className="text-base sm:text-lg font-bold text-white mb-1">Quality</div>
                     <div className="text-sm sm:text-base text-white/90">Superior Products</div>
                   </div>
 
-                  <div className="group text-center p-4 sm:p-6 rounded-xl sm:rounded-2xl bg-white/10 backdrop-blur-sm border border-white/20 shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300">
+                  <div className="group text-center p-4 sm:p-6 rounded-xl sm:rounded-2xl bg-white/10 backdrop-blur-sm border border-white/20 shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 w-full max-w-sm">
                     <div className="text-4xl sm:text-5xl md:text-6xl mb-3 sm:mb-4">💼</div>
                     <div className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mb-2">1000+</div>
                     <div className="text-base sm:text-lg font-bold text-white mb-1">Clients</div>
