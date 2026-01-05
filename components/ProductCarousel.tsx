@@ -400,7 +400,7 @@ function ProductGalleryCarousel({ products }: { products: Product[] }) {
                 >
                   <div className="grid md:grid-cols-2 gap-6 sm:gap-8">
                     {/* Left Column - Image */}
-                    <div className="relative aspect-square rounded-lg overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100">
+                    <div className="relative aspect-square rounded-lg  bg-gradient-to-br from-gray-50 to-gray-100">
                       <Image
                         src={product.imageSrc}
                         alt={product.imageAlt}
